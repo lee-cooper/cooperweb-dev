@@ -39,7 +39,7 @@ body {
 }
 
 .nav-item {
-  padding: 2rem;
+  padding: 2.5rem;
   font-size: 1.3rem;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 .greeting-tile {
-  height: 100vh;
+  height: calc(100vh - 5rem);
   background: url("./red-sombrero-background-compressed.jpeg");
   background-size: cover;
   background-position: center;
@@ -73,6 +73,7 @@ body {
   color: white;
   text-shadow: 2px 2px 6px rgb(206, 1, 1);
   text-align: center;
+  font-style: italic;
 }
 
 .subtitle {
