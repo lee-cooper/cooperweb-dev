@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  height: 200vh;
+}
+
+.help-float {
+  background-color: rgb(84, 191, 226);
+  padding: 0.5em;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1;
+}
+
+.parent {
+  background-color: lightcoral;
+  padding: 0.25rem;
+  position: relative;
+}
+
+.child {
+  padding: 0.25rem;
+}
+
+.child-one {
+  background-color: lightgoldenrodyellow;
+}
+
+.child-two {
+  background-color: lightslategray;
+}
+
+.child-three {
+  background-color: lightsalmon;
+}
+
+.article-heading {
+  position: sticky;
+  top: 0;
+  display: block;
+  background-color: inherit;
+  border-bottom: 1px solid black;
+  padding: 0.5rem;
+}
+
+.custom-position {
+  position: relative;
+  top: 10px;
+}
