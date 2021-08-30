@@ -20,13 +20,16 @@ body {
 }
 
 .parent {
-  background-color: lightcoral;
   padding: 0.25rem;
   position: relative;
 }
 
 .child {
-  padding: 0.25rem;
+  padding: 0.75rem 0.25rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 #333;
+  margin: 1rem 0;
 }
 
 .child-one {
@@ -47,10 +50,16 @@ body {
   display: block;
   background-color: inherit;
   border-bottom: 1px solid black;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+.article-image {
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .custom-position {
   position: relative;
-  top: 10px;
+  top: 30px;
 }
