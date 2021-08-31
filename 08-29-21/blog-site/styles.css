@@ -48,7 +48,15 @@ nav {
 }
 
 main {
+  display: flex;
   padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.article {
+  max-width: 50rem;
 }
 
 footer {
