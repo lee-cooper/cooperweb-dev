@@ -1,0 +1,28 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    background-color: black;
+}
+
+.child {
+    /* height: 2rem; */
+}
+
+.child-1 {
+    background-color: lightgoldenrodyellow;
+    height: 15rem;
+    flex-shrink: 2;
+}
+
+.child-2 {
+    background-color: lightsteelblue;
+    height: 15rem;
+    flex-shrink: 1;
+}
+
+.child-3 {
+    background-color: lightsalmon;
+    height: 15rem;
+    flex-shrink: 1;
+}
