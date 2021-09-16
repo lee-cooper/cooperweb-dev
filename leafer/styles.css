@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  
 }
 
 body {
@@ -7,6 +8,10 @@ body {
   padding: 0;
   height: 100vh;
   font-family: Roboto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
 }
 
 .leafer-nav {
