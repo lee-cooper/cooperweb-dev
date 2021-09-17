@@ -1,0 +1,11 @@
+.skills {
+  display: flex; 
+  justify-content: space-around; 
+  flex-flow: row wrap;
+}
+
+.skills div {
+  flex-basis: 0;;
+  min-width: 50%;
+  padding: 0 .5rem
+}
