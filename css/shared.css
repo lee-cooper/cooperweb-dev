@@ -108,6 +108,11 @@ main {
 }
 
 @media (max-width: 600px) {
+
+  .body-content {
+    padding: 1rem;
+  }
+
   .sidebar {
     display: flex;
     flex-direction: row;
