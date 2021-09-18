@@ -96,8 +96,11 @@ main {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 31px;
+  width: 37px;
   height: 21px;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .toggle-button .bar {
