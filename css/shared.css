@@ -2,8 +2,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-text-color: #505050;
+  --main-background-color: #f7f7f7;
+}
+
 a, a:visited {
-  color: #505050;
+  color: var(--main-text-color);
   text-decoration: none;
 }
 
@@ -13,10 +18,10 @@ a:hover {
 }
 
 body {
-  background: #f7f7f7;
+  background: var(--main-background-color);
   margin: 0;
   font-family: "PT Serif", serif;
-  color: #505050;
+  color: var(--main-text-color);
 }
 
 main {
@@ -43,10 +48,10 @@ main {
 }
 
 .sidebar {
-  width: 18rem;
-  height: 100vh;
+  min-width: 15rem;
+  width: 15rem;
   padding: 1.5rem 2rem;
-  border-right: 1px solid #505050;
+  border-right: 1px solid var(--main-text-color);
 }
 
 .profile {
@@ -106,8 +111,16 @@ main {
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: #505050;
+  background-color: var(--main-text-color);
   border-radius: 10px;
+}
+
+pre code {
+  display: block;
+  background-color: var(--main-text-color);
+  color: var(--main-background-color);
+  padding: .5rem;
+  border-radius: 5px;
 }
 
 @media (max-width: 600px) {
@@ -122,7 +135,7 @@ main {
     width: 100vw;
     height: auto;
     border-right: none;
-    box-shadow: 0 3px 3px -3px #505050;
+    box-shadow: 0 3px 3px -3px var(--main-text-color);
     padding: 0;
     min-height: 3rem;
     transition: all 0.3s linear;
@@ -157,7 +170,7 @@ main {
     width: 50%;
     padding: 0.5rem;
     text-align: center;
-    transition: all 0.5s;
+    transition: all 0.3s linear;
   }
 
   .toggle-button {

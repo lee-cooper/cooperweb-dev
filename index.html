@@ -9,6 +9,9 @@
     <title>Home</title>
     <link rel="stylesheet"
           href="/css/shared.css" />
+    <link rel="stylesheet"
+          href="/css/home.css" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   </head>
 
   <body class="container">
@@ -76,12 +79,36 @@
         <div>
           <h1>Hello There!</h1>
           <p>
-            Currently building this out, but in the meantime, feel free to use your imagination!
+            My name is Lee, and I'm a Web Developer.
           </p>
+          <pre><code>Check out the links below</code></pre>
+          <div class="cards">
+            <div class="card">
+              <h2>About</h2>
+              <i data-feather="user"
+                 class="icon"></i>
+              <p>Learn more about me</p>
+            </div>
+            <div class="card">
+              <h2>Contact</h2>
+              <i data-feather="send"
+                 class="icon"></i>
+              <p>Reach out</p>
+            </div>
+            <div class="card">
+              <h2>Portfolio</h2>
+              <i data-feather="book-open"
+                 class="icon"></i>
+              <p>See My Work</p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
     <script src="/js/scripts.js"></script>
+    <script>
+      feather.replace()
+    </script>
   </body>
 
 </html>
