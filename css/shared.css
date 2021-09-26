@@ -38,6 +38,18 @@ main {
   font-size: 1.1rem;
 }
 
+.quote {
+  
+  font-style: italic;
+  margin: 0;
+  border-left: 4px solid black;
+  padding-left: .5rem;
+}
+
+.quote p {
+  font-size: 1.5rem;
+}
+
 .container {
   display: flex;
   flex-direction: row;
