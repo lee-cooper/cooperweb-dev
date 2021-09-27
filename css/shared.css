@@ -114,17 +114,10 @@ main {
   flex-direction: column;
   justify-content: space-between;
   width: 37px;
-  height: 21px;
+  height: 37px;
   border: none;
   background: none;
   cursor: pointer;
-}
-
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: var(--main-text-color);
-  border-radius: 10px;
 }
 
 pre code {

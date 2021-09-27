@@ -12,14 +12,14 @@
           href="/css/shared.css">
     <link rel="stylesheet"
           href="./css-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   </head>
 
   <body class="container">
     <button class="toggle-button"
             id="menu-toggle">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+      <i data-feather="menu"
+         class="icon"></i>
     </button>
     <aside class="sidebar">
       <h1 class="mobile-header">Lee Cooper</h1>
@@ -93,6 +93,9 @@
       </div>
     </main>
     <script src="/js/scripts.js"></script>
+    <script>
+      feather.replace()
+    </script>
   </body>
 
 </html>
