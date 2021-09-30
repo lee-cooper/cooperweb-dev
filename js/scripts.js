@@ -7,4 +7,5 @@ toggleButton.addEventListener("click", () => {
   profile.classList.toggle("active");
   widgets.classList.toggle("active");
   sidebar.classList.toggle("active");
+  toggleButton.classList.toggle("active");
 });

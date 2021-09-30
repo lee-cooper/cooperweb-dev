@@ -106,18 +106,7 @@ main {
 }
 
 .toggle-button {
-  position: absolute;
-  top: 0.75rem;
-  left: 1rem;
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 37px;
-  height: 37px;
-  padding: 0;
-  border: none;
-  background: none;
-  cursor: pointer;
 }
 
 pre code {
@@ -194,6 +183,7 @@ pre code {
     box-shadow: 0 3px 3px -3px var(--main-text-color);
     padding: 1rem;
     z-index: 100;
+    overflow: auto;
   }
 
   .widgets, .profile {
@@ -233,8 +223,20 @@ pre code {
 
   .toggle-button {
     color: var(--main-text-color);
-    position: static;
-    display: flex;
+    position: absolute;
     z-index: 200;
+    display: block;
+    top: .5rem;
+    left: .5rem;
+    width: 37px;
+    height: 37px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .toggle-button.active {
+    position: fixed;
   }
 }
