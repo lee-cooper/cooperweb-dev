@@ -75,9 +75,35 @@
     </aside>
     <main>
       <div class="body-content">
-        Contact me here, yo!
+        <h1>Contact</h1>
+        <p>Contact me here, yo! Also a work in progress :)</p>
+        <p>This form doesn't do anything yet.</p>
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <br />
+            <input type="text"
+                   id="name">
+          </div>
+          <div>
+            <label for="email">Email</label><br />
+            <input type="text"
+                   id="email">
+          </div>
+          <div>
+            <label for="message">Message</label><br />
+            <textarea id="message"></textarea>
+          </div>
 
-        Also a work in progress :)
+          <button type="submit"
+                  class="btn primary">
+            Submit
+          </button>
+          <button type="button"
+                  class="btn secondary">
+            Clear
+          </button>
+        </form>
       </div>
     </main>
     <script src="/js/scripts.js"></script>
