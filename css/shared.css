@@ -233,6 +233,7 @@ pre code {
 
   .toggle-button {
     color: var(--main-text-color);
+    position: static;
     display: flex;
     z-index: 200;
   }
