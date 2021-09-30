@@ -108,12 +108,13 @@ main {
 .toggle-button {
   position: absolute;
   top: 0.75rem;
-  right: 1rem;
+  left: 1rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 37px;
   height: 37px;
+  padding: 0;
   border: none;
   background: none;
   cursor: pointer;
@@ -231,6 +232,8 @@ pre code {
   }
 
   .toggle-button {
+    color: var(--main-text-color);
     display: flex;
+    z-index: 200;
   }
 }
