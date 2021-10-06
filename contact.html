@@ -79,30 +79,31 @@
         <p>Contact me here, yo! Also a work in progress :)</p>
         <p>This form doesn't do anything yet.</p>
         <form>
-          <div>
+          <div class="input-control">
             <label for="name">Name</label>
-            <br />
             <input type="text"
                    id="name">
           </div>
-          <div>
-            <label for="email">Email</label><br />
+          <div class="input-control">
+            <label for="email">Email</label>
             <input type="text"
                    id="email">
           </div>
-          <div>
-            <label for="message">Message</label><br />
-            <textarea id="message"></textarea>
+          <div class="textarea-control">
+            <label for="message">Message</label>
+            <textarea id="message"
+                      rows="4"></textarea>
           </div>
-
-          <button type="submit"
-                  class="btn primary">
-            Submit
-          </button>
-          <button type="button"
-                  class="btn secondary">
-            Clear
-          </button>
+          <div>
+            <button type="submit"
+                    class="btn primary">
+              Submit
+            </button>
+            <button type="button"
+                    class="btn secondary">
+              Clear
+            </button>
+          </div>
         </form>
       </div>
     </main>

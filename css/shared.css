@@ -164,8 +164,11 @@ pre code {
 
 .btn {
   border: 1px solid var(--main-text-color);
-  padding: .25rem .5rem;
+  font-size: inherit;
+  font-family: inherit;
+  padding: .5rem .75rem;
   cursor: pointer;
+  margin-right: 1rem;
 }
 
 .btn.primary {
@@ -181,6 +184,61 @@ pre code {
 .btn.disabled {
   background-color: rgb(226, 223, 223);
   cursor: not-allowed;
+}
+
+.input-control {
+  width: 17rem;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.input-control > label {
+  display: inherit;
+  margin: 0 0 .5rem;
+}
+
+.input-control > input {
+  display: inherit;
+  background-color: white;
+  border: 1px solid var(--main-text-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: .5rem;
+  width: 100%;
+  outline: none;
+}
+
+.input-control > input:focus {
+  box-shadow: 0 0 2px 0 var(--main-text-color);
+}
+
+.textarea-control {
+  width: 17rem;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.textarea-control > label {
+  display: inherit;
+  margin: 0 0 .5rem;
+}
+
+.textarea-control > textarea {
+  display: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: white;
+  border: 1px solid var(--main-text-color);
+  border-radius: 5px;
+  font-size: inherit;
+  padding: .5rem;
+  outline: none;
+  width: 100%;
+}
+
+.textarea-control > textarea:focus {
+  box-shadow: 0 0 2px 0 var(--main-text-color);
 }
 
 @media (max-width: 600px) {
