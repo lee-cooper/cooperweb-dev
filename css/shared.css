@@ -73,6 +73,7 @@ main {
 
 .profile p {
   margin: .2rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 
@@ -84,7 +85,7 @@ main {
   align-items: center;
   object-fit: cover;
   border: 1px solid var(--main-text-color);
-  box-shadow: 0 0 3px 0 var(--main-text-color);
+  box-shadow: 0 0 2px 0 var(--main-text-color);
 }
 
 .widgets {
@@ -105,6 +106,14 @@ main {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.widget li {
+  height: 2rem;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .toggle-button {
@@ -129,10 +138,6 @@ pre code {
   text-decoration: none;
   color: inherit;
 }
-
-
-
-
 
 @media (max-width: 600px) {
 
