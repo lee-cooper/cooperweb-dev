@@ -4,6 +4,7 @@
 - Inputs
 - Textareas
 - Cards
+- Code Block
 
 /* Buttons */
 .btn {
@@ -125,4 +126,15 @@
 
 .card p {
   margin: 0;
+}
+
+/* Code Block */
+
+pre code {
+  display: block;
+  background-color: var(--main-text-color);
+  color: var(--main-background-color);
+  padding: .5rem;
+  border-radius: 5px;
+  overflow: scroll;
 }

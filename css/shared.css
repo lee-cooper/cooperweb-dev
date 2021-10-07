@@ -120,14 +120,6 @@ main {
   display: none;
 }
 
-pre code {
-  display: block;
-  background-color: var(--main-text-color);
-  color: var(--main-background-color);
-  padding: .5rem;
-  border-radius: 5px;
-}
-
 .cards {
   display: flex;
   flex-flow: row wrap;
