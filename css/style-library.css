@@ -3,7 +3,7 @@
 - Buttons
 - Inputs
 - Textareas
-
+- Cards
 
 /* Buttons */
 .btn {
@@ -13,6 +13,11 @@
   padding: .5rem .75rem;
   cursor: pointer;
   margin-right: 1rem;
+  outline: none;
+}
+
+.btn:focus, .btn:hover {
+  box-shadow: 0 0 2px 0 var(--main-text-color);
 }
 
 .btn.primary {
@@ -34,7 +39,6 @@
 
 .input-control {
   width: 17rem;
-  display: inline-block;
   margin: 1rem 0;
 }
 
@@ -62,7 +66,6 @@
 
 .textarea-control {
   width: 17rem;
-  display: inline-block;
   margin: 1rem 0;
 }
 
@@ -87,4 +90,39 @@
 
 .textarea-control > textarea:focus {
   box-shadow: 0 0 2px 0 var(--main-text-color);
+}
+
+/* Cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  margin: .5rem 0;
+  padding: 1rem;
+  box-shadow: 0px 0px 1px 0px black;
+  width: 12rem;
+  height: 12rem;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.card h2 {
+  margin: 0;
+}
+
+.card .icon {
+  height: 3rem;
+  width: 3rem;
+  margin: .75rem;
+}
+
+.card p {
+  margin: 0;
 }

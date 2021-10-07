@@ -80,29 +80,38 @@
         <h1>Contact</h1>
         <p>Contact me here, yo! Also a work in progress :)</p>
         <p>This form doesn't do anything yet.</p>
-        <form>
-          <div class="input-control block">
-            <label for="name">Name</label>
+        <form name="contact"
+              method="POST">
+          <div class="input-control">
+            <label for="name">Name *</label>
             <input type="text"
-                   id="name">
+                   name="name"
+                   id="name"
+                   required>
           </div>
-          <div class="input-control block">
-            <label for="email">Email</label>
+          <div class="input-control">
+            <label for="email">Email *</label>
             <input type="text"
-                   id="email">
+                   name="email"
+                   id="email"
+                   required>
           </div>
-          <div class="textarea-control block">
-            <label for="message">Message</label>
+          <div class="textarea-control">
+            <label for="message">Message *</label>
             <textarea id="message"
-                      rows="4"></textarea>
+                      name="message"
+                      rows="8"
+                      required></textarea>
           </div>
           <div>
             <button type="submit"
-                    class="btn primary">
+                    class="btn primary"
+                    onclick="submitForm()">
               Submit
             </button>
             <button type="button"
-                    class="btn secondary">
+                    class="btn secondary"
+                    onclick="clearForm()">
               Clear
             </button>
           </div>
@@ -110,6 +119,7 @@
       </div>
     </main>
     <script src="/js/scripts.js"></script>
+    <script src="/js/contact.js"></script>
     <script>
       feather.replace()
     </script>
