@@ -83,6 +83,8 @@ main {
   border-radius: 50%;
   align-items: center;
   object-fit: cover;
+  border: 1px solid var(--main-text-color);
+  box-shadow: 0 0 3px 0 var(--main-text-color);
 }
 
 .widgets {
