@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 :root {
@@ -20,7 +21,6 @@ a:hover {
 body {
   background: var(--main-background-color);
   margin: 0;
-  font-family: "PT Serif", serif;
   color: var(--main-text-color);
 }
 
