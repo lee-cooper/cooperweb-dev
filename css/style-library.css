@@ -8,7 +8,7 @@
 
 /* Buttons */
 .btn {
-  border: 1px solid var(--main-text-color);
+  border: 1px solid var(--primary-text-color);
   font-size: inherit;
   font-family: inherit;
   padding: .5rem .75rem;
@@ -18,17 +18,17 @@
 }
 
 .btn:focus, .btn:hover {
-  box-shadow: 0 0 2px 0 var(--main-text-color);
+  box-shadow: 0 0 2px 0 var(--primary-text-color);
 }
 
 .btn.primary {
-  background-color: var(--main-text-color);
-  color: var(--main-background-color);
+  background-color: var(--primary-text-color);
+  color: var(--primary-background-color);
 }
 
 .btn.secondary {
-  background-color: var(--main-background-color);
-  color: var(--main-text-color);
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
 }
 
 .btn.disabled {
@@ -51,7 +51,7 @@
 .input-control > input {
   display: inherit;
   background-color: white;
-  border: 1px solid var(--main-text-color);
+  border: 1px solid var(--primary-text-color);
   border-radius: 5px;
   font-size: 1rem;
   padding: .5rem;
@@ -60,7 +60,7 @@
 }
 
 .input-control > input:focus {
-  box-shadow: 0 0 2px 0 var(--main-text-color);
+  box-shadow: 0 0 2px 0 var(--primary-text-color);
 }
 
 /* Textareas */
@@ -81,7 +81,7 @@
   font-size: inherit;
   color: inherit;
   background-color: white;
-  border: 1px solid var(--main-text-color);
+  border: 1px solid var(--primary-text-color);
   border-radius: 5px;
   font-size: inherit;
   padding: .5rem;
@@ -90,7 +90,7 @@
 }
 
 .textarea-control > textarea:focus {
-  box-shadow: 0 0 2px 0 var(--main-text-color);
+  box-shadow: 0 0 2px 0 var(--primary-text-color);
 }
 
 /* Cards */
@@ -132,8 +132,8 @@
 
 pre code {
   display: block;
-  background-color: var(--main-text-color);
-  color: var(--main-background-color);
+  background-color: var(--primary-text-color);
+  color: var(--primary-background-color);
   padding: .5rem;
   border-radius: 5px;
   overflow: scroll;
