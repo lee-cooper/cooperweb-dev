@@ -70,9 +70,9 @@ main {
 }
 
 .profile p {
-  margin: .2rem;
   font-size: 1.1rem;
   text-align: center;
+  margin: .5rem 0;
 }
 
 .profile img {
@@ -96,7 +96,7 @@ main {
 }
 
 .widget h3 {
-  margin: .2rem 0;
+  margin: 0;
 }
 
 .widget ul {
@@ -146,6 +146,19 @@ main {
 .cards>a {
   text-decoration: none;
   color: inherit;
+}
+
+.primary-horizontal-divider {
+  height: 2px;
+  width: 100%;
+  background-color: var(--primary-text-color);
+}
+
+.secondary-horizontal-divider {
+  height: 1px;
+  width: 100%;
+  background-color: var(--secondary-text-color);
+  margin: 1rem 0;
 }
 
 @media (max-width: 600px) {
