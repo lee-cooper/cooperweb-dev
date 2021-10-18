@@ -19,6 +19,12 @@ body {
   color: var(--primary-text-color);
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -42,11 +48,6 @@ main {
 
 .quote p {
   font-size: 1.5rem;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
 }
 
 .sidebar {
