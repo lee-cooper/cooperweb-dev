@@ -21,33 +21,25 @@ body {
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   height: 100vh;
 }
 
 main {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .body-content {
+  width: 100%;
   max-width: 60rem;
   padding: 0 4rem;
 }
 
 .body-content p {
   font-size: 1.1rem;
-}
-
-.quote {
-  font-style: italic;
-  margin: 0;
-  border-left: 4px solid black;
-  padding-left: .5rem;
-}
-
-.quote p {
-  font-size: 1.5rem;
 }
 
 .sidebar {
@@ -58,6 +50,21 @@ main {
   color: var(--secondary-text-color);
   background-color: var(--secondary-background-color);
   height: 100%; 
+  position: static;
+  padding: 0;
+  display: none;
+}
+
+.sidebar.active {
+  position: fixed;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 3px 3px -3px var(--primary-text-color);
+  padding: 1rem;
+  z-index: 100;
+  overflow: auto;
 }
 
 .profile {
@@ -78,8 +85,8 @@ main {
 
 .profile img {
   display: inline-block;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   align-items: center;
   object-fit: cover;
@@ -135,7 +142,26 @@ main {
 }
 
 .toggle-button {
-  display: none;
+  color: var(--primary-text-color);
+  width: 37px;
+  height: 37px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.sidebar-toggle {
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  color: var(--secondary-text-color);
+  width: 37px;
+  height: 37px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .cards {
@@ -169,76 +195,4 @@ main {
     padding: 1rem;
   }
 
-  .sidebar {
-    position: static;
-    padding: 0;
-    display: none;
-  }
-
-  .sidebar.active {
-    position: fixed;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 3px 3px -3px var(--primary-text-color);
-    padding: 1rem;
-    z-index: 100;
-    overflow: auto;
-  }
-
-  .widgets, .profile {
-    display: none;
-  }
-
-  .container {
-    flex-direction: column;
-  }
-
-  .profile.active {
-    display: flex;
-    text-align: center;
-  }
-
-  .profile img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .widgets.active {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-between;
-    text-align: center;
-  }
-
-  .widget-separator, .widget {
-    width: 100%;
-  }
-
-  .widget {
-    margin: 0 0;
-  }
-
-  .toggle-button {
-    color: var(--primary-text-color);
-    position: absolute;
-    z-index: 200;
-    display: block;
-    top: .5rem;
-    left: .5rem;
-    width: 37px;
-    height: 37px;
-    padding: 0;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-
-  .toggle-button.active {
-    color: var(--secondary-text-color);
-    position: fixed;
-  }
 }

@@ -5,6 +5,7 @@
 - Textareas
 - Cards
 - Code Block
+- Quote
 
 /* Buttons */
 .btn {
@@ -137,4 +138,16 @@ pre code {
   padding: .5rem;
   border-radius: 5px;
   overflow: scroll;
+}
+
+/* Quote */
+.quote {
+  font-style: italic;
+  margin: 0;
+  border-left: 4px solid black;
+  padding-left: .5rem;
+}
+
+.quote p {
+  font-size: 1.5rem;
 }
