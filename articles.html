@@ -36,7 +36,7 @@
         <p>Developer, meditator, and creator</p>
       </div>
       <div class="widgets">
-        <hr class="widget-separator" />
+        <div class="secondary-horizontal-divider"></div>
         <nav class="widget"
              aria-label="Navigation">
           <h3>Navigation</h3>
@@ -58,7 +58,7 @@
             </li>
           </ul>
         </nav>
-        <hr class="widget-separator" />
+        <div class="secondary-horizontal-divider"></div>
         <nav class="widget"
              aria-label="External Links">
           <h3>External Links</h3>
@@ -99,20 +99,29 @@
         <div>
           <h1>Articles</h1>
           <p>Prepare for inevitable entropy!</p>
-          <li>
-            <a href=""">Javascript Console (coming soon)</a>
-          </li>
-          <li>
-            <a href="">CSS Selectors (coming soon)</a>
-          </li>
+          <ul>
+            <li>
+              <a href="">Javascript Console (coming soon)</a>
+            </li>
+            <li>
+              <a href="">CSS Selectors (coming soon)</a>
+            </li>
+          </ul>
+          <div class="primary-horizontal-divider"></div>
+          <a class="btn primary"
+             href="/index.html"
+             style="display: flex; align-items: center; width: 6rem; text-decoration: none;">
+            <i data-feather="arrow-left"
+               class="icon"></i>
+            Home
+          </a>
         </div>
       </div>
     </main>
-    <script src="
-               /js/scripts.js"></script>
-              <script>
-                feather.replace()
-              </script>
+    <script src="/js/scripts.js"></script>
+    <script>
+      feather.replace()
+    </script>
   </body>
 
 </html>

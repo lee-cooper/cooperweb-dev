@@ -152,6 +152,7 @@ main {
   height: 2px;
   width: 100%;
   background-color: var(--primary-text-color);
+  margin: 1rem 0;
 }
 
 .secondary-horizontal-divider {
