@@ -35,7 +35,7 @@
         <img src="/img/lee-profile.png"
              alt="Headshot of Lee Cooper" />
         <h2>Lee Cooper</h2>
-        <p>Developer, meditator, and creator</p>
+        <p>Developer + Creator</p>
       </div>
       <div class="widgets">
         <div class="secondary-horizontal-divider"></div>
@@ -98,55 +98,59 @@
     </aside>
     <main>
       <div class="body-content">
-        <h1>Contact</h1>
-        <p>Contact me here, yo! Also a work in progress :)</p>
-        <p>This form doesn't do anything yet.</p>
-        <form name="contact"
-              method="POST">
-          <div class="input-control">
-            <label for="name">Name *</label>
-            <input type="text"
-                   name="name"
-                   id="name"
-                   required>
-          </div>
-          <div class="input-control">
-            <label for="email">Email *</label>
-            <input type="text"
-                   name="email"
-                   id="email"
-                   required>
-          </div>
-          <div class="textarea-control">
-            <label for="message">Message *</label>
-            <textarea id="message"
-                      name="message"
-                      rows="8"
-                      required></textarea>
-          </div>
-          <div>
-            <button type="submit"
-                    class="btn primary"
-                    onclick="submitForm()">
-              Submit
-            </button>
-            <button type="button"
-                    class="btn secondary"
-                    onclick="clearForm()">
-              Clear
-            </button>
-          </div>
-        </form>
-        <div class="primary-horizontal-divider"></div>
-        <!-- TODO - Absolutely terrible inline style, fix asap -->
-        <a class="btn primary"
-           href="/index.html"
-           style="display: flex; align-items: center; width: 6rem; text-decoration: none;">
-          <i data-feather="arrow-left"
-             class="icon"></i>
-          Home
-        </a>
+        <div>
+          <h1>Contact</h1>
+          <div class="primary-horizontal-divider"></div>
+          <p>Contact me here, yo! Also a work in progress :)</p>
+          <p>This form doesn't do anything yet.</p>
+          <form name="contact"
+                method="POST">
+            <div class="input-control">
+              <label for="name">Name *</label>
+              <input type="text"
+                     name="name"
+                     id="name"
+                     required>
+            </div>
+            <div class="input-control">
+              <label for="email">Email *</label>
+              <input type="text"
+                     name="email"
+                     id="email"
+                     required>
+            </div>
+            <div class="textarea-control">
+              <label for="message">Message *</label>
+              <textarea id="message"
+                        name="message"
+                        rows="8"
+                        required></textarea>
+            </div>
+            <div>
+              <button type="submit"
+                      class="btn primary"
+                      onclick="submitForm()">
+                Submit
+              </button>
+              <button type="button"
+                      class="btn secondary"
+                      onclick="clearForm()">
+                Clear
+              </button>
+            </div>
+          </form>
+          <div class="primary-horizontal-divider"></div>
+          <!-- TODO - Absolutely terrible inline style, fix asap -->
+          <a class="btn primary"
+             href="/index.html"
+             style="display: flex; align-items: center; width: 6rem; text-decoration: none;">
+            <i data-feather="arrow-left"
+               class="icon"></i>
+            Home
+          </a>
+        </div>
       </div>
+
     </main>
     <script src="/js/scripts.js"></script>
     <script src="/js/contact.js"></script>
