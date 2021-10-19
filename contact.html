@@ -50,13 +50,13 @@
               <a href="/about.html">About</a>
             </li>
             <li>
-              <a href="/contact.html">Contact</a>
-            </li>
-            <li>
               <a href="/portfolio.html">Portfolio</a>
             </li>
             <li>
               <a href="/articles.html">Articles</a>
+            </li>
+            <li>
+              <a href="/contact.html">Contact</a>
             </li>
           </ul>
         </nav>
@@ -146,14 +146,26 @@
             </div>
           </form>
           <div class="primary-horizontal-divider"></div>
-          <!-- TODO - Absolutely terrible inline style, fix asap -->
-          <a class="btn primary"
-             href="/index.html"
-             style="display: flex; align-items: center; width: 6rem; text-decoration: none;">
-            <i data-feather="arrow-left"
-               class="icon"></i>
-            Home
-          </a>
+          <div class="mini-nav">
+            <a class="btn primary icon-btn"
+               href="/articles.html">
+              <i data-feather="arrow-left"
+                 class="icon"></i>
+              Articles
+            </a>
+            <a class="btn primary icon-btn"
+               href="/index.html">
+              <i data-feather="home"
+                 class="icon"></i>
+              Home
+            </a>
+            <a class="btn primary icon-btn"
+               href="/about.html">
+              About
+              <i data-feather="arrow-right"
+                 class="icon"></i>
+            </a>
+          </div>
         </div>
       </div>
 

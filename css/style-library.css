@@ -37,6 +37,14 @@
   cursor: not-allowed;
 }
 
+.icon-btn {
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  width: 8rem; 
+  text-decoration: none;
+}
+
 /* Inputs */
 
 .input-control {

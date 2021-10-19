@@ -190,6 +190,11 @@ main {
   visibility: hidden;
 }
 
+.mini-nav {
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 600px) {
 
   .body-content {
