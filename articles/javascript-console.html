@@ -1,72 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"
-          content="IE=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet"
-          href="/css/shared.css" />
-    <link rel="stylesheet"
-          href="/css/style-library.css" />
-    <link rel="stylesheet"
-          href="/css/article.css" />
-    <title>Articles | Javascript Console</title>
-  </head>
+      <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible"
+                  content="IE=edge">
+            <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect"
+                  href="https://fonts.googleapis.com">
+            <link rel="preconnect"
+                  href="https://fonts.gstatic.com"
+                  crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+                  rel="stylesheet">
+            <link rel="stylesheet"
+                  href="/css/shared.css" />
+            <link rel="stylesheet"
+                  href="/css/style-library.css" />
+            <link rel="stylesheet"
+                  href="/css/article.css" />
+            <title>Articles | Javascript Console</title>
+      </head>
 
-  <body>
-    <article>
-      <h1>Javascript Console Commands</h1>
-      <h2>Subtitle</h2>
-      <img>
-      <p>Console.log is king, and the most popular way to troubleshoot your code in Javascript. Today, I'd like to
-        explore some of the other console tools available to developers.</p>
+      <body>
+            <article>
+                  <h1>Javascript Console Commands</h1>
+                  <h2>Subtitle</h2>
+                  <img>
+                  <p>Console.log is king, and the most popular way to troubleshoot your code in Javascript. Today, I'd
+                        like to
+                        explore some of the other console tools available to developers.</p>
 
-      <section>
-        <h2>Console.log()</h2>
-        <h3>The Legend</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quo ipsa animi eaque, alias atque, excepturi
-          cum nam praesentium quod perferendis numquam aliquid iste magni nihil quasi! Soluta, cum eveniet?</p>
-      </section>
+                  <section>
+                        <h2>Console.log()</h2>
+                        <h3>The Legend</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quo ipsa animi eaque, alias
+                              atque, excepturi
+                              cum nam praesentium quod perferendis numquam aliquid iste magni nihil quasi! Soluta, cum
+                              eveniet?</p>
+                  </section>
 
-      <section>
-        <h2>Console.table()</h2>
-        <h3>It's no slouch!</h3>
-        <p>Console.table() is a really neat visual alternative to console.log() when viewing array-like or object data.
-        </p>
-        <p>Consider the following code:</p>
-        <pre><code>const music = [
+                  <section>
+                        <h2>Console.table()</h2>
+                        <h3>It's no slouch!</h3>
+                        <p>Console.table() is a really neat visual alternative to console.log() when viewing array-like
+                              or object data.
+                        </p>
+                        <p>Consider the following code:</p>
+                        <pre><code>const music = [
   { artist: "STFKR", song: "Dear Stranger", album: "Future Past Life" },
   { artist: "Foster the People", song: "The Things We Do", album: "The Things We Do" },
   { artist: "Pond", song: "Paint Me Silver", album: "The Weather" }
 ];
 
 console.table(music);</code></pre>
-        <p>Will produce the output of:</p>
-        <img src="/img/console-table-1.png"
-             style="width: 100%;">
-        <p>It also works for objects that are missing data, or have different properties</p>
-        <pre><code>const music = [
+                        <p>Will produce the output of:</p>
+                        <img src="/img/console-table-1.png"
+                             style="width: 100%;">
+                        <p>It also works for objects that are missing data, or have different properties</p>
+                        <pre><code>const music = [
   { artist: "STFKR", song: "Dear Stranger", album: "Future Past Life" },
   { artist: "Foster the People", song: "The Things We Do" },
   { song: "Paint Me Silver", album: "The Weather", releaseDate: "05/05/2017" }
 ];
 
 console.table(music);</code></pre>
-        <img src="/img/console-table-2.png"
-             style="width: 100%;">
-      </section>
-    </article>
-    <script src="/js/test.js"></script>
-  </body>
+                        <img src="/img/console-table-2.png"
+                             style="width: 100%;">
+                  </section>
+            </article>
+            <script src="/js/test.js"></script>
+      </body>
 
 </html>
