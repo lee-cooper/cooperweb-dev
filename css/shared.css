@@ -35,7 +35,7 @@ main {
 .body-content {
   width: 100%;
   max-width: 60rem;
-  padding: 0 4rem;
+  padding: 4rem 4rem;
 }
 
 .body-content p {
@@ -151,8 +151,8 @@ main {
 }
 
 #open-sidebar-button {
-  color: var(--primary-text-color);
-  outline-color: var(--primary-text-color);
+  color: var(--secondary-text-color);
+  outline-color: var(--secondary-text-color);
 }
 
 #close-sidebar-button {
@@ -181,6 +181,22 @@ main {
   visibility: hidden;
 }
 
+.fixed-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  border-radius: 0 0 5px 5px;
+  position: fixed;
+  max-width: 52rem;
+  width: 100%;
+}
+
+.fixed-nav > span {
+  font-size: 1.2rem;
+  color: var(--secondary-text-color);
+}
+
 .mini-nav {
   display: flex;
   justify-content: center;
@@ -193,7 +209,7 @@ main {
 @media (max-width: 600px) {
 
   .body-content {
-    padding: 1rem;
+    padding: 4rem 1rem 1rem;
   }
 
 }
