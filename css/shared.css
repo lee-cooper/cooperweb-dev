@@ -4,12 +4,12 @@
 }
 
 :root {
-  /* --primary-text-color: #505050; */
   --primary-text-color: #000000;
   --primary-background-color: #FFF;
   --secondary-background-color: #000;
   --secondary-text-color: #FFF;
-
+  
+  /* --primary-text-color: #505050; */
   /* 25649b */
 }
 
@@ -44,14 +44,10 @@ main {
 
 .sidebar {
   min-width: 15rem;
-  width: 15rem;
-  padding: 1.5rem 2rem;
   border-right: 1px solid var(--primary-text-color);
   color: var(--secondary-text-color);
   background-color: var(--secondary-background-color);
   height: 100%; 
-  position: static;
-  padding: 0;
   display: none;
 }
 
@@ -85,8 +81,8 @@ main {
 
 .profile img {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 6.2rem;
+  height: 6.2rem;
   border-radius: 50%;
   align-items: center;
   object-fit: cover;
@@ -141,27 +137,28 @@ main {
   width: 1.1rem;
 }
 
-#open-sidebar-button {
-  color: var(--primary-text-color);
-  width: 37px;
-  height: 37px;
+#open-sidebar-button, #close-sidebar-button {
+  margin: .5rem;
   padding: 0;
   border: none;
   background: none;
   cursor: pointer;
 }
 
+#open-sidebar-button .icon, #close-sidebar-button .icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+#open-sidebar-button {
+  color: var(--primary-text-color);
+}
+
 #close-sidebar-button {
-  position: absolute;
-  top: .5rem;
-  left: .5rem;
   color: var(--secondary-text-color);
-  width: 37px;
-  height: 37px;
-  padding: 0;
-  border: none;
-  background: none;
-  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .cards {
@@ -175,18 +172,18 @@ main {
   color: inherit;
 }
 
-.primary-horizontal-divider {
+.primary-horizontal-divider, .secondary-horizontal-divider {
   height: 2px;
   width: 100%;
-  background-color: var(--primary-text-color);
   margin: 1rem 0;
 }
 
+.primary-horizontal-divider {
+  background-color: var(--primary-text-color);
+}
+
 .secondary-horizontal-divider {
-  height: 1px;
-  width: 100%;
   background-color: var(--secondary-text-color);
-  margin: 1rem 0;
 }
 
 @media (max-width: 600px) {
