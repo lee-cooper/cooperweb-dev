@@ -5,9 +5,9 @@
 
 :root {
   --primary-text-color: #000000;
-  --primary-background-color: #FFF;
+  --primary-background-color: #f8f8f8;
   --secondary-background-color: #000;
-  --secondary-text-color: #FFF;
+  --secondary-text-color: #f8f8f8;
 }
 
 body {
@@ -175,7 +175,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: var(--secondary-background-color);
   border-radius: 0 0 5px 5px;
   position: fixed;
   max-width: 52rem;
@@ -183,9 +183,15 @@ main {
   height: 3rem;
 }
 
-.fixed-nav > span {
+.site-banner {
   font-size: 1.2rem;
   color: var(--secondary-text-color);
+  text-decoration: none;
+  outline-color: var(--secondary-text-color);
+}
+
+.site-banner:hover {
+  filter: brightness(80%);
 }
 
 .mini-nav {
