@@ -12,8 +12,8 @@ openSidebarButton.addEventListener("click", () => {
   openSidebarButton.classList.toggle("disabled");
   openSidebarButton.disabled = true;
   closeSidebarButton.focus();
-  
-  mainElement.classList.toggle("dim");
+
+  // mainElement.classList.toggle("dim");
 });
 
 closeSidebarButton.addEventListener("click", () => {
@@ -23,5 +23,5 @@ closeSidebarButton.addEventListener("click", () => {
   openSidebarButton.disabled = false;
   openSidebarButton.focus();
 
-  mainElement.classList.toggle("dim");
+  // mainElement.classList.toggle("dim");
 });
