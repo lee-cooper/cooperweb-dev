@@ -195,6 +195,10 @@ main {
   justify-content: center;
 }
 
+.mini-nav a {
+  margin: 0 .1rem;
+}
+
 @media (max-width: 600px) {
 
   .body-content {

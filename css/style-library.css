@@ -14,12 +14,12 @@
   font-family: inherit;
   padding: .5rem .75rem;
   cursor: pointer;
-  margin-right: 1rem;
   outline: none;
 }
 
 .btn:focus, .btn:hover {
   box-shadow: 0 0 2px 0 var(--primary-text-color);
+  filter: brightness(80%);
 }
 
 .btn.primary {
