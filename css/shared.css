@@ -100,7 +100,7 @@ main {
 }
 
 .widget h3 {
-  margin: 0;
+  margin: 0 0 .5rem;
 }
 
 .widget ul {
@@ -152,24 +152,15 @@ main {
 
 #open-sidebar-button {
   color: var(--primary-text-color);
+  outline-color: var(--primary-text-color);
 }
 
 #close-sidebar-button {
   color: var(--secondary-text-color);
+  outline-color: var(--secondary-text-color);
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.cards {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-.cards>a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .primary-horizontal-divider, .secondary-horizontal-divider {
