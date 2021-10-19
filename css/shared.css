@@ -143,24 +143,16 @@ main {
   border: none;
   background: none;
   cursor: pointer;
-}
-
-#open-sidebar-button .icon, #close-sidebar-button .icon {
-  width: 2rem;
-  height: 2rem;
-}
-
-#open-sidebar-button {
-  color: var(--secondary-text-color);
-  outline-color: var(--secondary-text-color);
-}
-
-#close-sidebar-button {
   color: var(--secondary-text-color);
   outline-color: var(--secondary-text-color);
   position: absolute;
   top: 0;
   left: 0;
+}
+
+#open-sidebar-button .icon, #close-sidebar-button .icon {
+  width: 2rem;
+  height: 2rem;
 }
 
 .primary-horizontal-divider, .secondary-horizontal-divider {
@@ -183,13 +175,14 @@ main {
 
 .fixed-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: black;
   border-radius: 0 0 5px 5px;
   position: fixed;
   max-width: 52rem;
   width: 100%;
+  height: 3rem;
 }
 
 .fixed-nav > span {
