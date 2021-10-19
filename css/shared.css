@@ -117,6 +117,10 @@ main {
   align-items: center;
 }
 
+.widget li:hover {
+  filter: brightness(80%);
+}
+
 .widget a {
   display: inline-flex;
   justify-content: center;
@@ -126,10 +130,6 @@ main {
   color: var(--secondary-text-color);
   text-decoration: none;
   outline-color: var(--secondary-text-color);
-}
-
-.widget li:hover {
-  filter: brightness(80%);
 }
 
 .widget .icon {
