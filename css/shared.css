@@ -186,6 +186,10 @@ main {
   background-color: var(--secondary-text-color);
 }
 
+.hide {
+  visibility: hidden;
+}
+
 @media (max-width: 600px) {
 
   .body-content {
