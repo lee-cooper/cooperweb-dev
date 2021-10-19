@@ -141,7 +141,7 @@ main {
   width: 1.1rem;
 }
 
-.toggle-button {
+#open-sidebar-button {
   color: var(--primary-text-color);
   width: 37px;
   height: 37px;
@@ -151,7 +151,7 @@ main {
   cursor: pointer;
 }
 
-.sidebar-toggle {
+#close-sidebar-button {
   position: absolute;
   top: .5rem;
   left: .5rem;
