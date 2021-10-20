@@ -148,13 +148,17 @@ main {
 }
 
 #open-sidebar-button.disabled {
-  color: grey;
+  filter: brightness(80%);
   cursor: default;
 }
 
 #open-sidebar-button .icon, #close-sidebar-button .icon {
   width: 2rem;
   height: 2rem;
+}
+
+#open-sidebar-button:hover, #close-sidebar-button:hover {
+  filter: brightness(80%);
 }
 
 .primary-horizontal-divider, .secondary-horizontal-divider {
