@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 :root {
@@ -50,6 +50,7 @@ main {
 
 .sidebar.active {
   position: fixed;
+  top: 0;
   left: 0;
   display: flex;
   flex-direction: column;
