@@ -111,71 +111,68 @@
     </aside>
     <main>
       <div class="body-content">
-        <div>
-          <h1>Contact</h1>
-          <div class="primary-horizontal-divider"></div>
-          <p>Contact me here, yo! Also a work in progress :)</p>
-          <p>This form doesn't do anything yet.</p>
-          <form name="contact"
-                method="POST">
-            <div class="input-control">
-              <label for="name">Name *</label>
-              <input type="text"
-                     name="name"
-                     id="name"
-                     required>
-            </div>
-            <div class="input-control">
-              <label for="email">Email *</label>
-              <input type="text"
-                     name="email"
-                     id="email"
-                     required>
-            </div>
-            <div class="textarea-control">
-              <label for="message">Message *</label>
-              <textarea id="message"
-                        name="message"
-                        rows="8"
-                        required></textarea>
-            </div>
-            <div>
-              <button type="submit"
-                      class="btn primary"
-                      onclick="submitForm()">
-                Submit
-              </button>
-              <button type="button"
-                      class="btn secondary"
-                      onclick="clearForm()">
-                Clear
-              </button>
-            </div>
-          </form>
-          <div class="primary-horizontal-divider"></div>
-          <div class="mini-nav">
-            <a class="btn primary icon-btn"
-               href="/articles.html">
-              <i data-feather="arrow-left"
-                 class="icon"></i>
-              Articles
-            </a>
-            <a class="btn primary icon-btn"
-               href="/index.html">
-              <i data-feather="home"
-                 class="icon"></i>
-              Home
-            </a>
-            <a class="btn primary icon-btn"
-               href="/about.html">
-              About
-              <i data-feather="arrow-right"
-                 class="icon"></i>
-            </a>
+        <h1>Contact</h1>
+        <div class="primary-horizontal-divider"></div>
+        <p>Contact me here, yo! Also a work in progress :)</p>
+        <p>This form doesn't do anything yet.</p>
+        <form name="contact"
+              method="POST">
+          <div class="input-control">
+            <label for="name">Name *</label>
+            <input type="text"
+                   name="name"
+                   id="name"
+                   required>
           </div>
+          <div class="input-control">
+            <label for="email">Email *</label>
+            <input type="text"
+                   name="email"
+                   id="email"
+                   required>
+          </div>
+          <div class="textarea-control">
+            <label for="message">Message *</label>
+            <textarea id="message"
+                      name="message"
+                      rows="8"
+                      required></textarea>
+          </div>
+          <div>
+            <button type="submit"
+                    class="btn primary"
+                    onclick="submitForm()">
+              Submit
+            </button>
+            <button type="button"
+                    class="btn secondary"
+                    onclick="clearForm()">
+              Clear
+            </button>
+          </div>
+        </form>
+        <div class="primary-horizontal-divider"></div>
+        <div class="mini-nav">
+          <a class="btn primary icon-btn"
+             href="/articles.html">
+            <i data-feather="arrow-left"
+               class="icon"></i>
+            Articles
+          </a>
+          <a class="btn primary icon-btn"
+             href="/index.html">
+            <i data-feather="home"
+               class="icon"></i>
+            Home
+          </a>
+          <a class="btn primary icon-btn"
+             href="/about.html">
+            About
+            <i data-feather="arrow-right"
+               class="icon"></i>
+          </a>
         </div>
       </div>
-
     </main>
     <script src="/js/scripts.js"></script>
     <script src="/js/contact.js"></script>
