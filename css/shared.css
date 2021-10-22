@@ -201,11 +201,12 @@ main {
 
 .mini-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .mini-nav a {
-  margin: 0 .1rem;
+  margin: .1rem;
 }
 
 .dim {

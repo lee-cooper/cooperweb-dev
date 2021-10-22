@@ -1,23 +1,18 @@
-.skills {
-  display: flex; 
-  justify-content: space-around; 
-  flex-flow: row wrap;
-  animation: fadeIn linear 2s;
+.about-card {
+  display: flex;
+  flex-direction: column;
 }
 
-.skills section {
-  flex-basis: 0;
-  min-width: 50%;
-  padding: 0 .5rem
+.about-card img {
+  width: 17rem;
+  height: 17rem;
+  padding: 1rem;
 }
 
-@keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+.about-card h2 {
+  margin: 0;
 }
 
-@media (max-width: 600px) {
-  .skills div {
-    min-width: 100%;
-  }
+.about-card img {
+  align-self: center;
 }
