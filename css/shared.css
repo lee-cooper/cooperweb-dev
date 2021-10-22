@@ -186,6 +186,7 @@ main {
   max-width: 52rem;
   width: 100%;
   height: 3rem;
+  z-index: 50;
 }
 
 .site-banner {
