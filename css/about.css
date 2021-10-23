@@ -6,7 +6,7 @@
 .about-card img {
   width: 17rem;
   height: 17rem;
-  padding: 1rem;
+  box-shadow: 0 0 6px 1px grey;
 }
 
 .about-card h2 {
