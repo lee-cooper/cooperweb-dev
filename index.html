@@ -25,22 +25,23 @@
 
   <body class="container">
     <header class="fixed-nav">
-      <button id="open-sidebar-button"
-              type="button"
-              aria-label="Open Menu">
+      <a id="open-sidebar-button"
+         aria-label="Open Menu"
+         href="#sidebar">
         <i data-feather="menu"
            class="icon"></i>
-      </button>
+      </a>
       <a href="/index.html"
          class="site-banner">cooperweb.dev</a>
     </header>
-    <aside class="sidebar">
-      <button id="close-sidebar-button"
-              type="button"
-              aria-label="Close Menu">
+    <aside class="sidebar"
+           id="sidebar">
+      <a id="close-sidebar-button"
+         aria-label="Close Menu"
+         href="#">
         <i data-feather="x"
            class="icon"></i>
-      </button>
+      </a>
       <div class="profile">
         <img src="/img/lee-profile.png"
              alt="Headshot of Lee Cooper" />
@@ -155,7 +156,7 @@
         </div>
       </div>
     </main>
-    <script src="/js/scripts.js"></script>
+    <!-- <script src="/js/scripts.js"></script> -->
     <script>
       feather.replace()
     </script>

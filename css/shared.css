@@ -3,6 +3,10 @@
   font-family: 'Montserrat', Arial, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-text-color: #000;
   --primary-background-color: #f8f8f8;
@@ -48,7 +52,7 @@ main {
   display: none;
 }
 
-.sidebar.active {
+.sidebar:target {
   position: fixed;
   top: 0;
   left: 0;
@@ -150,6 +154,7 @@ main {
 
 #open-sidebar-button.disabled {
   filter: brightness(80%);
+  pointer-events: none;
   cursor: default;
 }
 
