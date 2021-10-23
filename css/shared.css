@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+  min-width: 17rem;
 }
 
 :root {
@@ -41,6 +42,30 @@ main {
 
 .body-content p {
   font-size: 1.1rem;
+}
+
+.fixed-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-background-color);
+  border-radius: 0 0 5px 5px;
+  position: fixed;
+  max-width: 52rem;
+  width: 100%;
+  height: 3rem;
+  z-index: 50;
+}
+
+.site-banner {
+  font-size: 1.2rem;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  outline-color: var(--secondary-text-color);
+}
+
+.site-banner:hover {
+  filter: brightness(80%);
 }
 
 .sidebar {
@@ -179,30 +204,6 @@ main {
 
 .secondary-horizontal-divider {
   background-color: var(--secondary-text-color);
-}
-
-.fixed-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--secondary-background-color);
-  border-radius: 0 0 5px 5px;
-  position: fixed;
-  max-width: 52rem;
-  width: 100%;
-  height: 3rem;
-  z-index: 50;
-}
-
-.site-banner {
-  font-size: 1.2rem;
-  color: var(--secondary-text-color);
-  text-decoration: none;
-  outline-color: var(--secondary-text-color);
-}
-
-.site-banner:hover {
-  filter: brightness(80%);
 }
 
 .mini-nav {
