@@ -2,6 +2,15 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   let primaryText = localStorage.getItem("--primary-text-color");
+
+  if(primaryText === null) {
+    localStorage.setItem("--primary-text-color", "#000");
+    localStorage.setItem("--primary-background-color", "#f8f8f8");
+    localStorage.setItem("--secondary-background-color", "#000");
+    localStorage.setItem("--secondary-text-color", "#f8f8f8");
+  }
+
+  primaryText = localStorage.getItem("--primary-text-color");
   let primaryBackground = localStorage.getItem("--primary-background-color");
   let secondaryText = localStorage.getItem("--secondary-text-color");
   let secondaryBackground = localStorage.getItem("--secondary-background-color");
