@@ -59,4 +59,5 @@ oreoButton.addEventListener("click", () => {
 
 electricLemonadeButton.addEventListener("click", () => {
   setTheme("#000", "#f8f8f8", "#f8f8f8", "#0063B2");
+  //#fdff54 yellow
 });
