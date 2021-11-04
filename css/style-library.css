@@ -19,12 +19,21 @@
 
 .btn:focus, .btn:hover {
   box-shadow: 0 0 2px 0 var(--primary-text-color);
-  filter: brightness(80%);
+}
+
+.btn.text {
+  border: none;
+  background-color: transparent;
+  color: var(--secondary-text-color);
+}
+
+.btn.text:focus, .btn.text:hover {
+  box-shadow: none;
 }
 
 .btn.primary {
-  background-color: var(--primary-text-color);
-  color: var(--primary-background-color);
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-text-color);
 }
 
 .btn.secondary {

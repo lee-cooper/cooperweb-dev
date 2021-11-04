@@ -9,10 +9,23 @@ html {
 }
 
 :root {
+  /* Oreo */
   --primary-text-color: #000;
   --primary-background-color: #f8f8f8;
   --secondary-background-color: #000;
   --secondary-text-color: #f8f8f8;
+
+  /* Bubblegum */
+  /* --primary-text-color: #000;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #fce2ff;
+  --secondary-text-color: #000000; */
+
+  /* Electric Lemonade */
+  /* --primary-text-color: #000;
+  --primary-background-color: #f8f8f8;
+  --secondary-background-color: #0063B2;
+  --secondary-text-color: #f8f8f8; */
 }
 
 body {
@@ -49,6 +62,9 @@ main {
   justify-content: center;
   align-items: center;
   background-color: var(--secondary-background-color);
+  border-bottom: 1px solid var(--primary-text-color);
+  border-left: 1px solid var(--primary-text-color);
+  border-right: 1px solid var(--primary-text-color);
   border-radius: 0 0 5px 5px;
   position: fixed;
   max-width: 52rem;
@@ -214,10 +230,6 @@ main {
 
 .mini-nav a {
   margin: .1rem;
-}
-
-.dim {
-  background-color: grey;
 }
 
 @media (max-width: 600px) {
