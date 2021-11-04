@@ -1,24 +1,20 @@
 "use strict";
 
-document.addEventListener("DOMContentLoaded", () => {
-  let primaryText = localStorage.getItem("--primary-text-color");
+const root = document.documentElement;
 
-  if(primaryText === null) {
-    localStorage.setItem("--primary-text-color", "#000");
-    localStorage.setItem("--primary-background-color", "#f8f8f8");
-    localStorage.setItem("--secondary-background-color", "#000");
-    localStorage.setItem("--secondary-text-color", "#f8f8f8");
+document.addEventListener("DOMContentLoaded", () => {
+  const themeIsSet = localStorage.getItem("themeIsSet");
+
+  if(themeIsSet === null) {
+    setTheme("#000", "#f8f8f8", "#f8f8f8", "#000");
   }
 
-  primaryText = localStorage.getItem("--primary-text-color");
-  let primaryBackground = localStorage.getItem("--primary-background-color");
-  let secondaryText = localStorage.getItem("--secondary-text-color");
-  let secondaryBackground = localStorage.getItem("--secondary-background-color");
-  
-  root.style.setProperty("--primary-text-color", primaryText);
-  root.style.setProperty("--primary-background-color", primaryBackground);
-  root.style.setProperty("--secondary-text-color", secondaryText);
-  root.style.setProperty("--secondary-background-color", secondaryBackground);
+  const primaryText = localStorage.getItem("--primary-text-color");
+  const primaryBackground = localStorage.getItem("--primary-background-color");
+  const secondaryText = localStorage.getItem("--secondary-text-color");
+  const secondaryBackground = localStorage.getItem("--secondary-background-color");
+
+  setTheme(primaryText, primaryBackground, secondaryText, secondaryBackground);
 });
 
 const openSidebarButton = document.getElementById("open-sidebar-button");
@@ -36,45 +32,31 @@ closeSidebarButton.addEventListener("click", () => {
   openSidebarButton.focus();
 });
 
+function setTheme(primaryText, primaryBackground, secondaryText, secondaryBackground) {
+  localStorage.setItem("themeIsSet", true);
+  localStorage.setItem("--primary-text-color", primaryText);
+  localStorage.setItem("--primary-background-color", primaryBackground);
+  localStorage.setItem("--secondary-text-color", secondaryText);
+  localStorage.setItem("--secondary-background-color", secondaryBackground);
+
+  root.style.setProperty("--primary-text-color", primaryText);
+  root.style.setProperty("--primary-background-color", primaryBackground);
+  root.style.setProperty("--secondary-text-color", secondaryText);
+  root.style.setProperty("--secondary-background-color", secondaryBackground);
+}
+
 const bubblegumButton = document.getElementById("bubblegum");
 const oreoButton = document.getElementById("oreo");
 const electricLemonade = document.getElementById("electric-lemonade");
-const root = document.documentElement;
 
 bubblegumButton.addEventListener("click", () => {
-  localStorage.setItem("--primary-text-color", "#000");
-  localStorage.setItem("--primary-background-color", "#fff");
-  localStorage.setItem("--secondary-background-color", "#fce2ff");
-  localStorage.setItem("--secondary-text-color", "#000");
-
-  root.style.setProperty("--primary-text-color", "#000");
-  root.style.setProperty("--primary-background-color", "#fff");
-  root.style.setProperty("--secondary-background-color", "#fce2ff");
-  root.style.setProperty("--secondary-text-color", "#000");
+  setTheme("#000", "#fff", "#000", "#fce2ff");
 });
 
 oreoButton.addEventListener("click", () => {
-
-  localStorage.setItem("--primary-text-color", "#000");
-  localStorage.setItem("--primary-background-color", "#f8f8f8");
-  localStorage.setItem("--secondary-background-color", "#000");
-  localStorage.setItem("--secondary-text-color", "#f8f8f8");
-
-  root.style.setProperty("--primary-text-color", "#000");
-  root.style.setProperty("--primary-background-color", "#f8f8f8");
-  root.style.setProperty("--secondary-background-color", "#000");
-  root.style.setProperty("--secondary-text-color", "#f8f8f8");
+  setTheme("#000", "#f8f8f8", "#f8f8f8", "#000");
 });
 
 electricLemonade.addEventListener("click", () => {
-
-  localStorage.setItem("--primary-text-color", "#000");
-  localStorage.setItem("--primary-background-color", "#f8f8f8");
-  localStorage.setItem("--secondary-background-color", "#0063B2");
-  localStorage.setItem("--secondary-text-color", "#f8f8f8");
-
-  root.style.setProperty("--primary-text-color", "#000");
-  root.style.setProperty("--primary-background-color", "#f8f8f8");
-  root.style.setProperty("--secondary-background-color", "#0063B2");
-  root.style.setProperty("--secondary-text-color", "#f8f8f8");
+  setTheme("#000", "#f8f8f8", "#f8f8f8", "#0063B2");
 });

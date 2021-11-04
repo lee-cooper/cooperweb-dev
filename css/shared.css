@@ -9,23 +9,10 @@ html {
 }
 
 :root {
-  /* Oreo */
-  /* --primary-text-color: #000;
+  --primary-text-color: #000;
   --primary-background-color: #f8f8f8;
   --secondary-background-color: #000;
-  --secondary-text-color: #f8f8f8; */
-
-  /* Bubblegum */
-  /* --primary-text-color: #000;
-  --primary-background-color: #ffffff;
-  --secondary-background-color: #fce2ff;
-  --secondary-text-color: #000000; */
-
-  /* Electric Lemonade */
-  /* --primary-text-color: #000;
-  --primary-background-color: #f8f8f8;
-  --secondary-background-color: #0063B2;
-  --secondary-text-color: #f8f8f8; */
+  --secondary-text-color: #f8f8f8;
 }
 
 body {
