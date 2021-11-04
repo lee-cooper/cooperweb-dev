@@ -47,7 +47,7 @@ function setTheme(primaryText, primaryBackground, secondaryText, secondaryBackgr
 
 const bubblegumButton = document.getElementById("bubblegum");
 const oreoButton = document.getElementById("oreo");
-const electricLemonade = document.getElementById("electric-lemonade");
+const electricLemonadeButton = document.getElementById("electric-lemonade");
 
 bubblegumButton.addEventListener("click", () => {
   setTheme("#000", "#fff", "#000", "#fce2ff");
@@ -57,6 +57,6 @@ oreoButton.addEventListener("click", () => {
   setTheme("#000", "#f8f8f8", "#f8f8f8", "#000");
 });
 
-electricLemonade.addEventListener("click", () => {
+electricLemonadeButton.addEventListener("click", () => {
   setTheme("#000", "#f8f8f8", "#f8f8f8", "#0063B2");
 });
