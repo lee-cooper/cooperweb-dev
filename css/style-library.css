@@ -14,7 +14,6 @@
   font-family: inherit;
   padding: .5rem .75rem;
   cursor: pointer;
-  outline: none;
 }
 
 .btn:focus, .btn:hover {
@@ -25,10 +24,12 @@
   border: none;
   background-color: transparent;
   color: var(--secondary-text-color);
+  width: 100%;
 }
 
-.btn.text:focus, .btn.text:hover {
+.btn.text:focus {
   box-shadow: none;
+  outline: var(--secondary-text-color) auto 1px;
 }
 
 .btn.primary {

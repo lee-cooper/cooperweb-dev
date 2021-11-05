@@ -41,6 +41,10 @@ main {
   padding: 4rem 4rem;
 }
 
+.body-content > h1 {
+  margin: 0;
+}
+
 .body-content p {
   font-size: 1.1rem;
 }
