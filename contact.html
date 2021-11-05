@@ -23,6 +23,9 @@
     <link rel="stylesheet"
           href="/css/contact.css" />
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"
+            async
+            defer></script>
   </head>
 
   <body class="container">
@@ -132,10 +135,11 @@
       <div class="body-content">
         <h1>Contact</h1>
         <div class="primary-horizontal-divider"></div>
-        <p>Contact me here, yo! Also a work in progress :)</p>
-        <p>This form doesn't do anything yet.</p>
-        <form name="contact"
-              method="POST">
+        <form accept-charset="UTF-8"
+              action="https://usebasin.com/f/f06cc34711b0"
+              method="POST"
+              id="invisible-recaptcha-form"
+              name="contact">
           <div class="input-control">
             <label for="name">Name *</label>
             <input type="text"
@@ -157,10 +161,13 @@
                       rows="8"
                       required></textarea>
           </div>
+          <input type="hidden"
+                 name="flower">
           <div>
-            <button type="submit"
-                    class="btn primary"
-                    onclick="submitForm()">
+            <button class="btn primary g-recaptcha"
+                    data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"
+                    data-callback='submitForm'
+                    data-badge="inline">
               Submit
             </button>
             <button type="button"

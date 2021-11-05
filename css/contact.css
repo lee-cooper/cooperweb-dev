@@ -1,3 +1,7 @@
 .textarea-control {
   width: 100%;
 }
+
+.grecaptcha-badge {
+  display: none;
+}
