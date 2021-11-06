@@ -37,8 +37,8 @@ main {
 
 .body-content {
   width: 100%;
-  max-width: 60rem;
-  padding: 4rem 4rem;
+  max-width: 54rem;
+  padding: 4rem 1rem 1rem;
 }
 
 .body-content > h1 {
@@ -47,6 +47,8 @@ main {
 
 .body-content p {
   font-size: 1.1rem;
+  line-height: 2rem;
+  margin: 1.5rem 0;
 }
 
 .fixed-nav {
@@ -136,6 +138,7 @@ main {
 
 .widget h3 {
   margin: 0 0 .5rem;
+  font-weight: 900;
 }
 
 .widget ul {
@@ -222,12 +225,4 @@ main {
 
 .mini-nav a {
   margin: .1rem;
-}
-
-@media (max-width: 600px) {
-
-  .body-content {
-    padding: 4rem 1rem 1rem;
-  }
-
 }
