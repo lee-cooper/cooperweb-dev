@@ -1,8 +1,12 @@
 article > h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
-article > h2 {
+article h2 {
   font-size: 1.5rem;
-  font-style: italic;
+  margin-top: 3rem;
+}
+
+article .gist .gist-file {
+  margin-bottom: 3rem;
 }

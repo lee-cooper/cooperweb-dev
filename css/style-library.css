@@ -159,6 +159,17 @@
   margin: 0;
 }
 
+/* Code */
+code {
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-text-color);
+  font-family: monospace;
+  display: inline-block;
+  padding: 0 0.3rem;
+  line-height: 1.3rem;
+  border: 1px solid var(--secondary-text-color);
+}
+
 /* Code Block */
 
 pre code {

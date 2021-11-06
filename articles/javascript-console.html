@@ -7,6 +7,8 @@
           content="IE=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Useful and lesser known Javascript Console methods to improve your workflow">
     <link rel="preconnect"
           href="https://fonts.googleapis.com">
     <link rel="preconnect"
@@ -20,55 +22,156 @@
           href="/css/style-library.css" />
     <link rel="stylesheet"
           href="/css/article.css" />
-    <title>Articles | Javascript Console</title>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <title>Javascript Console - Articles - CooperWeb</title>
   </head>
 
   <body class="container">
+    <header class="fixed-nav">
+      <a id="open-sidebar-button"
+         aria-label="Open Menu"
+         href="#sidebar">
+        <i data-feather="menu"
+           class="icon"></i>
+      </a>
+      <a href="/index.html"
+         class="site-banner">cooperweb.dev</a>
+    </header>
+    <aside class="sidebar"
+           id="sidebar">
+      <a id="close-sidebar-button"
+         aria-label="Close Menu"
+         href="#">
+        <i data-feather="x"
+           class="icon"></i>
+      </a>
+      <div class="profile">
+        <img src="/img/lee-profile.png"
+             alt="Headshot of Lee Cooper" />
+        <h2>Lee Cooper</h2>
+        <p>Developer + Creator</p>
+      </div>
+      <div class="widgets">
+        <div class="secondary-horizontal-divider"></div>
+        <nav class="widget"
+             aria-label="Navigation">
+          <h3>Navigation</h3>
+          <ul>
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+            <li>
+              <a href="/about.html">About</a>
+            </li>
+            <li>
+              <a href="/portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a href="/articles.html">Articles</a>
+            </li>
+            <li>
+              <a href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="secondary-horizontal-divider"></div>
+        <nav class="widget"
+             aria-label="External Links">
+          <h3>External Links</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/lee-cooper"
+                 target="_blank"
+                 rel="noopener">
+                Github&nbsp;
+                <i data-feather="external-link"
+                   class="icon"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/lee-cooper-2731a9129"
+                 target="_blank"
+                 rel="noopener">
+                LinkedIn&nbsp;
+                <i data-feather="external-link"
+                   class="icon"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://leecoopersblog.medium.com/"
+                 target="_blank"
+                 rel="noopener">
+                Blog&nbsp;
+                <i data-feather="external-link"
+                   class="icon"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="secondary-horizontal-divider"></div>
+        <div class="widget"
+             aria-label="Themes">
+          <h3>Website Themes</h3>
+          <ul>
+            <li>
+              <button id="bubblegum"
+                      class="btn text">Bubblegum</button>
+            </li>
+            <li>
+              <button id="oreo"
+                      class="btn text">Oreo</button>
+            </li>
+            <li>
+              <button id="electric-lemonade"
+                      class="btn text">Electric Lemonade</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
     <main>
       <div class="body-content">
         <article>
           <h1>Javascript Console Commands</h1>
-          <h2>Subtitle</h2>
+          <div class="primary-horizontal-divider"></div>
           <p>Console.log is king, and the most popular way to troubleshoot your code in Javascript. Today, I'd
             like to
             explore some of the other console tools available to developers.</p>
           <section>
             <h2>Console.log()</h2>
-            <h3>The Legend</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quo ipsa animi eaque, alias
               atque, excepturi
               cum nam praesentium quod perferendis numquam aliquid iste magni nihil quasi! Soluta, cum
               eveniet?</p>
           </section>
-
           <section>
             <h2>Console.table()</h2>
-            <h3>It's no slouch!</h3>
-            <p>Console.table() is a really neat visual alternative to console.log() when viewing array-like
-              or object data.
+            <p><code>Console.table()</code> is a really neat visual alternative to <code>Console.log()</code> when
+              viewing array-like
+              or object data.<br />
+              <br />
+              Consider the following code:
             </p>
-            <p>Consider the following code:</p>
             <script src="https://gist.github.com/lee-cooper/c9d2e27649dba0eef2515ab2b7c4170e.js"></script>
-            <p>Will produce the output of:</p>
+            <p>Using <code>Console.table()</code> will output the data in a table view, complete with columns for each
+              property and rows for each element in the array.</p>
             <img src="/img/console-table-1.png"
                  style="width: 100%;">
             <p>It also works for objects that are missing data, or have different properties</p>
-            <pre><code>const music = [
-  { artist: "STFKR", song: "Dear Stranger", album: "Future Past Life" },
-  { artist: "Foster the People", song: "The Things We Do" },
-  { song: "Paint Me Silver", album: "The Weather", releaseDate: "05/05/2017" }
-];
-
-console.table(music);</code></pre>
+            <script src="https://gist.github.com/lee-cooper/8465f8dbc43e7bbe4a5018bfb17e8511.js"></script>
             <img src="/img/console-table-2.png"
                  style="width: 100%;">
           </section>
       </div>
       </article>
     </main>
+    <script src="/js/scripts.js"></script>
     <script src="/js/test.js"></script>
     <link rel="stylesheet"
           href="/css/test.css">
+    <script>
+      feather.replace()
+    </script>
   </body>
 
 </html>
