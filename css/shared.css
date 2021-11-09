@@ -184,7 +184,9 @@ main {
   cursor: pointer;
   color: var(--secondary-text-color);
   outline-color: var(--secondary-text-color);
+  text-decoration: none;
   position: absolute;
+  font-size: 1.5rem;
   top: 0;
   left: 0;
 }
@@ -193,11 +195,6 @@ main {
   filter: brightness(80%);
   pointer-events: none;
   cursor: default;
-}
-
-#open-sidebar-button .icon, #close-sidebar-button .icon {
-  width: 2rem;
-  height: 2rem;
 }
 
 #open-sidebar-button:hover, #close-sidebar-button:hover {

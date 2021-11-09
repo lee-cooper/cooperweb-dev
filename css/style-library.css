@@ -150,9 +150,7 @@
 }
 
 .card .icon {
-  height: 3rem;
-  width: 3rem;
-  margin: .75rem;
+  font-size: 3.5rem;
 }
 
 .card p {
