@@ -176,6 +176,10 @@ main {
   width: 1.1rem;
 }
 
+.widget button {
+  box-shadow: none;
+}
+
 #open-sidebar-button, #close-sidebar-button {
   margin: .5rem;
   padding: 0;
