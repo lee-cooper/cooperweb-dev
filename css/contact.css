@@ -2,6 +2,19 @@
   width: 100%;
 }
 
+.input-error {
+  color: hsl(0, 100%, 43%);
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.error {
+  border: 1px solid hsl(0, 100%, 43%) !important;
+}
+
 .grecaptcha-badge {
   display: none;
 }

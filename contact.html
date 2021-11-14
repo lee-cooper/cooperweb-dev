@@ -98,7 +98,6 @@
         </nav>
         <div class="secondary-horizontal-divider"></div>
         <div class="widget"
-             aria-label="Themes"
              id="themes">
           <h3>Website Themes</h3>
           <ul>
@@ -132,21 +131,30 @@
             <input type="text"
                    name="name"
                    id="name"
+                   onblur="validateName(event)"
                    required>
+            <span class="input-error"
+                  id="name-error">&#10071; Name is required.</span>
           </div>
           <div class="input-control">
             <label for="email">Email *</label>
             <input type="text"
                    name="email"
                    id="email"
+                   onblur="validateEmail(event)"
                    required>
+            <span class="input-error"
+                  id="email-error">&#10071; Valid email is required.</span>
           </div>
           <div class="textarea-control">
             <label for="message">Message *</label>
             <textarea id="message"
                       name="message"
                       rows="8"
+                      onblur="validateMessage(event)"
                       required></textarea>
+            <span class="input-error"
+                  id="message-error">&#10071; Message is required.</span>
           </div>
           <input type="hidden"
                  name="flower">
