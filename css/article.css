@@ -8,5 +8,9 @@ article h2 {
 }
 
 article .gist .gist-file {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+.article-section > img {
+  max-width: 100%;
 }

@@ -123,14 +123,23 @@
           <p>Console.log is king, and the most popular way to troubleshoot your code in Javascript. Today, I'd
             like to
             explore some of the other console tools available to developers.</p>
-          <section>
+          <section class="article-section">
             <h2>Console.log()</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quo ipsa animi eaque, alias
-              atque, excepturi
-              cum nam praesentium quod perferendis numquam aliquid iste magni nihil quasi! Soluta, cum
-              eveniet?</p>
+            <p><code>console.log()</code> is used to write a message out to the console, often for troubleshooting
+              purposes. </p>
+            <p>Below, the text "Hello World!" is written out to the browser console.</p>
+            <script src="https://gist.github.com/lee-cooper/6f3fc27f14649d8e9c667c2def40a93a.js"></script>
+            <img src="/img/console-log-1.png">
+            <p><code>console.log()</code> can also output multiple values at once by separating them with a commas.</p>
+            <script src="https://gist.github.com/lee-cooper/f91cf3d46f5942dc9fa3afc625a135af.js"></script>
+            <img src="/img/console-log-2.png">
+            <p>An interesting side effect of logging objects using <code>console.log()</code> is that the object's
+              <i>reference</i> value is written to the console, not the value at the time of the log. For example,
+            </p>
+            <img src="/img/console-log-3.png">
+
           </section>
-          <section>
+          <section class="article-section">
             <h2>Console.table()</h2>
             <p><code>Console.table()</code> is a really neat visual alternative to <code>Console.log()</code> when
               viewing array-like
@@ -141,12 +150,10 @@
             <script src="https://gist.github.com/lee-cooper/c9d2e27649dba0eef2515ab2b7c4170e.js"></script>
             <p>Using <code>Console.table()</code> will output the data in a table view, complete with columns for each
               property and rows for each element in the array.</p>
-            <img src="/img/console-table-1.png"
-                 style="width: 100%;">
+            <img src="/img/console-table-1.png">
             <p>It also works for objects that are missing data, or have different properties</p>
             <script src="https://gist.github.com/lee-cooper/8465f8dbc43e7bbe4a5018bfb17e8511.js"></script>
-            <img src="/img/console-table-2.png"
-                 style="width: 100%;">
+            <img src="/img/console-table-2.png">
           </section>
       </div>
       </article>
