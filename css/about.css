@@ -16,3 +16,51 @@
 .about-card img {
   align-self: center;
 }
+
+.about-header {
+  text-align: center;
+  font-size: 2.5rem;
+  z-index: -100;
+  color: #3c3c3c;
+  margin: 0 0 1rem 0;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.box1 {
+  position: relative;
+}
+
+.box1 > .primary-horizontal-divider {
+  position: absolute;
+  top: 7rem;
+  z-index: -100;
+}
+
+.about-content > .box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.box1 > img {
+  border-radius: 50%;
+  max-width: 8rem;
+}
+
+.box1 > h2 {
+  margin: 0.7rem 0;
+}
+
+.tech-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tech-card {
+  width: clamp(12rem, 17rem, 18rem);
+}

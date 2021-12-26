@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 html {
@@ -39,6 +39,7 @@ main {
 .body-content {
   width: 100%;
   max-width: 54rem;
+  min-width: 10rem;
   padding: 4rem 1rem 2rem;
 }
 
