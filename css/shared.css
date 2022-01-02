@@ -7,7 +7,7 @@ html {
   scroll-behavior: smooth;
   min-width: 17rem;
   visibility: hidden;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 :root {
@@ -26,21 +26,21 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-height: 100vh;
 }
 
 main {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  flex-grow: 1;
 }
 
 .body-content {
   width: 100%;
   max-width: 54rem;
   min-width: 10rem;
-  padding: 4rem 1rem 2rem;
+  padding: 2rem 1rem 2rem;
 }
 
 .body-content > h1 {
@@ -61,9 +61,6 @@ main {
   border-bottom: 1px solid var(--primary-text-color);
   border-left: 1px solid var(--primary-text-color);
   border-right: 1px solid var(--primary-text-color);
-  border-radius: 0 0 5px 5px;
-  position: fixed;
-  max-width: 52rem;
   width: 100%;
   height: 3rem;
   z-index: 50;
@@ -232,4 +229,18 @@ main {
 
 .mini-nav a {
   margin: 0.1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-background-color);
+  width: 100%;
+  color: var(--secondary-text-color);
+  min-height: 4rem;
+}
+
+footer > a {
+  color: var(--secondary-text-color);
 }
