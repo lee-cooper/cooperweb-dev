@@ -18,15 +18,12 @@ html {
 }
 
 body {
-  background: var(--primary-background-color);
-  margin: 0;
-  color: var(--primary-text-color);
-}
-
-.container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: var(--primary-background-color);
+  color: var(--primary-text-color);
+  margin: 0;
 }
 
 main {
