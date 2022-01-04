@@ -13,6 +13,7 @@ html {
 :root {
   --primary-text-color: #000;
   --primary-background-color: #f8f8f8;
+  --primary-accent-color: #ddd000;
   --secondary-background-color: #000;
   --secondary-text-color: #f8f8f8;
 }
@@ -55,7 +56,7 @@ main {
   justify-content: center;
   align-items: center;
   background-color: var(--secondary-background-color);
-  border-bottom: 1px solid var(--primary-text-color);
+  border-bottom: 5px solid var(--primary-accent-color);
   width: 100%;
   height: 3rem;
   z-index: 50;
@@ -231,7 +232,7 @@ footer {
   justify-content: center;
   align-items: center;
   background: var(--secondary-background-color);
-  border-top: 1px solid var(--primary-text-color);
+  border-top: 5px solid var(--primary-accent-color);
   width: 100%;
   color: var(--secondary-text-color);
   min-height: 3rem;
