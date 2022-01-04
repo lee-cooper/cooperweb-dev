@@ -234,7 +234,7 @@ footer {
   border-top: 1px solid var(--primary-text-color);
   width: 100%;
   color: var(--secondary-text-color);
-  min-height: 4rem;
+  min-height: 3rem;
 }
 
 footer > a {
