@@ -2,7 +2,7 @@
 
 Front End code for my personal website [cooperweb.dev](https://cooperweb.dev)
 
-Hosted with Vercel.
+Hosted with Vercel
 
 ## Running the Project
 
