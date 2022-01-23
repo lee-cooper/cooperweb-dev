@@ -1,7 +1,5 @@
 'use strict';
 
-const root = document.documentElement;
-
 document.addEventListener('DOMContentLoaded', () => {
   setupSiteTheme();
 });
@@ -29,6 +27,8 @@ function setTheme(
   localStorage.setItem('--primary-accent-color', primaryAccent);
   localStorage.setItem('--secondary-text-color', secondaryText);
   localStorage.setItem('--secondary-background-color', secondaryBackground);
+
+  const root = document.documentElement;
 
   root.style.setProperty('--primary-text-color', primaryText);
   root.style.setProperty('--primary-background-color', primaryBackground);
@@ -62,8 +62,7 @@ function setupSiteTheme() {
   );
 }
 
-const themes = document.getElementById('themes');
-themes.addEventListener('click', (event) => {
+document.getElementById('themes').addEventListener('click', (event) => {
   if (event.target.id === 'bubblegum')
     setTheme('#000', '#fff', '#000', '#000', '#fce2ff');
   if (event.target.id === 'oreo')
@@ -72,17 +71,16 @@ themes.addEventListener('click', (event) => {
     setTheme('#000', '#f8f8f8', '#ddd000', '#f8f8f8', '#0063B2');
 });
 
-const openSidebarButton = document.getElementById('open-sidebar-button');
-const closeSidebarButton = document.getElementById('close-sidebar-button');
-
 openSidebarButton.addEventListener('click', () => {
-  openSidebarButton.classList.toggle('disabled');
+  const openSidebarButton = document.getElementById('open-sidebar-button');
+  const closeSidebarButton = document.getElementById('close-sidebar-button');
+
   openSidebarButton.disabled = true;
   closeSidebarButton.focus();
 });
 
 closeSidebarButton.addEventListener('click', () => {
-  openSidebarButton.classList.toggle('disabled');
+  const openSidebarButton = document.getElementById('open-sidebar-button');
   openSidebarButton.disabled = false;
   openSidebarButton.focus();
 });

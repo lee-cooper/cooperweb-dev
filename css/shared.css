@@ -191,17 +191,6 @@ main {
   left: 0;
 }
 
-#open-sidebar-button.disabled {
-  filter: brightness(80%);
-  pointer-events: none;
-  cursor: default;
-}
-
-#open-sidebar-button:hover,
-#close-sidebar-button:hover {
-  filter: brightness(80%);
-}
-
 .primary-horizontal-divider,
 .secondary-horizontal-divider {
   height: 2px;
