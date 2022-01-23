@@ -41,7 +41,7 @@ function setupSiteTheme() {
   const themeIsSet = localStorage.getItem('themeIsSet');
 
   if (!themeIsSet) {
-    setTheme('#000', '#f8f8f8', '#ddd000', '#f8f8f8', '#000'); // Default to Oreo theme
+    setTheme('#000', '#f8f8f8', '#d3d3d3', '#f8f8f8', '#000'); // Default to Oreo theme
     return;
   }
 
@@ -66,12 +66,12 @@ document.getElementById('themes').addEventListener('click', (event) => {
   if (event.target.id === 'bubblegum')
     setTheme('#000', '#fff', '#000', '#000', '#fce2ff');
   if (event.target.id === 'oreo')
-    setTheme('#000', '#f8f8f8', '#ddd000', '#f8f8f8', '#000');
+    setTheme('#000', '#f8f8f8', '#d3d3d3', '#f8f8f8', '#000');
   if (event.target.id === 'electric-lemonade')
     setTheme('#000', '#f8f8f8', '#ddd000', '#f8f8f8', '#0063B2');
 });
 
-openSidebarButton.addEventListener('click', () => {
+document.getElementById('open-sidebar-button').addEventListener('click', () => {
   const openSidebarButton = document.getElementById('open-sidebar-button');
   const closeSidebarButton = document.getElementById('close-sidebar-button');
 
@@ -79,8 +79,10 @@ openSidebarButton.addEventListener('click', () => {
   closeSidebarButton.focus();
 });
 
-closeSidebarButton.addEventListener('click', () => {
-  const openSidebarButton = document.getElementById('open-sidebar-button');
-  openSidebarButton.disabled = false;
-  openSidebarButton.focus();
-});
+document
+  .getElementById('close-sidebar-button')
+  .addEventListener('click', () => {
+    const openSidebarButton = document.getElementById('open-sidebar-button');
+    openSidebarButton.disabled = false;
+    openSidebarButton.focus();
+  });
