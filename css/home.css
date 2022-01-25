@@ -1,8 +1,8 @@
 .grid-test {
   display: grid;
-  margin: 1rem 7rem 3rem;
+  margin: 1rem 5rem 3rem;
   grid-template-columns: 2rem repeat(3, 1fr) 2rem;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 26rem 1fr 1fr 1fr 1fr;
   row-gap: 3rem;
 }
 
@@ -19,10 +19,12 @@
 .home-title > h1 {
   text-shadow: 2px 2px var(--primary-accent-color);
   margin: 0 0 1rem;
+  text-align: center;
 }
 
 .home-title > h2 {
   font-size: 2rem;
+  text-align: center;
 }
 
 .home-welcome {
@@ -142,4 +144,32 @@
   margin-top: 2rem;
   font-size: 1.5rem;
   padding: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .grid-test {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0.5rem;
+  }
+
+  .home-title {
+    grid-column: 1 / 4;
+  }
+
+  .home-about {
+    grid-column: 1 / 4;
+  }
+
+  .home-portfolio {
+    grid-column: 1 / 4;
+  }
+
+  .home-contact {
+    grid-column: 1 / 4;
+  }
+
+  .home-articles {
+    grid-column: 1 / 4;
+  }
 }
