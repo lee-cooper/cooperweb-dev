@@ -66,7 +66,7 @@ document.getElementById('themes').addEventListener('click', (event) => {
   if (event.target.id === 'bubblegum')
     setTheme('#000', '#fff', '#000', '#000', '#fce2ff');
   if (event.target.id === 'oreo')
-    setTheme('#000', '#f8f8f8', '#d3d3d3', '#f8f8f8', '#000');
+    setTheme('#000', '#ffffff', '#d3d3d3', '#f8f8f8', '#000');
   if (event.target.id === 'electric-lemonade')
     setTheme('#000', '#f8f8f8', '#ddd000', '#f8f8f8', '#0063B2');
 });
