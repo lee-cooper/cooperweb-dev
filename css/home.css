@@ -69,6 +69,15 @@
   margin: 2rem 0;
 }
 
+.contact-button,
+.articles-button,
+.portfolio-button,
+.about-button {
+  display: flex;
+  justify-content: end;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 800px) {
   .home-grid {
     grid-template-columns: repeat(3, 1fr);
