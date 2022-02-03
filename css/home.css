@@ -1,10 +1,11 @@
 .home-grid {
   display: grid;
-  margin-top: 1rem;
   background-color: #ebebeb;
   grid-template-columns: 2rem repeat(3, 1fr) 2rem;
   grid-template-rows: 26rem 14rem 1fr;
   row-gap: 3rem;
+  width: 100%;
+  padding-bottom: 3rem;
 }
 
 .home-grid > section {
@@ -14,7 +15,6 @@
   box-shadow: 12px 12px 0px var(--primary-accent-color);
   border: 1px solid var(--secondary-background-color);
   margin: 1rem;
-  max-height: 12rem;
   position: relative;
 }
 
@@ -99,13 +99,14 @@
 
 @media screen and (max-width: 800px) {
   .home-grid {
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 0.5rem;
+    grid-template-rows: 26rem 1fr 1fr 1fr;
+    margin-top: 3rem;
   }
 
-  .home-grid > section:nth-of-type(odd),
-  .home-grid > section:nth-of-type(even),
+  .home-about,
+  .home-articles,
+  .home-portfolio,
   .home-title {
-    grid-column: 1 / 4;
+    grid-column: 1 / 6;
   }
 }
