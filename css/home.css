@@ -1,8 +1,9 @@
 .home-grid {
   display: grid;
-  margin: 1rem 5rem 3rem;
+  margin-top: 1rem;
+  background-color: #ebebeb;
   grid-template-columns: 2rem repeat(3, 1fr) 2rem;
-  grid-template-rows: 26rem 1fr 1fr 1fr 1fr;
+  grid-template-rows: 26rem 14rem 1fr;
   row-gap: 3rem;
 }
 
@@ -12,24 +13,41 @@
   padding: 1rem;
   box-shadow: 12px 12px 0px var(--primary-accent-color);
   border: 1px solid var(--secondary-background-color);
+  margin: 1rem;
+  max-height: 12rem;
+  position: relative;
 }
 
-.home-grid > section:nth-of-type(odd) {
-  grid-column: 2 / 4;
-}
-
-.home-grid > section:nth-of-type(even) {
-  grid-column: 3 / 5;
-  background-color: var(--secondary-background-color);
+.home-portfolio {
+  grid-column: 2 / 3;
   color: var(--secondary-text-color);
+  background-color: var(--secondary-background-color);
+}
+
+.home-about {
+  grid-column: 3 / 4;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+}
+
+.home-articles {
+  grid-column: 4 / 5;
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-background-color);
+}
+
+.home-grid > .test-contact {
+  grid-column: 1 / 6;
+  background-color: var(--primary-accent-color);
 }
 
 .home-title {
-  grid-column: 2 / 5;
+  grid-column: 1 / 6;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--primary-background-color);
   text-shadow: var(--primary-accent-color);
 }
 
@@ -73,15 +91,16 @@
 .articles-button,
 .portfolio-button,
 .about-button {
-  display: flex;
-  justify-content: end;
+  position: absolute;
+  bottom: -0.5rem;
+  right: 1rem;
   text-decoration: none;
 }
 
 @media screen and (max-width: 800px) {
   .home-grid {
     grid-template-columns: repeat(3, 1fr);
-    margin: 0.5rem 0.5rem 2rem;
+    margin-top: 0.5rem;
   }
 
   .home-grid > section:nth-of-type(odd),
