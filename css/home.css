@@ -52,14 +52,14 @@
 }
 
 .home-title > h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
   text-shadow: 0 0 0px var(--primary-accent-color);
   margin: 0 0 1rem;
 }
 
 .home-title > h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-align: center;
   margin: 0 0 1rem;
 }
@@ -123,13 +123,11 @@
   .home-grid {
     grid-template-rows: 26rem 1fr 1fr 1fr;
   }
-  .home-title {
-    grid-column: 1 / 6;
-  }
 
   .home-about,
   .home-articles,
-  .home-portfolio {
-    grid-column: 2 / 5;
+  .home-portfolio,
+  .home-title {
+    grid-column: 1 / 6;
   }
 }
