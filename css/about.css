@@ -1,22 +1,3 @@
-.about-card {
-  display: flex;
-  flex-direction: column;
-}
-
-.about-card img {
-  width: 16rem;
-  height: 16rem;
-  box-shadow: 0 0 6px 1px grey;
-}
-
-.about-card h2 {
-  margin: 0;
-}
-
-.about-card img {
-  align-self: center;
-}
-
 .about-header {
   text-align: center;
   font-size: 2.2rem;
@@ -54,24 +35,4 @@
 
 .box1 > h2 {
   margin: 0.7rem 0;
-}
-
-.tech-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.tech-card {
-  width: clamp(12rem, 17rem, 18rem);
-  border: 3px solid var(--secondary-background-color);
-  padding: 0.5rem;
-}
-
-.tech-card ul {
-  list-style-type: none;
-}
-
-.tech-card h3 {
-  text-align: center;
 }
