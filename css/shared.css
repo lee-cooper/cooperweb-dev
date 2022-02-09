@@ -259,16 +259,6 @@ main {
   background-color: var(--secondary-text-color);
 }
 
-.mini-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.mini-nav a {
-  margin: 0.1rem;
-}
-
 footer {
   display: flex;
   justify-content: center;
