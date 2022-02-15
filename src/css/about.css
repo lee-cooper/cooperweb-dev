@@ -36,3 +36,39 @@
 .box1 > h2 {
   margin: 0.7rem 0;
 }
+
+.tile-header {
+  display: flex;
+  justify-content: center;
+  background-color: #f3f3f3;
+  padding: 1rem;
+}
+
+.tiles {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15rem;
+  height: 15rem;
+  border: 1px solid lightgray;
+  box-shadow: 0 0 5px 0px lightgrey;
+  background-color: white;
+  padding: 0.3rem;
+}
+
+.tile > i {
+  font-size: 5rem;
+}
+
+.tile > p {
+  /* font-size: 1rem; */
+  text-align: center;
+}
