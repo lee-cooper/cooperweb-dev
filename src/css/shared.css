@@ -161,7 +161,12 @@ main {
   z-index: 50;
 }
 
+.menu-button-container {
+  min-width: 6rem;
+}
+
 .social-links {
+  min-width: 6rem;
   margin: 0 0.5rem;
 }
 
