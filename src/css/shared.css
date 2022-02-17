@@ -168,6 +168,8 @@ main {
 .social-links {
   min-width: 6rem;
   margin: 0 0.5rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .social-link {
