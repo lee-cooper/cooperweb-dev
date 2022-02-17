@@ -104,6 +104,7 @@ h3 {
 
 p {
   margin: 0 0 2rem;
+  line-height: 1.7rem;
 }
 
 /* -------- */
@@ -134,7 +135,6 @@ body {
   min-height: 100vh;
   background: var(--primary-background-color);
   color: var(--primary-text-color);
-  margin: 0;
 }
 
 main {
@@ -148,14 +148,6 @@ main {
   max-width: 54rem;
   min-width: 10rem;
   padding: 2rem 1rem 2rem;
-}
-
-.body-content > h1 {
-  margin: 0;
-}
-
-.body-content p {
-  line-height: 2rem;
 }
 
 .fixed-nav {
