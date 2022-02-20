@@ -164,10 +164,10 @@ header {
 /* blog comments */
 .blog-comment {
   display: flex;
-  background-color: rgb(224, 224, 224);
+  background-color: #e0e0e0;
   padding: 1rem;
   margin-bottom: 1rem;
-  width: clamp(100%, 30vw, 40rem);
+  max-width: 50rem;
 }
 
 .user-info {
@@ -188,6 +188,15 @@ header {
 
 .blog-commment-time {
   color: #63bbfc;
+}
+
+.footer-legal {
+  background-color: #e0e0e0;
+}
+
+.footer-legal > a {
+  color: #63bbfc;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 650px) {

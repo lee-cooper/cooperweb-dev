@@ -1,0 +1,30 @@
+.portfolio-projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-project {
+  width: clamp(15rem, 20rem, 25rem);
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 0 7px 0px #e2e2e2;
+  border-radius: 3px;
+}
+
+.portfolio-project > img {
+  width: 100%;
+  object-fit: fill;
+  height: 15rem;
+  max-height: 15rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #e2e2e2;
+}
+
+.portfolio-project > h2 {
+  padding: 0 1rem;
+}
+
+.portfolio-button {
+  display: inline-block;
+  margin: 0 1rem 1rem;
+}
