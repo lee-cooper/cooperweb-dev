@@ -1,8 +1,7 @@
 .home-grid {
   display: grid;
-  background-color: #ebebeb;
   grid-template-columns: 2rem repeat(3, 1fr) 2rem;
-  grid-template-rows: 26rem 14rem 1fr;
+  grid-template-rows: 20rem 14rem 1fr;
   row-gap: 3rem;
   width: 100%;
   padding-bottom: 3rem;
@@ -12,9 +11,8 @@
   gap: 1rem;
   display: flex;
   padding: 1rem;
-  /* box-shadow: 12px 12px 0px var(--primary-accent-color); */
-  border: 1px solid var(--secondary-background-color);
-  border-radius: 0.5rem;
+  box-shadow: 0 0 7px 0 var(--primary-accent-color);
+  border: 1px solid var(--primary-accent-color);
   margin: 1rem;
   position: relative;
 }
@@ -64,6 +62,11 @@
   font-size: 1.7rem;
   text-align: center;
   margin: 0 0 1rem;
+}
+
+.home-title span {
+  display: inline-block;
+  margin: 0 0 0.5rem;
 }
 
 .home-grid section i {
@@ -123,7 +126,7 @@
 
 @media screen and (max-width: 900px) {
   .home-grid {
-    grid-template-rows: 26rem 1fr 1fr 1fr;
+    grid-template-rows: 20rem 1fr 1fr 1fr;
   }
 
   .home-about,
