@@ -62,7 +62,7 @@
     purple
   );
   background-size: 200% 200%;
-  animation: rainbow 3s linear infinite;
+  animation: rainbow 1s linear infinite alternate;
   background-clip: text;
   -webkit-background-clip: text;
   color: rgba(0, 0, 0, 1);
@@ -148,11 +148,8 @@
   0% {
     background-position: left;
   }
-  50% {
-    background-position: right;
-  }
   100% {
-    background-position: left;
+    background-position: right;
   }
 }
 
