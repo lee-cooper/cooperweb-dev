@@ -1,6 +1,7 @@
 .portfolio-projects {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .portfolio-project {

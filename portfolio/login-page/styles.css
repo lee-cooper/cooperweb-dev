@@ -1,0 +1,101 @@
+:root {
+  --primary-color: #248083;
+  --secondary-color: #636363;
+  --white-color: #ffffff;
+  --black-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+p {
+  line-height: 1.8;
+}
+
+::selection {
+  color: var(--white-color);
+  background: var(--primary-color) !important;
+  padding: 0.2rem !important;
+}
+
+.login-wrapper {
+  width: clamp(15rem, 100%, 25rem);
+  padding: 2rem;
+}
+
+.login-wrapper h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.login-wrapper > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-wrapper input {
+  border: none;
+  border-bottom: 2px solid var(--secondary-color);
+  margin-bottom: 1.5rem;
+  height: 2.5rem;
+  font-size: inherit;
+}
+
+.login-wrapper input:focus {
+  border-bottom: 3px solid var(--primary-color);
+  outline: none;
+}
+
+.login-wrapper label {
+  display: flex;
+  flex-direction: column;
+  color: var(--secondary-color);
+}
+
+.login-wrapper p {
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.login-wrapper p a {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--primary-color);
+  transition-duration: 0.5s;
+  padding: 0 0.2rem;
+}
+
+.login-wrapper p a:focus,
+.login-wrapper p a:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  outline: none;
+}
+
+.login-wrapper button {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border: none;
+  width: 7rem;
+  align-self: center;
+}
+
+.login-wrapper button:focus {
+  outline: var(--primary-color) 1px solid;
+}
