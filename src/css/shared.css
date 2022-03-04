@@ -118,7 +118,6 @@ p {
 html {
   scroll-behavior: smooth;
   min-width: 17rem;
-  visibility: hidden;
   min-height: 100vh;
 }
 

@@ -23,14 +23,14 @@
   z-index: -100;
 }
 
-.tile-header {
+.about-tile-header {
   display: flex;
   justify-content: center;
   background-color: #f3f3f3;
   padding: 1rem;
 }
 
-.tiles {
+.about-tiles {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -38,7 +38,7 @@
   margin: 2rem 0;
 }
 
-.tile {
+.about-tile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,11 +50,11 @@
   padding: 0.3rem;
 }
 
-.tile > i {
+.about-tile > i {
   font-size: 4.5rem;
 }
 
-.tile > p {
+.about-tile > p {
   font-size: 1rem;
   text-align: center;
 }
