@@ -104,10 +104,9 @@
   align-self: flex-end;
 }
 
-.contact-button,
-.articles-button,
-.portfolio-button,
-.about-button {
+.home-articles-button,
+.home-portfolio-button,
+.home-about-button {
   position: absolute;
   bottom: -0.5rem;
   right: 1rem;

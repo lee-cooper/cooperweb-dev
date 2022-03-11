@@ -7,99 +7,12 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1" />
     <title>Portfolio - CooperWeb</title>
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon"
-          sizes="180x180"
-          href="/src/favicon/apple-touch-icon.png">
-    <link rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/src/favicon/favicon-32x32.png">
-    <link rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/src/favicon/favicon-16x16.png">
-    <link rel="manifest"
-          href="/src/favicon/site.webmanifest">
-
-    <!-- Line Awesome Icons, Google Fonts -->
-    <link rel="stylesheet"
-          href="/src/css/line-awesome-font-face.css">
-    <link rel="stylesheet"
-          href="/src/css/line-awesome.min.css" />
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
-          rel="stylesheet">
-
-    <!-- Custom Styles -->
-    <link rel="stylesheet"
-          href="/src/css/shared.css" />
-    <link rel="stylesheet"
-          href="/src/css/style-library.css" />
-    <link rel="stylesheet"
-          href="./src/css/portfolio.css" />
+    @@include('./_layouts/style-links.html')
   </head>
 
   <body>
-    <header class="fixed-nav">
-      <div class="menu-button-container">
-        <a id="open-sidebar-button"
-           aria-label="Open Menu"
-           href="#sidebar">
-          <i class="las la-bars"></i>
-        </a>
-      </div>
-      <a href="/index.html"
-         class="site-banner">cooperweb.dev</a>
-      <div class="social-links">
-        <a href="https://github.com/lee-cooper"
-           target="_blank"
-           rel="noopener"
-           aria-label="Github - link opens in a new tab"
-           class="social-link">
-          <i class="lab la-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/lee-cooper-2731a9129"
-           target="_blank"
-           rel="noopener"
-           aria-label="LinkedIn - link opens in a new tab"
-           class="social-link">
-          <i class="lab la-linkedin"></i>
-        </a>
-      </div>
-    </header>
-    <nav class="sidebar"
-         id="sidebar">
-      <div class="widget">
-        <a id="close-sidebar-button"
-           aria-label="Close Menu"
-           href="#">
-          <i class="las la-times-circle"></i>
-        </a>
-        <ul>
-          <li>
-            <a href="/index.html">Home</a>
-          </li>
-          <li>
-            <a href="/about.html">About</a>
-          </li>
-          <li>
-            <a href="/portfolio.html">Portfolio</a>
-          </li>
-          <li>
-            <a href="/articles.html">Articles</a>
-          </li>
-          <li>
-            <a href="/contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    @@include('./_layouts/header.html')
+    @@include('./_layouts/nav.html')
     <main>
       <div class="body-content">
         <h1>Portfolio</h1>
@@ -122,9 +35,7 @@
         </div>
       </div>
     </main>
-    <footer>
-      <a href="#">Back to top</a>
-    </footer>
+    @@include('./_layouts/footer.html')
     <script src="/src/js/scripts.js"></script>
   </body>
 

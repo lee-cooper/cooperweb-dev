@@ -1,0 +1,27 @@
+{
+  "name": "cooperweb-dev",
+  "version": "0.0.0",
+  "description": "Lee Cooper's personal website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "npx gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lee-cooper/cooperweb-dev.git"
+  },
+  "author": "Lee Cooper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lee-cooper/cooperweb-dev/issues"
+  },
+  "homepage": "https://github.com/lee-cooper/cooperweb-dev#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0"
+  }
+}
