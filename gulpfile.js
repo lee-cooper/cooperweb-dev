@@ -93,5 +93,5 @@ exports.default = async function () {
   // Build and reload at the first time
   buildAndReload();
   // Watch task
-  watch(['*.html'], series(buildAndReload));
+  watch(['*.html', 'src/css/*.css'], series(buildAndReload));
 };

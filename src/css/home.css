@@ -5,6 +5,8 @@
   row-gap: 3rem;
   width: 100%;
   padding-bottom: 3rem;
+  background-color: #c7eaff;
+  background-image: -webkit-linear-gradient(275deg, #ffffff 35%, #c7eaff 56%);
 }
 
 .home-grid > section {
@@ -46,7 +48,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-background-color);
+  color: black;
   text-shadow: var(--primary-accent-color);
   padding: 1rem;
 }
@@ -65,7 +67,7 @@
   animation: rainbow 1s linear infinite alternate;
   background-clip: text;
   -webkit-background-clip: text;
-  color: rgba(0, 0, 0, 1);
+  color: black;
   width: 80vw;
   display: block;
   text-align: center;
@@ -108,8 +110,8 @@
 .home-portfolio-button,
 .home-about-button {
   position: absolute;
-  bottom: -0.5rem;
   right: 1rem;
+  bottom: 1rem;
   text-decoration: none;
 }
 
