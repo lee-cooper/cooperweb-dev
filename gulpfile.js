@@ -83,6 +83,18 @@ exports.copyLayouts = copyLayouts;
 exports.combineCss = combineCss;
 exports.copyFonts = copyFonts;
 exports.includeHTML = includeHTML;
+
+async function build() {
+  await includeHTML();
+  await combineCss();
+  await copyFonts();
+  await copyFavicons();
+  await copyLayouts();
+  await copyImages();
+}
+
+exports.build = build;
+
 exports.default = async function () {
   // Init serve files from the build folder
   server.init({

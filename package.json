@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "npx gulp",
+    "build": "npx gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
