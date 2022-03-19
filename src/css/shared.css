@@ -268,14 +268,20 @@ main {
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: var(--secondary-background-color);
   width: 100%;
   color: var(--secondary-text-color);
   min-height: 3rem;
+  padding: 1rem;
 }
 
-footer > a {
+footer a {
   color: var(--secondary-text-color);
+}
+
+footer span {
+  margin-bottom: 0.5rem;
 }

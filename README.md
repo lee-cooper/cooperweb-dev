@@ -6,5 +6,5 @@ Hosted with Vercel
 
 ## Running the Project
 
-1.) Install dependencies with `npm install`
+1.) Install dependencies with `npm install` \
 2.) Run `npm start` to start the app
