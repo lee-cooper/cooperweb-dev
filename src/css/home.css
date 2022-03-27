@@ -14,7 +14,6 @@
   display: flex;
   padding: 1rem;
   box-shadow: 0 0 7px 0 var(--primary-accent-color);
-  border: 1px solid var(--primary-accent-color);
   margin: 1rem;
   position: relative;
 }

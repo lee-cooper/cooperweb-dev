@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'Montserrat';
-  src: url('/fonts/la-brands-400.woff2');
+  src: url('/fonts/la-brands-400.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('/fonts/la-regular-400.woff2');
+  src: url('/fonts/la-regular-400.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('/fonts/la-solid-900.woff2');
+  src: url('/fonts/la-solid-900.woff2') format('woff2');
 }

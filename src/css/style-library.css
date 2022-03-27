@@ -203,3 +203,19 @@ pre code {
   text-align: center;
   margin: 2rem 0;
 }
+
+/* Horizontal Dividers */
+.primary-horizontal-divider,
+.secondary-horizontal-divider {
+  height: 2px;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.primary-horizontal-divider {
+  background-color: var(--primary-text-color);
+}
+
+.secondary-horizontal-divider {
+  background-color: var(--secondary-text-color);
+}
