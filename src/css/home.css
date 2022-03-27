@@ -9,38 +9,6 @@
   background-image: -webkit-linear-gradient(275deg, #ffffff 35%, #c7eaff 56%);
 }
 
-.home-grid > section {
-  gap: 1rem;
-  display: flex;
-  padding: 1rem;
-  box-shadow: 0 0 7px 0 var(--primary-accent-color);
-  margin: 1rem;
-  position: relative;
-}
-
-.home-portfolio {
-  grid-column: 2 / 3;
-  color: var(--primary-text-color);
-  background-color: var(--primary-background-color);
-}
-
-.home-about {
-  grid-column: 3 / 4;
-  color: var(--primary-text-color);
-  background-color: var(--primary-background-color);
-}
-
-.home-articles {
-  grid-column: 4 / 5;
-  color: var(--primary-text-color);
-  background-color: var(--primary-background-color);
-}
-
-.home-grid > .test-contact {
-  grid-column: 1 / 6;
-  background-color: var(--primary-accent-color);
-}
-
 .home-title {
   grid-column: 1 / 6;
   display: flex;
@@ -48,8 +16,7 @@
   justify-content: center;
   align-items: center;
   color: black;
-  text-shadow: var(--primary-accent-color);
-  padding: 1rem;
+  text-align: center;
 }
 
 .home-title > h1 {
@@ -69,7 +36,6 @@
   color: black;
   width: 80vw;
   display: block;
-  text-align: center;
   font-size: 3.5rem;
   margin: 0 0 1rem;
   transition: color 0.2s linear;
@@ -81,13 +47,34 @@
 
 .home-title > h2 {
   font-size: 1.7rem;
-  text-align: center;
-  margin: 0 0 1rem;
 }
 
 .home-title span {
   display: inline-block;
-  margin: 0 0 0.5rem;
+}
+
+.home-grid > section {
+  gap: 1rem;
+  display: flex;
+  padding: 1rem;
+  box-shadow: 0 0 7px 0 var(--primary-accent-color);
+  margin: 1rem;
+  position: relative;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+  border-radius: 0.4rem;
+}
+
+.home-portfolio {
+  grid-column: 2 / 3;
+}
+
+.home-about {
+  grid-column: 3 / 4;
+}
+
+.home-articles {
+  grid-column: 4 / 5;
 }
 
 .home-grid section i {
@@ -96,22 +83,12 @@
   font-size: 6.25rem;
 }
 
-.home-grid section h2,
-.home-grid section p {
-  margin: 0 0 1rem;
-}
-
-.home-contact button {
-  align-self: flex-end;
-}
-
 .home-articles-button,
 .home-portfolio-button,
 .home-about-button {
   position: absolute;
   right: 1rem;
   bottom: 1rem;
-  text-decoration: none;
 }
 
 .fade-in-1 {
