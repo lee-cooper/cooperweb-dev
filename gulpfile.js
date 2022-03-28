@@ -78,6 +78,12 @@ async function copyLayouts() {
     .pipe(gulp.dest(`${paths.scripts.dest}/layouts`));
 }
 
+async function copyPortfolio() {
+  return gulp
+    .src(['portfolio/**/*'])
+    .pipe(gulp.dest(`${paths.scripts.dest}/portfolio`));
+}
+
 exports.copyImages = copyImages;
 exports.copyLayouts = copyLayouts;
 exports.combineCss = combineCss;
@@ -91,6 +97,7 @@ async function build() {
   await copyFavicons();
   await copyLayouts();
   await copyImages();
+  await copyPortfolio();
 }
 
 exports.build = build;
