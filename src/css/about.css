@@ -17,6 +17,7 @@
   width: 8rem;
   height: 8rem;
   margin: 0 0 1rem;
+  border: 2px solid black;
 }
 
 .about-content > .primary-horizontal-divider {
