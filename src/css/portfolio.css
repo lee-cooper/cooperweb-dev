@@ -5,10 +5,12 @@
 }
 
 .portfolio-project {
-  width: clamp(15rem, 20rem, 25rem);
+  min-width: 15rem;
+  max-width: 17rem;
   border: 1px solid #e2e2e2;
   box-shadow: 0 0 7px 0px #e2e2e2;
   border-radius: 3px;
+  flex: 1;
 }
 
 .portfolio-project > img {
