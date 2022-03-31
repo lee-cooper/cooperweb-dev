@@ -4,9 +4,6 @@
   grid-template-rows: 20rem 1fr;
   row-gap: 3rem;
   width: 100%;
-  padding-bottom: 3rem;
-  background-color: #c7eaff;
-  background-image: -webkit-linear-gradient(275deg, #ffffff 35%, #c7eaff 56%);
 }
 
 .home-title {
@@ -57,6 +54,9 @@
   grid-column: 1 / 6;
   display: flex;
   flex-wrap: wrap;
+  padding: 3rem 0;
+  background-color: #c7eaff;
+  box-shadow: 0 0 7px 0 lightblue;
 }
 
 .home-panels > section {
