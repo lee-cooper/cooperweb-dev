@@ -71,13 +71,13 @@
   flex: 1;
 }
 
-.home-panels section i {
+.home-panels i {
   display: flex;
   align-items: center;
   font-size: 6.25rem;
 }
 
-.home-panels > section > div {
+.home-panels div {
   display: flex;
   flex-direction: column;
   flex: 1;
