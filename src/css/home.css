@@ -65,25 +65,30 @@
   padding: 1rem;
   box-shadow: 0 0 7px 0 var(--primary-accent-color);
   margin: 1rem;
-  position: relative;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
   border-radius: 0.4rem;
   flex: 1;
 }
 
-.home-grid section i {
+.home-panels section i {
   display: flex;
   align-items: center;
   font-size: 6.25rem;
 }
 
-.home-articles-button,
-.home-portfolio-button,
-.home-about-button {
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
+.home-panels > section > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.home-panels a {
+  display: inline-block;
+  align-self: flex-end;
+  width: 8.5rem;
+  margin-top: auto;
+  text-align: center;
 }
 
 .fade-in-1 {
