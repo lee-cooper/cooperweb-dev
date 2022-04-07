@@ -51,6 +51,7 @@ async function combineCss() {
       'src/css/contact.css',
       'src/css/portfolio.css',
       'src/css/about.css',
+      'src/css/design-system.css',
     ])
     .pipe(cleanCSS())
     .pipe(concat('main.css'))

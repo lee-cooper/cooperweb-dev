@@ -1,0 +1,147 @@
+:root {
+  --inline-block: inline-block;
+  --root-heading-size: 2rem;
+  --root-heading-margin: 2rem;
+  --root-color-lightness: 95;
+}
+
+.design-main {
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  padding: 1rem;
+}
+
+.design-main > section {
+  grid-column: 2 / 3;
+  padding: 0 2rem;
+  max-width: 66ch;
+}
+
+.design-links {
+  grid-column: 1 / 2;
+  grid-row: repeat(auto);
+  padding: 0 1rem;
+  border-right: 1px solid black;
+  text-align: center;
+}
+
+.design-links > h2 {
+  margin-top: 0;
+}
+
+.design-links li {
+  padding: 0.75rem 0.25rem;
+  border-top: 1px solid black;
+  transition: 0.5s;
+}
+
+.design-links li:hover {
+  background-color: #c7eaff;
+  color: black;
+  font-weight: bold;
+}
+
+.design-links li:last-of-type {
+  border-bottom: 1px solid black;
+}
+
+/* Headings */
+
+.ldc-h1 {
+  display: block;
+  font-size: var(--root-heading-size);
+  margin-top: var(--root-heading-margin);
+  margin-bottom: var(--root-heading-margin);
+}
+
+.ldc-h2 {
+  display: block;
+  font-size: calc(var(--root-heading-size) - 0.25rem);
+  margin-top: calc(var(--root-heading-margin) - 0.2rem);
+  margin-bottom: calc(var(--root-heading-margin) - 0.2rem);
+}
+
+.ldc-h3 {
+  display: block;
+  font-size: calc(var(--root-heading-size) - 0.4rem);
+  margin-top: calc(var(--root-heading-margin) - 0.4rem);
+  margin-bottom: calc(var(--root-heading-margin) - 0.4rem);
+}
+
+.ldc-h4 {
+  display: block;
+  font-size: calc(var(--root-heading-size) - 0.5rem);
+  margin-top: calc(var(--root-heading-margin) - 0.6rem);
+  margin-bottom: calc(var(--root-heading-margin) - 0.6rem);
+}
+
+.ldc-h5 {
+  display: block;
+  font-size: calc(var(--root-heading-size) - 0.6rem);
+  margin-top: calc(var(--root-heading-margin) - 0.8rem);
+  margin-bottom: calc(var(--root-heading-margin) - 0.8rem);
+}
+
+.ldc-h6 {
+  display: block;
+  font-size: calc(var(--root-heading-size) - 0.7rem);
+  margin-top: calc(var(--root-heading-margin) - 1rem);
+  margin-bottom: calc(var(--root-heading-margin) - 1rem);
+}
+
+/* background-color: hsl(203, 100%, 89%); */
+
+/* Colors */
+.ldc-blue-50 {
+  background-color: hsl(203, 100%, 95%);
+}
+
+.ldc-blue-100 {
+  background-color: hsl(203, 100%, var(--root-color-lightness));
+}
+
+.ldc-blue-200 {
+  background-color: hsl(203, 100%, var(--root-color-lightness));
+}
+
+.ldc-blue-300 {
+  background-color: hsl(203, 100%, var(--root-color-lightness));
+}
+
+.ldc-blue-400 {
+  background-color: hsl(203, 100%, var(--root-color-lightness));
+}
+
+.ldc-blue-500 {
+  background-color: hsl(203, 100%, var(--root-color-lightness));
+}
+
+.ldc-blue-600 {
+  background-color: hsl(203, 100%, var(--root-color-lightness));
+}
+
+.ldc-blue-700 {
+  background-color: hsl(203, 100%, var(--root-color-lightness));
+}
+
+.ldc-blue-800 {
+  background-color: hsl(203, 100%, var(--root-color-lightness));
+}
+
+.ldc-blue-900 {
+  background-color: hsl(203, 100%, var(--root-color-lightness));
+}
+
+/* Table */
+
+.ldc-table {
+  width: 30rem;
+}
+
+.ldc-table > thead {
+  border: 1px solid black;
+}
+
+.ldc-table th {
+  text-align: start;
+}
