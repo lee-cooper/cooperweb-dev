@@ -136,8 +136,11 @@ html {
   --primary-text-color: #000;
   --primary-background-color: #ffffff;
   --primary-accent-color: #d3d3d3;
-  --secondary-background-color: #000;
-  --secondary-text-color: #f8f8f8;
+  --secondary-background-color: #f6e2b9;
+  --secondary-text-color: #000;
+
+  /* #f6e2b9 butter yellow */
+  /* #e86c09 orange */
 }
 
 body {
