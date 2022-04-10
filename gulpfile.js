@@ -15,7 +15,7 @@ const paths = {
 
 async function includeHTML() {
   return gulp
-    .src(['*.html'])
+    .src(['src/pages/**'])
     .pipe(
       fileInclude({
         prefix: '@@',
@@ -35,24 +35,13 @@ async function buildAndReload() {
   await combineCss();
   await copyFonts();
   await copyFavicons();
-  await copyLayouts();
   await copyImages();
   reload();
 }
 
 async function combineCss() {
   return gulp
-    .src([
-      'src/css/line-awesome-font-face.css',
-      'src/css/line-awesome.min.css',
-      'src/css/shared.css',
-      'src/css/style-library.css',
-      'src/css/home.css',
-      'src/css/contact.css',
-      'src/css/portfolio.css',
-      'src/css/about.css',
-      'src/css/design-system.css',
-    ])
+    .src(['src/css/**'])
     .pipe(cleanCSS())
     .pipe(concat('main.css'))
     .pipe(gulp.dest(paths.scripts.dest));
@@ -77,12 +66,6 @@ async function copyImages() {
     .pipe(gulp.dest(`${paths.scripts.dest}/img`));
 }
 
-async function copyLayouts() {
-  return gulp
-    .src(['_layouts/**'])
-    .pipe(gulp.dest(`${paths.scripts.dest}/layouts`));
-}
-
 async function copyPortfolio() {
   return gulp
     .src(['portfolio/**/*'])
@@ -90,7 +73,6 @@ async function copyPortfolio() {
 }
 
 exports.copyImages = copyImages;
-exports.copyLayouts = copyLayouts;
 exports.combineCss = combineCss;
 exports.copyFonts = copyFonts;
 exports.includeHTML = includeHTML;
@@ -100,7 +82,6 @@ async function build() {
   await combineCss();
   await copyFonts();
   await copyFavicons();
-  await copyLayouts();
   await copyImages();
   await copyPortfolio();
 }
@@ -117,5 +98,8 @@ exports.default = async function () {
   // Build and reload at the first time
   buildAndReload();
   // Watch task
-  watch(['*.html', 'src/css/*.css', '_layouts/*.html'], series(buildAndReload));
+  watch(
+    ['src/pages/*.html', 'src/css/*.css', '_layouts/*.html'],
+    series(buildAndReload)
+  );
 };
