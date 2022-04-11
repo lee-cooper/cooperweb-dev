@@ -19,8 +19,7 @@
   object-fit: fill;
   height: 15rem;
   max-height: 15rem;
-  padding: 0.5rem;
-  border-bottom: 1px solid #e2e2e2;
+  border-bottom: 3px solid #e2e2e2;
   background-color: #e2e2e2;
 }
 
