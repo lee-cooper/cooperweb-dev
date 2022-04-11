@@ -136,11 +136,24 @@ html {
   --primary-text-color: #000;
   --primary-background-color: #ffffff;
   --primary-accent-color: #d3d3d3;
-  --secondary-background-color: #f6e2b9;
-  --secondary-text-color: #000;
+  --secondary-background-color: #274472;
+  --secondary-text-color: #fff;
 
   /* #f6e2b9 butter yellow */
   /* #e86c09 orange */
+  /* 
+  Midnight Blue
+  #41729F
+
+  Blue Gray
+  #5885AF
+
+  Dark Blue
+  #274472
+
+  Baby Blue
+  #C3E0E5
+  */
 }
 
 body {
@@ -163,7 +176,6 @@ main {
   min-width: 10rem;
   padding: 1rem 1rem 1rem;
   margin: 1rem 0;
-  box-shadow: 0 0 7px 0 lightgrey;
 }
 
 /* Header */

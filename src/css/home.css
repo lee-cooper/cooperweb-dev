@@ -55,20 +55,22 @@
   display: flex;
   flex-wrap: wrap;
   padding: 3rem 0;
-  background-color: #c7eaff;
-  box-shadow: 0 0 7px 0 lightblue;
+  background-color: hsl(189, 40%, 90%);
 }
 
 .home-panels > section {
   gap: 1rem;
   display: flex;
   padding: 1rem;
-  box-shadow: 0 0 7px 0 var(--primary-accent-color);
+  /* box-shadow: 0 0 7px 0 var(--primary-accent-color); */
   margin: 1rem;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
   border-radius: 0.4rem;
   flex: 1;
+  box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.024),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    30.1px 30.1px 24.1px rgba(0, 0, 0, 0.046);
 }
 
 .home-panels i {

@@ -9,12 +9,13 @@
 
 /* Buttons */
 .btn {
-  border: 1px solid var(--primary-text-color);
+  /* border: 1px solid var(--primary-text-color); */
   font-size: inherit;
   font-family: inherit;
   padding: 0.5rem 0.75rem;
   cursor: pointer;
   text-decoration: none;
+  border: none;
 }
 
 .btn:focus,
