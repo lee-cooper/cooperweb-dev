@@ -7,14 +7,13 @@
 
 .about-wrapper img {
   width: clamp(8rem, 100%, 30rem);
-  height: claim(8rem, 100%, 30rem);
+  height: clamp(8rem, 100%, 30rem);
   margin-top: 2rem;
 }
 
 .about-content {
   display: flex;
   flex-direction: column;
-  min-width: 8rem;
-  max-width: 30rem;
+  width: clamp(8rem, 100%, 30rem);
   margin-top: 2rem;
 }
