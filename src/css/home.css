@@ -55,15 +55,14 @@
   display: flex;
   flex-wrap: wrap;
   padding: 3rem 0;
-  background-color: hsl(189, 40%, 90%);
+  background-color: #dbedf0;
 }
 
 .home-panels > section {
-  gap: 1rem;
   display: flex;
   padding: 1rem;
   /* box-shadow: 0 0 7px 0 var(--primary-accent-color); */
-  margin: 1rem;
+  margin: 1rem 0.5rem;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
   border-radius: 0.4rem;
