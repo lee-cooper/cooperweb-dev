@@ -14,42 +14,26 @@
     @@include('./_layouts/header.html')
     @@include('./_layouts/nav.html')
     <main>
-      <div class="body-content">
-        <section class="about-content">
-          <h1 class="about-header">ABOUT</h1>
-          <img src="/img/lee-profile2.png"
-               alt="headshot of Lee Cooper">
-          <div class="primary-horizontal-divider"></div>
-        </section>
-        <section>
-          <h2>Who Am I?</h2>
-          <p>Hello! My name is Lee Cooper. I'm a web developer with experience
-            developing, deploying, and maintaining enterprise-level web
-            applications, with a specialization in designing accessible and user-friendly interfaces and components.
-          </p>
-        </section>
-        <section>
-          <h2>Background</h2>
-          <p>I was introduced to software development during my second year of college, where I took an
-            "Introduction to C++" course as an elective while I finished out the remainder of my classes for my
-            business associates degree.</p>
-          <p>After the first class, I was hooked.</p>
-          <p>Switching my major, I went on to achieve my bachelors degree in Information Systems
-            Technology at Southern Illinois University in Carbondale and accepted a position at
-            Progressive Insurance as an IT Applications Developer.</p>
-          <p>That one class offering began my journey of becoming a professional software developer, where I get to
-            do what I love everyday - build software that changes the lives of others.</p>
-        </section>
-        <section>
-          <h2>What Am I Up To Now?</h2>
-          <p>In addition to my work at Progressive, my 2022 goals are to teach web development classes and
-            create websites for local businesses in need of a web presence. This led to the creation of
-            <a href="https://cooperweb.dev">cooperweb.dev</a> as a
-            way to
-            reach these goals.
-          </p>
-          <p>Explore the site, and feel free to <a href="/contact.html">reach out</a>.</p>
-        </section>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; margin: 1rem;">
+        <img src="/img/lee-profile2.png"
+             alt="headshot of Lee Cooper"
+             style="min-width: 8rem; width: 100%; min-height: 8rem; max-width: 30rem; max-height: 30rem; margin-top: 2rem;">
+        <div style="display: flex; flex-direction: column; min-width: 8rem; max-width: 30rem; margin-top: 2rem;">
+          <section>
+            <h2>Who Am I?</h2>
+            <p>Hello! My name is Lee Cooper. I'm a web developer with experience
+              developing, deploying, and maintaining enterprise-level web
+              applications, with a specialization in designing accessible and user-friendly interfaces and components.
+            </p>
+          </section>
+          <section>
+            <h2>What Am I Up To Now?</h2>
+            <p>My 2022 goals are to increase my proficiency in UI / UX Design, learn React to create re-usable
+              components, and create design systems with other developers on Github!
+            </p>
+            <p>Explore the site, and feel free to reach out!</p>
+          </section>
+        </div>
       </div>
     </main>
     @@include('./_layouts/footer.html')
