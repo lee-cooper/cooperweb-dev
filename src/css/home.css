@@ -108,6 +108,9 @@
   border-radius: 7px;
   width: fit-content;
   text-align: center;
+  box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.024),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    30.1px 30.1px 24.1px rgba(0, 0, 0, 0.046);
 }
 
 .home-contact > p {
