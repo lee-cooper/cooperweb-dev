@@ -166,7 +166,6 @@ body {
 
 main {
   display: flex;
-  justify-content: center;
   flex-grow: 1;
 }
 
@@ -186,6 +185,12 @@ main {
   align-items: center;
   height: 3rem;
   background-color: var(--secondary-background-color);
+}
+
+.header-title {
+  color: var(--secondary-text-color);
+  margin: 0 0.5rem;
+  border-bottom: none;
 }
 
 #open-navigation {

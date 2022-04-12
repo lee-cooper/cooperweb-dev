@@ -99,7 +99,7 @@ exports.default = async function () {
   buildAndReload();
   // Watch task
   watch(
-    ['src/pages/*.html', 'src/css/*.css', '_layouts/*.html'],
+    ['src/pages/**/*.html', 'src/css/*.css', '_layouts/*.html'],
     series(buildAndReload)
   );
 };

@@ -13,7 +13,7 @@
   <body>
     @@include('./_layouts/header.html')
     @@include('./_layouts/nav.html')
-    <main>
+    <main class="about-main">
       <div class="about-wrapper">
         <img src="/img/lee-profile2.png"
              alt="headshot of Lee Cooper">
@@ -29,10 +29,18 @@
               components, and create design systems with other developers on Github!
             </p>
             <p>Explore the site, and feel free to reach out!</p>
-            <a class="btn primary"
-               href="mailto:lee@cooperweb.dev?subject=Hello There!&body=Hi Lee, so I was looking at your website and...">Contact</a>
           </section>
         </div>
+      </div>
+      <div class="about-contact-wrapper">
+        <section class="about-contact">
+          <h2>Contact</h2>
+          <p>Have a question?<br />Send me a message and I'll respond as soon
+            as I
+            can!</p>
+          <a class="btn primary"
+             href="mailto:cooperlee372@gmail.com?subject=Hello There!&body=Hi Lee, so I was looking at your website and...">Contact</a>
+        </section>
       </div>
     </main>
     @@include('./_layouts/footer.html')
