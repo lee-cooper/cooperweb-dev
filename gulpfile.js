@@ -4,7 +4,7 @@ const server = require('browser-sync').create();
 const { watch, series } = require('gulp');
 const concat = require('gulp-concat');
 const cleanCSS = require('gulp-clean-css');
-const imagemin = require('gulp-imagemin');
+const webp = require('gulp-webp');
 
 const paths = {
   scripts: {
@@ -62,7 +62,7 @@ async function copyFavicons() {
 async function copyImages() {
   return gulp
     .src(['src/img/**'])
-    .pipe(imagemin())
+    .pipe(webp())
     .pipe(gulp.dest(`${paths.scripts.dest}/img`));
 }
 
