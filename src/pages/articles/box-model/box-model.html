@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1" />
+    <title>Box Model - Articles - CooperWeb</title>
+    <meta name="description"
+          content="An article describing the CSS Box Model with tangible examples.">
+    @@include('../../_layouts/style-links.html')
+    <link rel="stylesheet"
+          href="./box-model.css">
+  </head>
+
+  <body>
+    @@include('../../_layouts/header.html')
+    @@include('../../_layouts/nav.html')
+    <main class="article-content-main">
+      <h1>The CSS Box Model</h1>
+      <div class="article-metadata-container">
+        <img src="/img/lee-profile2.webp"
+             alt="headshot of Lee Cooper">
+        <div>
+          <span>Lee Cooper</span>
+          <span class="article-date">04/15/22</span>
+        </div>
+      </div>
+      <figure class="article-image-container">
+        <img src="/articles/box-model/box-model.svg"
+             alt="">
+        <figcaption>The CSS Box Model</figcaption>
+      </figure>
+      <section>
+        <h2>Everything is a Box</h2>
+        <p>Each HTML element on a web page is represented as a
+          box, known as the <b>CSS Box Model</b>, and is made up of four areas that define how
+          elements are presented on the screen.
+        <p>These areas are: <b>Content</b>, <b>Padding</b>, <b>Border</b>, and
+          <b>Margin</b>.
+        </p>
+        </p>
+        <h3>The Picture Frame Analogy</h3>
+        <figure class="article-image-container">
+          <img src="/articles/box-model/doge-picture.png"
+               alt="">
+          <figcaption>Picture frame with a photo of a Shiba Inu</figcaption>
+        </figure>
+        <p>Picture frames are one way to conceptualize the CSS Box Model. Each of the box model areas
+          correlate to an area in this picture of the Shiba Inu, and provides a concrete example of the box model
+          concepts.
+        </p>
+        <h3>Content</h3>
+        <p>This is the actual thing represented in the box on the web page, such a paragraph of text or an image. It's
+          the cute dog
+          in the photo frame.</p>
+        <h3>Padding</h3>
+        <p>The area or space between the content and the border. It separates the dog picture from the border of
+          the
+          picture frame.</p>
+        <h3>Border</h3>
+        <p>The edge of the content and its padding. It's the physical frame in the picture that contains both the Shibu
+          Inu and the space around it.</p>
+        <h3>Margin</h3>
+        <p>The space beyond the border. Used to provide spacing between one HTML Element, and another. Adding to the
+          analogy, this would be the space between one picture frame and others around it.</p>
+      </section>
+      <section>
+        <h2>In the Browser</h2>
+        <p>Inspecting an HTML Element using the browser dev tools is the quickest way to visualize</p>
+        <img src="/articles/box-model/doge-without-frame.png"
+             alt=""
+             style="width: 7rem; height: auto; padding: 1rem; margin: 1rem; border: 4px solid black">
+
+      </section>
+    </main>
+    @@include('../../_layouts/footer.html')
+  </body>
+
+</html>

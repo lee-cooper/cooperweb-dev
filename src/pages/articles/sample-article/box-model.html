@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1" />
+    <title>Box Model - Articles - CooperWeb</title>
+    <meta name="description"
+          content="A site containing UI / UX design, Accessibility, and other web development-related articles by Lee Cooper, Web Developer">
+    @@include('../../_layouts/style-links.html')
+    <link rel="stylesheet"
+          href="./box-model.css">
+
+  </head>
+
+  <body>
+    @@include('../../_layouts/header.html')
+    @@include('../../_layouts/nav.html')
+    <main class="article-content-main">
+      <h1>CSS Box Model</h1>
+      <div class="article-metadata-container">
+        <img src="/img/lee-profile2.webp"
+             alt="headshot of Lee Cooper">
+        <div>
+          <span>Lee Cooper</span>
+          <span class="article-date">04/15/22</span>
+        </div>
+      </div>
+      <div class="article-image-container">
+        <img src="/articles/box-model/box-model.svg"
+             alt="">
+      </div>
+      <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum aperiam deleniti expedita enim eaque
+          architecto cum, debitis natus, a error suscipit odit dolorem? Explicabo, quibusdam et necessitatibus magni
+          autem harum!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, quidem itaque? Aut, sed! Dolorum
+          perferendis sint doloremque libero iure esse.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, amet veniam labore rerum quibusdam modi eaque
+          quas deleniti aliquam ad perspiciatis quae molestias maxime tempore error adipisci non sed quam facilis! Nam
+          maxime, culpa inventore voluptate corporis omnis quam explicabo.</p>
+        <pre>
+          <code>
+            {
+              margin: 0rem 1rem;
+            }
+          </code>
+        </pre>
+      </section>
+      <section>
+        <h2>Sub Heading</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat sint, natus, iure beatae ducimus doloribus
+          distinctio omnis repellat velit optio dicta tempore provident sapiente! Magnam consectetur commodi excepturi
+          quae velit.</p>
+        <aside class="article-aside">
+          <h3>Side content</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis nulla aliquam nobis quam illum
+            repellendus
+            totam natus omnis consequatur vitae.</p>
+        </aside>
+      </section>
+      <section>
+        <h2>Sub Heading</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat sint, natus, iure beatae ducimus doloribus
+          distinctio omnis repellat velit optio dicta tempore provident sapiente! Magnam consectetur commodi excepturi
+          quae velit.</p>
+        <div class="article-image-container">
+          <img src="https://source.unsplash.com/fxOE7y8HmQ8"
+               alt="">
+        </div>
+      </section>
+    </main>
+    @@include('../../_layouts/footer.html')
+  </body>
+
+</html>
