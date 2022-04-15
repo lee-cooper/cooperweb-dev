@@ -15,10 +15,3 @@
   src: url('/fonts/la-solid-900.woff2') format('woff2');
   font-display: swap;
 }
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap)
-    format('woff2');
-  font-display: swap;
-}
