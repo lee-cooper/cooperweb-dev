@@ -6,6 +6,7 @@
   padding: 2rem 1rem;
   background-color: #eaeaea;
   border-radius: 7px;
+  transition: 0.4s;
 }
 
 .article-post > span {
@@ -14,7 +15,6 @@
   display: block;
 }
 
-.article-post:focus,
 .article-post:hover {
   background-color: #dbedf0;
 }
