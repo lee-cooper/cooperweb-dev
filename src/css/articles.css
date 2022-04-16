@@ -1,3 +1,28 @@
 .article-main {
   justify-content: center;
 }
+
+.article-post {
+  padding: 2rem 1rem;
+  background-color: #eaeaea;
+  border-radius: 7px;
+}
+
+.article-post > span {
+  font-style: italic;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.article-post:focus,
+.article-post:hover {
+  background-color: #dbedf0;
+}
+
+.article-link:focus > section {
+  background-color: #dbedf0;
+}
+
+.article-post > p {
+  margin: 0;
+}
