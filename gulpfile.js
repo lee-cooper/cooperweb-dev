@@ -36,6 +36,7 @@ async function buildAndReload() {
   await copyFonts();
   await copyFavicons();
   await copyImages();
+  await copyPortfolio();
   reload();
 }
 

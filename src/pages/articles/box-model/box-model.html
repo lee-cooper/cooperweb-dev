@@ -28,7 +28,7 @@
         </div>
       </div>
       <figure class="article-image-container">
-        <img src="/articles/box-model/box-model.svg"
+        <img src="/img/articles/box-model/box-model.svg"
              alt="">
         <figcaption>The CSS Box Model</figcaption>
       </figure>
@@ -36,21 +36,18 @@
         <h2>Everything is a Box</h2>
         <p>Each HTML element on a web page is represented as a
           box, known as the <b>CSS Box Model</b>, and is made up of four areas that define how
-          elements are presented on the screen.
+          elements are presented on the screen.</p>
         <p>These areas are: <b>Content</b>, <b>Padding</b>, <b>Border</b>, and
           <b>Margin</b>.
         </p>
+        <p>Picture frames are one way to illustrate the CSS Box Model. Each of the box model areas
+          correlate to an area in this picture of the Shiba Inu.
         </p>
-        <h3>The Picture Frame Analogy</h3>
         <figure class="article-image-container">
-          <img src="/articles/box-model/doge-picture.png"
+          <img src="/img/articles/box-model/doge-picture.webp"
                alt="">
           <figcaption>Picture frame with a photo of a Shiba Inu</figcaption>
         </figure>
-        <p>Picture frames are one way to conceptualize the CSS Box Model. Each of the box model areas
-          correlate to an area in this picture of the Shiba Inu, and provides a concrete example of the box model
-          concepts.
-        </p>
         <h3>Content</h3>
         <p>This is the actual thing represented in the box on the web page, such a paragraph of text or an image. It's
           the cute dog
@@ -68,11 +65,35 @@
       </section>
       <section>
         <h2>In the Browser</h2>
-        <p>Inspecting an HTML Element using the browser dev tools is the quickest way to visualize</p>
-        <img src="/articles/box-model/doge-without-frame.png"
-             alt=""
-             style="width: 7rem; height: auto; padding: 1rem; margin: 1rem; border: 4px solid black">
-
+        <p>In practice, a HTML Element can be inspected to see each area's value by using the browser dev
+          tools.</p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; margin-bottom: 2rem;">
+          <img src="/img/articles/box-model/doge-without-frame.webp"
+               alt="Photo of a Shibu Inu used to illustrate CSS Box Model concepts"
+               style="width: 7rem; height: 8rem; padding: 1rem; margin: 1rem; border: 4px solid black; background-color: #dfdfdd;">
+          <img src="/img/articles/box-model/box-model-dev-tools.webp"
+               alt="Photo of box model in browser dev tools"
+               style="width: 12rem; height: auto;">
+        </div>
+        <p>Right clicking the Shibu Inu image and selecting <b>inspect</b> will launch the browser dev tools with
+          the <b>elements</b> tab selected. On the right side is a <b>styles</b> tab, and scrolling to the bottom
+          reveals an interactive display that lists the <i>calculated</i> values for content, padding, border, and
+          margin dimensions.
+        </p>
+        <p>Since relative units like rem and em are often used for sizing <i>(rather than static pixel sizes)</i>, this
+          provides a convenient way to
+          inspect an element's dimensions in different states, such as on a desktop screen or a mobile phone display.
+        </p>
+      </section>
+      <section>
+        <h2>In Conclusion</h2>
+        <p>The CSS Box Model is a key introductory concept to the world of CSS. Once it is understood that everything on
+          a web page is made up of boxes, it becomes easier to view how each element is sized and its behavior
+          around other elements.</p>
+        <h3>Challenge:</h3>
+        <p>Using the inspect tool, explore this page and find an example implementation of each of the four CSS Box
+          Model areas. How do they interact? Does every element have a value for each of the four areas? Does specifying
+          the value for one area <i>(for example, margin)</i> apply it to all side of the element?</p>
       </section>
     </main>
     @@include('../../_layouts/footer.html')
