@@ -61,3 +61,24 @@
   font-style: italic;
   color: #6a6a6a;
 }
+
+.article-box-model-shiba {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.article-box-model {
+  width: 12rem;
+  height: auto;
+}
+
+.article-shiba {
+  width: 7rem;
+  height: 8rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: 4px solid black;
+  background-color: #dfdfdd;
+}
