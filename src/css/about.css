@@ -18,7 +18,7 @@
 .about-content {
   width: clamp(8rem, 100%, 35rem);
   margin: 2rem 0 0;
-  background-color: #dbedf0;
+  background-color: #e5e5e5;
   padding: 2rem;
   align-self: baseline;
 }
@@ -33,8 +33,7 @@
 }
 
 .about-contact-wrapper {
-  width: 100%;
-  margin: 3rem 0;
+  margin: 3rem 2rem;
 }
 
 .about-contact {

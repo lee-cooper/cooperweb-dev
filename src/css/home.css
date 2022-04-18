@@ -30,7 +30,7 @@
   animation: rainbow 1s linear infinite alternate;
   background-clip: text;
   -webkit-background-clip: text;
-  color: black;
+  color: #274472;
   width: 80vw;
   display: block;
   font-size: 3.5rem;
@@ -44,6 +44,7 @@
 
 .home-title > h2 {
   font-size: 1.7rem;
+  color: black;
 }
 
 .home-title span {
@@ -67,7 +68,7 @@
   background-color: var(--primary-background-color);
   border-radius: 0.4rem;
   max-width: 25rem;
-  height: 11rem;
+  height: 12rem;
   flex: 1;
   box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.024),
     12.5px 12.5px 10px rgba(0, 0, 0, 0.035),

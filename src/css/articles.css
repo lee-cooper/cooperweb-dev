@@ -3,10 +3,14 @@
 }
 
 .article-post {
-  padding: 2rem 1rem;
+  padding: var(--spacing-2) var(--spacing-3);
   background-color: #eaeaea;
   border-radius: 7px;
   transition: 0.4s;
+}
+
+.article-post > h2 {
+  color: #274472;
 }
 
 .article-post > span {

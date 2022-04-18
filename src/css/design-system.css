@@ -1,36 +1,52 @@
 :root {
   --inline-block: inline-block;
   --root-heading-size: 2rem;
-  --root-heading-margin: 2rem;
   --root-color-lightness: 95;
+
+  /* spacing */
+  /* To be applied to padding or margin */
+  --spacing-0: 0rem;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 1rem;
+  --spacing-4: 1.5rem;
+  --spacing-5: 2rem;
+  --spacing-6: 2.5rem;
+  --spacing-7: 3rem;
+  --spacing-8: 4rem;
+  --spacing-9: 5rem;
+  --spacing-10: 6rem;
+  --spacing-11: 7rem;
+  --spacing-12: 8rem;
+
+  /* line height */
+  --line-height-1: 1;
+  --line-height-2: 1.25;
+  --line-height-3: 1.7;
 }
 
 .design-main {
   display: grid;
   grid-template-columns: 15rem 1fr;
-  padding: 1rem;
+  padding: var(--spacing-3);
 }
 
 .design-main > section {
   grid-column: 2 / 3;
-  padding: 0 2rem;
+  padding: var(--spacing-0) var(--spacing-5);
   max-width: 66ch;
 }
 
 .design-links {
   grid-column: 1 / 2;
   grid-row: repeat(auto);
-  padding: 0 1rem;
+  padding: var(--spacing-0) var(--spacing-3);
   border-right: 1px solid black;
   text-align: center;
 }
 
-.design-links > h2 {
-  margin-top: 0;
-}
-
 .design-links li {
-  padding: 0.75rem 0.25rem;
+  padding: var(--spacing-3) var(--spacing-1);
   border-top: 1px solid black;
   transition: 0.5s;
 }
@@ -46,50 +62,60 @@
 }
 
 /* Headings */
-
-.ldc-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   display: block;
+  font-weight: normal;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: var(--spacing-2);
+  margin-bottom: var(--spacing-2);
+  color: #274472;
+}
+
+h1 {
   font-size: var(--root-heading-size);
-  margin-top: var(--root-heading-margin);
-  margin-bottom: var(--root-heading-margin);
 }
 
-.ldc-h2 {
-  display: block;
-  font-size: calc(var(--root-heading-size) - 0.25rem);
-  margin-top: calc(var(--root-heading-margin) - 0.2rem);
-  margin-bottom: calc(var(--root-heading-margin) - 0.2rem);
-}
-
-.ldc-h3 {
-  display: block;
+h2 {
   font-size: calc(var(--root-heading-size) - 0.4rem);
-  margin-top: calc(var(--root-heading-margin) - 0.4rem);
-  margin-bottom: calc(var(--root-heading-margin) - 0.4rem);
 }
 
-.ldc-h4 {
-  display: block;
-  font-size: calc(var(--root-heading-size) - 0.5rem);
-  margin-top: calc(var(--root-heading-margin) - 0.6rem);
-  margin-bottom: calc(var(--root-heading-margin) - 0.6rem);
-}
-
-.ldc-h5 {
-  display: block;
+h3 {
   font-size: calc(var(--root-heading-size) - 0.6rem);
-  margin-top: calc(var(--root-heading-margin) - 0.8rem);
-  margin-bottom: calc(var(--root-heading-margin) - 0.8rem);
 }
 
-.ldc-h6 {
-  display: block;
+h4 {
+  font-size: calc(var(--root-heading-size) - 0.5rem);
+}
+
+h5 {
+  font-size: calc(var(--root-heading-size) - 0.6rem);
+}
+
+h6 {
   font-size: calc(var(--root-heading-size) - 0.7rem);
-  margin-top: calc(var(--root-heading-margin) - 1rem);
-  margin-bottom: calc(var(--root-heading-margin) - 1rem);
 }
 
-/* background-color: hsl(203, 100%, 89%); */
+/* Paragaph */
+p {
+  margin-bottom: var(--spacing-4);
+  line-height: var(--line-height-3);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: lightblue dashed;
+}
+
+ul {
+  list-style-type: none;
+}
+*/
 
 /* Colors */
 .ldc-blue-50 {
@@ -145,3 +171,5 @@
 .ldc-table th {
   text-align: start;
 }
+
+/* Spacing */
