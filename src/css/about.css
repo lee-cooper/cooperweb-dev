@@ -6,7 +6,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   gap: 1rem;
 }
 
@@ -18,10 +17,10 @@
 
 .about-content {
   width: clamp(8rem, 100%, 35rem);
-  height: 31rem;
   margin: 2rem 0 0;
   background-color: #dbedf0;
   padding: 2rem;
+  align-self: baseline;
 }
 
 .about-content > section {

@@ -5,6 +5,10 @@
   padding: 0 1rem;
 }
 
+.article-content-main > section {
+  margin-bottom: 1.7rem;
+}
+
 .article-content-main ul {
   margin: 1rem 0 2rem;
   list-style-type: circle;

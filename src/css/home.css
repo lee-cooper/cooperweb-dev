@@ -53,6 +53,7 @@
 .home-panels {
   grid-column: 1 / 6;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 3rem 0;
   background-color: #dbedf0;
@@ -61,10 +62,12 @@
 .home-panels > section {
   display: flex;
   padding: 1rem;
-  margin: 1rem 0.5rem;
+  margin: 1rem 1rem;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
   border-radius: 0.4rem;
+  max-width: 25rem;
+  height: 11rem;
   flex: 1;
   box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.024),
     12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
@@ -94,7 +97,7 @@
 
 .home-contact-wrapper {
   grid-column: 1 / 6;
-  margin: 0 0 3rem;
+  margin: 0 1rem 3rem;
 }
 
 .home-contact {
