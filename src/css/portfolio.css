@@ -20,7 +20,6 @@
 
 .portfolio-project > img {
   width: 100%;
-  object-fit: fill;
   height: 15rem;
   max-height: 15rem;
   border-bottom: 3px solid #e2e2e2;
