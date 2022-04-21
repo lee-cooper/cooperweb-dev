@@ -40,10 +40,14 @@ async function buildAndReload() {
   reload();
 }
 
+// TODO: cleanup
 async function combineCss() {
   return gulp
     .src([
       'src/css/shared.css',
+      'src/css/_layouts/header.css',
+      'src/css/_layouts/nav.css',
+      'src/css/_layouts/footer.css',
       'src/css/style-library.css',
       'src/css/line-awesome.min.css',
       'src/css/line-awesome-font-face.css',
@@ -109,5 +113,5 @@ exports.default = async function () {
   // Build and reload at the first time
   buildAndReload();
   // Watch task
-  watch(['src/pages/**/*', 'src/css/*.css'], series(buildAndReload));
+  watch(['src/pages/**/*', 'src/css/**/*'], series(buildAndReload));
 };

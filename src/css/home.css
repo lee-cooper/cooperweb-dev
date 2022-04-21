@@ -12,7 +12,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: black;
   text-align: center;
 }
 
@@ -30,7 +29,6 @@
   animation: rainbow 1s linear infinite alternate;
   background-clip: text;
   -webkit-background-clip: text;
-  color: #274472;
   width: 80vw;
   display: block;
   font-size: 3.5rem;
@@ -57,28 +55,27 @@
   justify-content: center;
   flex-wrap: wrap;
   padding: 3rem 0;
-  background-color: #dbedf0;
+  background-color: var(--color-gray);
 }
 
 .home-panels > section {
   display: flex;
   padding: 1rem;
   margin: 1rem 1rem;
-  color: var(--primary-text-color);
-  background-color: var(--primary-background-color);
+  color: var(--color-black);
+  background-color: var(--color-white);
   border-radius: 0.4rem;
-  max-width: 25rem;
+  max-width: 20rem;
   height: 12rem;
   flex: 1;
   box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.024),
     12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
     30.1px 30.1px 24.1px rgba(0, 0, 0, 0.046);
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .home-panels i {
   display: flex;
-  align-items: center;
   font-size: 6.25rem;
 }
 
@@ -90,9 +87,7 @@
 
 .home-panels a {
   display: inline-block;
-  align-self: flex-end;
   width: 8.5rem;
-  margin-top: auto;
   text-align: center;
 }
 
@@ -107,19 +102,15 @@
   align-items: center;
   margin: 2rem auto;
   padding: 1rem 2rem;
-  background-color: var(--primary-background-color);
+  background-color: var(--color-white);
   border-radius: 7px;
-  width: fit-content;
+  width: 100%;
+  max-width: 22rem;
   text-align: center;
   box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.024),
     12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
     30.1px 30.1px 24.1px rgba(0, 0, 0, 0.046);
   border: 1px solid #e5e5e5;
-}
-
-.home-contact > p {
-  max-width: 30rem;
-  text-align: center;
 }
 
 .fade-in-1 {

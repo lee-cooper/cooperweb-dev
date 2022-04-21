@@ -23,6 +23,16 @@
   --line-height-1: 1;
   --line-height-2: 1.25;
   --line-height-3: 1.7;
+
+  /* Colors */
+  --color-black: #000;
+  --color-white: #fff;
+  --color-gray: #f3f3f3;
+  --color-dark-blue: #274472;
+  --color-midnight-blue: #41729f;
+  --color-baby-blue: hsl(189, 40%, 78%);
+
+  /* borders */
 }
 
 .design-main {
@@ -73,7 +83,7 @@ h6 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-top: var(--spacing-2);
   margin-bottom: var(--spacing-2);
-  color: #274472;
+  color: var(--color-midnight-blue);
 }
 
 h1 {
@@ -109,53 +119,11 @@ p {
 a {
   color: inherit;
   text-decoration: none;
-  border-bottom: lightblue dashed;
+  border-bottom: var(--color-baby-blue) dashed;
 }
 
 ul {
   list-style-type: none;
-}
-*/
-
-/* Colors */
-.ldc-blue-50 {
-  background-color: hsl(203, 100%, 95%);
-}
-
-.ldc-blue-100 {
-  background-color: hsl(203, 100%, var(--root-color-lightness));
-}
-
-.ldc-blue-200 {
-  background-color: hsl(203, 100%, var(--root-color-lightness));
-}
-
-.ldc-blue-300 {
-  background-color: hsl(203, 100%, var(--root-color-lightness));
-}
-
-.ldc-blue-400 {
-  background-color: hsl(203, 100%, var(--root-color-lightness));
-}
-
-.ldc-blue-500 {
-  background-color: hsl(203, 100%, var(--root-color-lightness));
-}
-
-.ldc-blue-600 {
-  background-color: hsl(203, 100%, var(--root-color-lightness));
-}
-
-.ldc-blue-700 {
-  background-color: hsl(203, 100%, var(--root-color-lightness));
-}
-
-.ldc-blue-800 {
-  background-color: hsl(203, 100%, var(--root-color-lightness));
-}
-
-.ldc-blue-900 {
-  background-color: hsl(203, 100%, var(--root-color-lightness));
 }
 
 /* Table */
@@ -171,5 +139,3 @@ ul {
 .ldc-table th {
   text-align: start;
 }
-
-/* Spacing */
