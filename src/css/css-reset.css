@@ -87,36 +87,3 @@ video {
   margin: 0;
   padding: 0;
 }
-
-* {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif, sans-serif;
-  outline-color: var(--color-black);
-}
-
-html {
-  scroll-behavior: smooth;
-  min-width: 17rem;
-  min-height: 100vh;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background: var(--color-white);
-  color: var(--color-black);
-}
-
-main {
-  display: flex;
-  flex-grow: 1;
-}
-
-.body-content {
-  width: 100%;
-  max-width: 54rem;
-  min-width: 10rem;
-  padding: 1rem 1rem 1rem;
-  margin: 1rem 0;
-}

@@ -1,10 +1,7 @@
 :root {
-  --inline-block: inline-block;
   --root-heading-size: 2rem;
-  --root-color-lightness: 95;
 
   /* spacing */
-  /* To be applied to padding or margin */
   --spacing-0: 0rem;
   --spacing-1: 0.25rem;
   --spacing-2: 0.5rem;
@@ -30,48 +27,42 @@
   --color-gray: #f3f3f3;
   --color-dark-blue: #274472;
   --color-midnight-blue: #41729f;
-  --color-baby-blue: hsl(189, 40%, 78%);
-
-  /* borders */
+  --color-baby-blue: #b0d7dd;
 }
 
-.design-main {
-  display: grid;
-  grid-template-columns: 15rem 1fr;
-  padding: var(--spacing-3);
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  outline-color: var(--color-black);
 }
 
-.design-main > section {
-  grid-column: 2 / 3;
-  padding: var(--spacing-0) var(--spacing-5);
-  max-width: 66ch;
+html {
+  scroll-behavior: smooth;
+  min-width: 17rem;
+  min-height: 100vh;
 }
 
-.design-links {
-  grid-column: 1 / 2;
-  grid-row: repeat(auto);
-  padding: var(--spacing-0) var(--spacing-3);
-  border-right: 1px solid black;
-  text-align: center;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--color-white);
+  color: var(--color-black);
 }
 
-.design-links li {
-  padding: var(--spacing-3) var(--spacing-1);
-  border-top: 1px solid black;
-  transition: 0.5s;
+main {
+  display: flex;
+  flex-grow: 1;
 }
 
-.design-links li:hover {
-  background-color: #c7eaff;
-  color: black;
-  font-weight: bold;
+.body-content {
+  width: 100%;
+  max-width: 54rem;
+  min-width: 10rem;
+  padding: 1rem 1rem 1rem;
+  margin: 1rem 0;
 }
 
-.design-links li:last-of-type {
-  border-bottom: 1px solid black;
-}
-
-/* Headings */
 h1,
 h2,
 h3,
@@ -110,7 +101,6 @@ h6 {
   font-size: calc(var(--root-heading-size) - 0.7rem);
 }
 
-/* Paragaph */
 p {
   margin-bottom: var(--spacing-4);
   line-height: var(--line-height-3);
@@ -126,7 +116,102 @@ ul {
   list-style-type: none;
 }
 
-/* Table */
+/* Buttons */
+.btn {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+
+.btn:focus,
+.btn:hover {
+  box-shadow: 0 0 2px 0 var(--color-black);
+}
+
+.btn.text {
+  border: none;
+  background-color: transparent;
+  color: var(--color-white);
+  width: 100%;
+}
+
+.btn.text:focus {
+  box-shadow: none;
+  outline: var(--color-white) auto 1px;
+}
+
+.btn.primary {
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+}
+
+.btn.secondary {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.btn.disabled {
+  background-color: rgb(226, 223, 223);
+  cursor: not-allowed;
+}
+
+/* Banners */
+.construction {
+  background-color: lightgoldenrodyellow;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.primary-horizontal-divider {
+  height: 2px;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.primary-horizontal-divider {
+  background-color: var(--color-black);
+}
+
+.design-main {
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  padding: var(--spacing-3);
+}
+
+.design-main > section {
+  grid-column: 2 / 3;
+  padding: var(--spacing-0) var(--spacing-5);
+  max-width: 66ch;
+}
+
+.design-links {
+  grid-column: 1 / 2;
+  grid-row: repeat(auto);
+  padding: var(--spacing-0) var(--spacing-3);
+  border-right: 1px solid black;
+  text-align: center;
+}
+
+.design-links li {
+  padding: var(--spacing-3) var(--spacing-1);
+  border-top: 1px solid black;
+  transition: 0.5s;
+}
+
+.design-links li:hover {
+  background-color: #c7eaff;
+  color: black;
+  font-weight: bold;
+}
+
+.design-links li:last-of-type {
+  border-bottom: 1px solid black;
+}
 
 .ldc-table {
   width: 30rem;
