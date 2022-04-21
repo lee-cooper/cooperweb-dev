@@ -94,7 +94,9 @@
 
 .home-contact-wrapper {
   grid-column: 1 / 6;
-  margin: 0 1rem 3rem;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 1rem 5rem;
 }
 
 .home-contact {

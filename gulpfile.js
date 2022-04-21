@@ -15,7 +15,7 @@ const paths = {
 
 async function includeHTML() {
   return gulp
-    .src(['src/pages/**', '!src/**/portfolio*/'])
+    .src(['src/pages/**', 'src/shared/**', '!src/**/portfolio*/'])
     .pipe(
       fileInclude({
         prefix: '@@',
@@ -45,7 +45,7 @@ async function combineCss() {
     .src([
       'src/css/external/**/*',
       'src/css/design-system.css',
-      'src/css/_layouts/**/*',
+      'src/css/components/**/*',
       'src/css/pages/**/*',
     ])
     .pipe(cleanCSS())
