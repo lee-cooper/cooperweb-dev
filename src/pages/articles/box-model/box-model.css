@@ -32,7 +32,6 @@
 
 .article-metadata-container > img {
   width: 2.5rem;
-  height: 2.5rem;
   border-radius: 50%;
   border: 1px solid #274472;
 }
@@ -44,7 +43,6 @@
 
 .article-image-container > img {
   width: 100%;
-  height: auto;
 }
 
 .article-image-container > figcaption {
@@ -75,12 +73,10 @@
 
 .article-box-model {
   width: 12rem;
-  height: auto;
 }
 
 .article-shiba {
   width: 7rem;
-  height: 8rem;
   padding: 1rem;
   margin: 1rem;
   border: 4px solid black;

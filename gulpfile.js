@@ -15,7 +15,7 @@ const paths = {
 
 async function includeHTML() {
   return gulp
-    .src(['src/pages/**'])
+    .src(['src/pages/**', '!src/**/portfolio*/'])
     .pipe(
       fileInclude({
         prefix: '@@',
@@ -40,21 +40,13 @@ async function buildAndReload() {
   reload();
 }
 
-// TODO: cleanup
 async function combineCss() {
   return gulp
     .src([
-      'src/css/css-reset.css',
+      'src/css/external/**/*',
       'src/css/design-system.css',
-      'src/css/_layouts/header.css',
-      'src/css/_layouts/nav.css',
-      'src/css/_layouts/footer.css',
-      'src/css/line-awesome.min.css',
-      'src/css/line-awesome-font-face.css',
-      'src/css/home.css',
-      'src/css/about.css',
-      'src/css/articles.css',
-      'src/css/portfolio.css',
+      'src/css/_layouts/**/*',
+      'src/css/pages/**/*',
     ])
     .pipe(cleanCSS())
     .pipe(concat('main.css'))
@@ -82,7 +74,7 @@ async function copyImages() {
 
 async function copyPortfolio() {
   return gulp
-    .src(['portfolio/**/*'])
+    .src(['src/pages/portfolio/**/*'])
     .pipe(gulp.dest(`${paths.scripts.dest}/portfolio`));
 }
 
