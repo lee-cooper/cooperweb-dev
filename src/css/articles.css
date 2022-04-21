@@ -3,30 +3,19 @@
 }
 
 .article-post {
-  padding: var(--spacing-2) var(--spacing-3);
-  background-color: #eaeaea;
-  border-radius: 7px;
+  padding: var(--spacing-3);
+  background-color: var(--color-gray);
+  border-radius: var(--border-radius-2);
   transition: 0.4s;
-}
-
-.article-post > h2 {
-  color: #274472;
 }
 
 .article-post > span {
   font-style: italic;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-3);
   display: block;
 }
 
-.article-post:hover {
-  background-color: #dbedf0;
-}
-
+.article-post:hover,
 .article-link:focus > section {
-  background-color: #dbedf0;
-}
-
-.article-post > p {
-  margin: 0;
+  background-color: var(--color-baby-blue);
 }

@@ -28,6 +28,9 @@
   --color-dark-blue: #274472;
   --color-midnight-blue: #41729f;
   --color-baby-blue: #b0d7dd;
+
+  /* Borders */
+  --border-radius-2: 0.5rem;
 }
 
 * {

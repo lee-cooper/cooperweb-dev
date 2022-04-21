@@ -54,24 +54,24 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 3rem 0;
+  padding: var(--spacing-7) var(--spacing-0);
   background-color: var(--color-gray);
 }
 
 .home-panels > section {
   display: flex;
-  padding: 1rem;
-  margin: 1rem 1rem;
+  padding: var(--spacing-3);
+  margin: var(--spacing-3);
+  gap: var(--spacing-3);
   color: var(--color-black);
   background-color: var(--color-white);
-  border-radius: 0.4rem;
+  border-radius: var(--border-radius-2);
   max-width: 20rem;
   height: 12rem;
   flex: 1;
   box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.024),
     12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
     30.1px 30.1px 24.1px rgba(0, 0, 0, 0.046);
-  gap: 1rem;
 }
 
 .home-panels i {
@@ -89,6 +89,7 @@
   display: inline-block;
   width: 8.5rem;
   text-align: center;
+  margin-top: auto;
 }
 
 .home-contact-wrapper {

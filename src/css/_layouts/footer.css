@@ -3,7 +3,7 @@ footer {
   place-items: center;
   background: var(--color-midnight-blue);
   color: var(--color-white);
-  padding: 3rem 1rem;
+  padding: var(--spacing-7) var(--spacing-3);
   text-align: center;
 }
 
@@ -12,11 +12,11 @@ footer a {
 }
 
 footer span {
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--spacing-2);
 }
 
 .social-links > a {
   display: inline-block;
-  font-size: 3rem;
+  font-size: var(--spacing-7);
   border-bottom: none;
 }
