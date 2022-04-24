@@ -6,21 +6,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 65rem;
-  margin: var(--spacing-5) auto;
-  gap: var(--spacing-3);
-  padding: var(--spacing-3);
+  background-color: var(--color-gray);
+  border-bottom: 3px solid var(--color-midnight-blue);
+  box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.024),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    30.1px 30.1px 24.1px rgba(0, 0, 0, 0.046);
 }
 
 .about-wrapper img {
-  width: clamp(8rem, 100%, 25rem);
+  width: clamp(8rem, 100%, 32rem);
   height: clamp(8rem, 100%, 25rem);
-  border-bottom: 3px solid var(--color-dark-blue);
+  padding: var(--spacing-3) var(--spacing-5) 0;
+  background-color: var(--color-white);
 }
 
 .about-content {
-  width: clamp(8rem, 100%, 35rem);
+  width: clamp(8rem, 100%, 32rem);
   background-color: var(--color-white);
+  padding: var(--spacing-3) var(--spacing-5) 0;
 }
 
 .about-content > section {
@@ -35,5 +38,5 @@
 .about-contact-wrapper {
   display: flex;
   justify-content: center;
-  margin: var(--spacing-5) var(--spacing-3) var(--spacing-9);
+  margin: var(--spacing-9) var(--spacing-3);
 }
