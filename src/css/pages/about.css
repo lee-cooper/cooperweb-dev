@@ -35,5 +35,5 @@
 .about-contact-wrapper {
   display: flex;
   justify-content: center;
-  margin: 2rem 1rem 5rem;
+  margin: var(--spacing-5) var(--spacing-3) var(--spacing-9);
 }

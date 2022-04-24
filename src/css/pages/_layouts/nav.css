@@ -16,7 +16,7 @@
 #close-navigation {
   font-size: 1.7rem;
   align-self: flex-end;
-  margin: 0 0 1rem;
+  margin-bottom: var(--spacing-3);
   border-bottom: none;
 }
 
@@ -30,5 +30,5 @@
 
 .nav-list li {
   font-size: 1.7rem;
-  margin: 0 0 1.4rem;
+  margin-bottom: var(--spacing-4);
 }

@@ -39,17 +39,3 @@
   padding: 1rem;
   margin-bottom: 2rem;
 }
-
-pre {
-  font-family: Courier, monospace;
-  white-space: pre-line;
-  background-color: #274472;
-  color: white;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  margin-bottom: 2rem;
-}
-
-pre code {
-  white-space: pre;
-}
