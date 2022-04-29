@@ -47,6 +47,16 @@
   margin-right: var(--spacing-3);
 }
 
+.home-about {
+  display: flex;
+  justify-content: center;
+  margin: var(--spacing-9) var(--spacing-3);
+}
+
+.home-about > section > p {
+  max-width: 65ch;
+}
+
 .home-latest-article {
   display: flex;
   justify-content: center;
@@ -80,7 +90,7 @@
 }
 
 .home-latest-article-text {
-  font-size: 0.8rem;
+  font-size: var(--subtitle);
   color: var(--color-dark-gray);
   margin-top: var(--spacing-1);
 }
@@ -169,20 +179,22 @@
 .home-article-metadata-container > div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .home-article-metadata-container > img {
   width: 3.5rem;
   border-radius: 50%;
   border: 1px solid #274472;
+  filter: grayscale(100%);
 }
 
 .home-article-author {
   color: var(--color-black);
-  font-size: 1.1rem;
+  margin-bottom: var(--spacing-1);
 }
 
 .article-date {
-  font-style: italic;
+  font-size: var(--subtitle);
   color: #6a6a6a;
 }

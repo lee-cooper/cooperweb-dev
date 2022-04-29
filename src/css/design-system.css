@@ -25,13 +25,23 @@
   --color-black: #000;
   --color-white: #fff;
   --color-gray: #eeecec;
-  --color-dark-gray: #7e7e7e;
+  --color-dark-gray: #6e6e6e;
   --color-dark-blue: #274472;
   --color-midnight-blue: #41729f;
   --color-baby-blue: #b0d7dd;
 
   /* Borders */
   --border-radius-2: 0.5rem;
+
+  /* font size */
+  --heading-1: var(--root-heading-size);
+  --heading-2: calc(var(--root-heading-size) - 0.4rem);
+  --heading-3: calc(var(--root-heading-size) - 0.6rem);
+  --heading-4: calc(var(--root-heading-size) - 0.7rem);
+  --heading-5: calc(var(--root-heading-size) - 0.8rem);
+  --heading-6: calc(var(--root-heading-size) - 0.9rem);
+  --regular: 1rem;
+  --subtitle: 0.8rem;
 }
 
 * {
@@ -68,6 +78,30 @@ main {
   margin: 1rem 0;
 }
 
+h1 {
+  font-size: var(--heading-1);
+}
+
+h2 {
+  font-size: var(--heading-2);
+}
+
+h3 {
+  font-size: var(--heading-3);
+}
+
+h4 {
+  font-size: var(--heading-4);
+}
+
+h5 {
+  font-size: var(--heading-5);
+}
+
+h6 {
+  font-size: var(--heading-6);
+}
+
 h1,
 h2,
 h3,
@@ -80,30 +114,6 @@ h6 {
   margin-top: var(--spacing-2);
   margin-bottom: var(--spacing-3);
   color: var(--color-midnight-blue);
-}
-
-h1 {
-  font-size: var(--root-heading-size);
-}
-
-h2 {
-  font-size: calc(var(--root-heading-size) - 0.4rem);
-}
-
-h3 {
-  font-size: calc(var(--root-heading-size) - 0.6rem);
-}
-
-h4 {
-  font-size: calc(var(--root-heading-size) - 0.5rem);
-}
-
-h5 {
-  font-size: calc(var(--root-heading-size) - 0.6rem);
-}
-
-h6 {
-  font-size: calc(var(--root-heading-size) - 0.7rem);
 }
 
 p {
@@ -123,7 +133,7 @@ ul {
 
 /* Buttons */
 .btn {
-  font-size: inherit;
+  font-size: 1rem;
   font-family: inherit;
   padding: 0.5rem 0.75rem;
   cursor: pointer;

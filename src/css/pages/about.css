@@ -18,6 +18,7 @@
   height: clamp(8rem, 100%, 25rem);
   padding: var(--spacing-3) var(--spacing-5) 0;
   background-color: var(--color-white);
+  filter: grayscale(100%);
 }
 
 .about-content {
