@@ -24,7 +24,7 @@
   /* Colors */
   --color-black: #000;
   --color-white: #fff;
-  --color-gray: #eeecec;
+  --color-gray: #e4e4e4;
   --color-dark-gray: #6e6e6e;
   --color-dark-blue: #274472;
   --color-midnight-blue: #41729f;
@@ -110,7 +110,7 @@ h5,
 h6 {
   display: block;
   font-weight: normal;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
   margin-top: var(--spacing-2);
   margin-bottom: var(--spacing-3);
   color: var(--color-midnight-blue);

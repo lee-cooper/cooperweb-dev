@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1" />
+    <title>Dark Mode with CSS Variables | Articles | CooperWeb</title>
+    <meta name="description"
+          content="How to implement dark mode using CSS variables">
+    @@include('../../_layouts/style-links.html')
+    <link rel="stylesheet"
+          href="./dark-mode.css">
+  </head>
+
+  <body>
+    @@include('../../_layouts/header.html')
+    @@include('../../_layouts/nav.html')
+    <main class="article-content-main">
+      <h1>Dark Mode with CSS Variables</h1>
+      <div class="article-metadata-container">
+        <img src="/img/lee-profile2.webp"
+             alt="headshot of Lee Cooper">
+        <div>
+          <span>Lee Cooper</span>
+          <span class="article-date">April 28th, 2022</span>
+        </div>
+      </div>
+      <figure class="article-image-container">
+        <img src="/img/articles/box-model/box-model.webp"
+             alt="The CSS Box Model">
+        <figcaption>The CSS Box Model</figcaption>
+      </figure>
+      <section>
+        <h2>Why Dark Mode?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio iusto rerum, nisi soluta blanditiis magnam
+          necessitatibus dolore porro et beatae cumque exercitationem distinctio nihil sunt esse molestiae enim quos
+          itaque veritatis quaerat fugit? Consectetur optio aliquam porro voluptatem, tempora expedita, aliquid
+          perspiciatis minus cumque sunt voluptas nesciunt ipsum inventore at.</p>
+      </section>
+      <section>
+        <h2>CSS Variables</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, vel. Magnam temporibus unde ullam voluptatibus
+          molestiae aut facilis, odio voluptatem expedita? Perferendis consectetur dicta quidem, velit possimus vel odio
+          aut accusamus in ipsum omnis dolore repellendus excepturi, quis rem sed aliquam nam deleniti porro eos tempore
+          veniam consequuntur. Maxime, similique?</p>
+      </section>
+      <section>
+        <h2>Sample Website</h2>
+        <p>In practice, a HTML Element can be inspected to see each area's value by using the browser dev
+          tools.</p>
+        <div class="article-box-model-shiba">
+          <img src="/img/articles/box-model/doge-without-frame.webp"
+               alt="Photo of a Shibu Inu used to illustrate CSS Box Model concepts"
+               class="article-shiba">
+          <img src="/img/articles/box-model/box-model-dev-tools.webp"
+               alt="Photo of box model in browser dev tools"
+               class="article-box-model">
+        </div>
+        <p>Right clicking the Shibu Inu image and selecting <b>inspect</b> will launch the browser dev tools with
+          the <b>elements</b> tab selected. On the right side is a <b>styles</b> tab, and scrolling to the bottom
+          reveals an interactive display that lists the <i>calculated</i> values for content, padding, border, and
+          margin dimensions.
+        </p>
+        <p>Since relative units like rem and em are often used for sizing <i>(rather than static pixel sizes)</i>, this
+          provides a convenient way to
+          inspect an element's dimensions in different states, such as on a desktop screen or a mobile phone display.
+        </p>
+      </section>
+      <section>
+        <h2>In Conclusion</h2>
+        <p>The CSS Box Model is a key introductory concept to the world of CSS. Once it is understood that everything on
+          a web page is made up of boxes, it becomes easier to view how each element is sized and its behavior
+          around other elements.</p>
+        <h3>Challenge:</h3>
+        <p>Using the inspect tool, explore this page and find an example implementation of each of the four CSS Box
+          Model areas. How do they interact? Does every element have a value for each of the four areas? Does specifying
+          the value for one area <i>(for example, margin)</i> apply it to all sides of the element?</p>
+      </section>
+    </main>
+    @@include('../../_layouts/footer.html')
+  </body>
+
+</html>
