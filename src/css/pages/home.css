@@ -61,7 +61,8 @@
 .home-about {
   display: flex;
   justify-content: center;
-  margin: var(--spacing-9) var(--spacing-3);
+  padding: var(--spacing-9) var(--spacing-3);
+  background-color: var(--color-gray);
 }
 
 .home-about > section > p {
@@ -112,7 +113,6 @@
   justify-content: center;
   flex-wrap: wrap;
   padding: var(--spacing-5) var(--spacing-0);
-  background-color: var(--color-gray);
 }
 
 .home-panels > section {

@@ -41,6 +41,8 @@
   --heading-5: calc(var(--root-heading-size) - 0.8rem);
   --heading-6: calc(var(--root-heading-size) - 0.9rem);
   --regular: 1rem;
+  --text-header: 0.9rem;
+  --text-body: 0.8rem;
   --subtitle: 0.8rem;
 }
 
