@@ -1,0 +1,5 @@
+.breadcrumbs {
+  display: flex;
+  font-size: var(--subtitle);
+  color: var(--color-dark-gray);
+}

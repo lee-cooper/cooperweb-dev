@@ -9,16 +9,6 @@
   margin-bottom: 1.7rem;
 }
 
-.article-content-main ul {
-  margin: 1rem 0 2rem;
-  list-style-type: circle;
-  padding-left: 1rem;
-}
-
-.article-content-main ul li {
-  margin: 0.75rem 0;
-}
-
 .article-metadata-container {
   display: flex;
   gap: 0.5rem;
