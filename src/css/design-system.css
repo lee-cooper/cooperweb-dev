@@ -1,5 +1,5 @@
 :root {
-  --root-heading-size: 2rem;
+  --root-heading-size: 1.8rem;
 
   /* spacing */
   --spacing-0: 0rem;
@@ -22,8 +22,8 @@
   --line-height-3: 1.7;
 
   /* Colors */
-  --color-black: #000;
-  --color-white: #fff;
+  --color-black: #222222;
+  --color-white: #fafafa;
   --color-gray: #e4e4e4;
   --color-dark-gray: #6e6e6e;
   --color-dark-blue: #274472;
@@ -35,7 +35,7 @@
 
   /* font size */
   --heading-1: var(--root-heading-size);
-  --heading-2: calc(var(--root-heading-size) - 0.4rem);
+  --heading-2: calc(var(--root-heading-size) - 0.5rem);
   --heading-3: calc(var(--root-heading-size) - 0.6rem);
   --heading-4: calc(var(--root-heading-size) - 0.7rem);
   --heading-5: calc(var(--root-heading-size) - 0.8rem);
