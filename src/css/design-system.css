@@ -23,7 +23,8 @@
 
   /* Colors */
   --color-black: #222222;
-  --color-white: #fafafa;
+  --color-off-white: #fafafa;
+  --color-white: #fff;
   --color-gray: #e4e4e4;
   --color-dark-gray: #6e6e6e;
   --color-dark-blue: #274472;
@@ -63,7 +64,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: var(--color-white);
+  background: var(--color-off-white);
   color: var(--color-black);
 }
 
@@ -154,22 +155,22 @@ ul {
 .btn.text {
   border: none;
   background-color: transparent;
-  color: var(--color-white);
+  color: var(--color-off-white);
   width: 100%;
 }
 
 .btn.text:focus {
   box-shadow: none;
-  outline: var(--color-white) auto 1px;
+  outline: var(--color-off-white) auto 1px;
 }
 
 .btn.primary {
   background-color: var(--color-dark-blue);
-  color: var(--color-white);
+  color: var(--color-off-white);
 }
 
 .btn.secondary {
-  background-color: var(--color-white);
+  background-color: var(--color-off-white);
   color: var(--color-black);
 }
 

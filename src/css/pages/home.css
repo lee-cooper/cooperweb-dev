@@ -37,17 +37,6 @@
   transition: color 0.2s linear;
 }
 
-.slant-gradient {
-  background-color: #41729f;
-  background-image: linear-gradient(
-    354deg,
-    #41729f 0%,
-    #41729f 60%,
-    #fafafa 60%,
-    #fafafa 60%
-  );
-}
-
 .home-title > h1:hover {
   color: rgba(0, 0, 0, 0);
 }
@@ -80,6 +69,7 @@
   justify-content: center;
   gap: var(--spacing-5);
   flex-wrap: wrap;
+  background-color: var(--color-white);
   padding: var(--spacing-3);
   width: clamp(12rem, 100%, 55rem);
   border-radius: var(--border-radius-2);

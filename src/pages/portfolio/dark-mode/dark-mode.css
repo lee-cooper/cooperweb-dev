@@ -26,7 +26,7 @@
   --text-secondary: #215a0e;
 
   --color-black: #000;
-  --color-white: #fff;
+  --color-off-white: #fff;
   --color-gray: #eeecec;
   --color-dark-gray: #6e6e6e;
   --color-dark-blue: #274472;
@@ -64,7 +64,7 @@ main {
 }
 
 header {
-  background-color: var(--color-white);
+  background-color: var(--color-off-white);
   display: flex;
   padding: var(--spacing-5);
   justify-content: space-between;

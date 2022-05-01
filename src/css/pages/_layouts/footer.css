@@ -2,13 +2,13 @@ footer {
   display: grid;
   place-items: center;
   background: var(--color-midnight-blue);
-  color: var(--color-white);
+  color: var(--color-off-white);
   padding: var(--spacing-7) var(--spacing-3);
   text-align: center;
 }
 
 footer a {
-  color: var(--color-white);
+  color: var(--color-off-white);
 }
 
 footer span {

@@ -23,7 +23,9 @@
 
 .about-content {
   width: clamp(8rem, 100vw, 32rem);
-  padding: var(--spacing-3) var(--spacing-5) 0;
+  padding: var(--spacing-3) var(--spacing-5);
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-2);
 }
 
 .about-content > section {
