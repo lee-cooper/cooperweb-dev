@@ -26,6 +26,7 @@
   padding: var(--spacing-3) var(--spacing-5);
   background-color: var(--color-white);
   border-radius: var(--border-radius-2);
+  border: 1px solid var(--color-gray);
 }
 
 .about-content > section {

@@ -1,86 +1,99 @@
 :root {
-  --root-heading-size: 2rem;
-
-  /* spacing */
-  --spacing-0: 0rem;
-  --spacing-1: 0.25rem;
-  --spacing-2: 0.5rem;
-  --spacing-3: 1rem;
-  --spacing-4: 1.5rem;
-  --spacing-5: 2rem;
-  --spacing-6: 2.5rem;
-  --spacing-7: 3rem;
-  --spacing-8: 4rem;
-  --spacing-9: 5rem;
-  --spacing-10: 6rem;
-  --spacing-11: 7rem;
-  --spacing-12: 8rem;
-
-  /* line height */
-  --line-height-1: 1;
-  --line-height-2: 1.25;
-  --line-height-3: 1.7;
-
   /* Colors */
-  --text-primary: rgb(37, 37, 37);
-  --text-secondary: #215a0e;
+  --purple: #725cc5;
+  --gray: #e9e9e9;
+  --dark-gray: #575757;
+  --off-white: #f0f0f0;
+  --off-black: #2f2f2f;
 
-  --color-black: #000;
-  --color-off-white: #fff;
-  --color-gray: #eeecec;
-  --color-dark-gray: #6e6e6e;
-  --color-dark-blue: #274472;
-  --color-midnight-blue: #41729f;
-  --color-baby-blue: #b0d7dd;
+  --primary-background-color: var(--off-white);
+  --secondary-background-color: var(--off-black);
+  --accent-background-color: var(--purple);
 
-  /* Borders */
-  --border-radius-2: 0.5rem;
-
-  /* font size */
-  --heading-1: var(--root-heading-size);
-  --heading-2: calc(var(--root-heading-size) - 0.4rem);
-  --heading-3: calc(var(--root-heading-size) - 0.6rem);
-  --heading-4: calc(var(--root-heading-size) - 0.7rem);
-  --heading-5: calc(var(--root-heading-size) - 0.8rem);
-  --heading-6: calc(var(--root-heading-size) - 0.9rem);
-  --regular: 1rem;
-  --subtitle: 0.8rem;
+  --primary-text-color: var(--off-black);
+  --secondary-text-color: var(--gray);
+  --accent-text-color: var(--off-white);
 }
 
-* {
-  font-family: 'Radio Canada', sans-serif;
+html {
+  font-family: 'Courier New', Courier, monospace;
+  height: 100%;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-main {
-  width: 100%;
-  max-width: 60rem;
-  padding: var(--spacing-5);
+  height: 100%;
+  margin: 0;
+  background-color: var(--primary-background-color);
 }
 
 header {
-  background-color: var(--color-off-white);
-  display: flex;
-  padding: var(--spacing-5);
-  justify-content: space-between;
-  width: 100%;
-  max-width: 60rem;
+  display: grid;
+  place-items: center;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--primary-text-color);
 }
 
-.logo {
-  font-size: var(--heading-1);
+footer {
+  display: grid;
+  place-items: center;
+  background-color: var(--off-black);
+  padding: 2rem;
+  color: var(--off-white);
+  margin-top: 2rem;
+  text-align: center;
 }
 
-nav > ul {
-  display: flex;
-  gap: 1rem;
+.article-grid {
+  display: grid;
+  width: 95%;
+  gap: 1.5rem;
+  margin: 0 auto;
 }
 
-nav > ul > li {
-  font-size: var(--heading-5);
+.article-tile {
+  padding: 2rem;
+  border: 1px solid lightgray;
+  box-shadow: 0 0 1rem 0 lightgray;
+}
+
+.article-tile h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.article-tile p {
+  margin: 1rem 0 0;
+}
+
+@media screen and (min-width: 60rem) {
+  .article-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .grid-column-span-2 {
+    grid-column: span 2;
+  }
+
+  .grid-row-span-2 {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
+
+.accent {
+  background-color: var(--accent-background-color);
+  color: var(--accent-text-color);
+}
+
+.primary {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+
+.secondary {
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-text-color);
 }
