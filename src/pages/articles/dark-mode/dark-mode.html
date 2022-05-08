@@ -24,27 +24,56 @@
              alt="headshot of Lee Cooper">
         <div>
           <span>Lee Cooper</span>
-          <span class="article-date">April 28th, 2022</span>
+          <span class="article-date">May 22nd, 2022</span>
         </div>
       </div>
       <figure class="article-image-container">
-        <img src="/img/articles/box-model/box-model.webp"
+        <img src="/img/articles/dark-mode/dark-mode.webp"
              alt="The CSS Box Model">
-        <figcaption>The CSS Box Model</figcaption>
+        <figcaption>Dark Mode</figcaption>
       </figure>
       <section>
         <h2>Why Dark Mode?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio iusto rerum, nisi soluta blanditiis magnam
-          necessitatibus dolore porro et beatae cumque exercitationem distinctio nihil sunt esse molestiae enim quos
-          itaque veritatis quaerat fugit? Consectetur optio aliquam porro voluptatem, tempora expedita, aliquid
-          perspiciatis minus cumque sunt voluptas nesciunt ipsum inventore at.</p>
+        <p>Dark mode has become an increasingly popular option for websites. The ability to toggle between light and
+          dark themes allows users to select a presentation that can reduce eye strain, improve device battery life, and
+          match
+          the aesthetic that the user prefers.</p>
+        <p>In this article, you'll learn how to implement dark mode for a website using CSS Variables so that you can
+          begin to provide this features to your users.</p>
       </section>
       <section>
         <h2>CSS Variables</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, vel. Magnam temporibus unde ullam voluptatibus
-          molestiae aut facilis, odio voluptatem expedita? Perferendis consectetur dicta quidem, velit possimus vel odio
-          aut accusamus in ipsum omnis dolore repellendus excepturi, quis rem sed aliquam nam deleniti porro eos tempore
-          veniam consequuntur. Maxime, similique?</p>
+        <p>The magic lies within CSS variables, which allows setting CSS values to a variable that can later be
+          overwritten. This forms the basis of light and dark mode.</p>
+        <p>To start out, define a variable for the background and text colors on the root element of the document.
+          Additionally, assign these colors to HTML elements</p>
+
+        <pre style="background-color: black; color: white; white-space: pre-line; padding: 1rem;">
+          <code>
+              <span style="white-space: pre;">:root {</span>
+              <span style="white-space: pre;">  --background-color: #000;</span>
+              <span style="white-space: pre;">  --text-color: #FFF;</span>
+              <span style="white-space: pre;">}</span>
+        
+              <span style="white-space: pre;">h1, p {</span>
+              <span style="white-space: pre;">  color: var(--text-color);</span>
+              <span style="white-space: pre;">}</span>
+        
+              <span style="white-space: pre;">body {</span>
+              <span style="white-space: pre;">  background-color: var(--background-color);</span>
+              <span style="white-space: pre;">}</span>
+          </code>
+        </pre>
+
+
+
+        <p>Next, create a simple HTML document containing these styled elements:</p>
+        <pre>
+          <code>
+
+          </code>
+        </pre>
+
       </section>
       <section>
         <h2>Sample Website</h2>

@@ -7,6 +7,7 @@
   background-color: var(--color-gray);
   border-radius: var(--border-radius-2);
   transition: 0.4s;
+  margin: var(--spacing-3) auto;
 }
 
 .article-post > span {
