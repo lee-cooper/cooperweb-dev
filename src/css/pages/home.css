@@ -64,7 +64,9 @@
 
 .home-latest-article {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
   margin: var(--spacing-9) var(--spacing-3);
 }
 
@@ -83,8 +85,11 @@
     30.1px 30.1px 24.1px rgba(0, 0, 0, 0.046);
 }
 
-.home-latest-article img {
+.home-latest-article img.home-article-image {
   width: clamp(8rem, 100%, 25rem);
+  aspect-ratio: 2/1;
+  block-size: auto;
+  object-fit: contain;
 }
 
 .home-latest-article section {
