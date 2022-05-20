@@ -2,4 +2,5 @@
   display: flex;
   font-size: var(--subtitle);
   color: var(--color-dark-gray);
+  margin-bottom: var(--spacing-1);
 }

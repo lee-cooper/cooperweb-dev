@@ -24,7 +24,7 @@
              alt="headshot of Lee Cooper">
         <div>
           <span>Lee Cooper</span>
-          <span class="article-date">May 22nd, 2022</span>
+          <span class="article-date">May 19th, 2022</span>
         </div>
       </div>
       <figure class="article-image-container">
@@ -39,73 +39,50 @@
           match
           the aesthetic that the user prefers.</p>
         <p>In this article, you'll learn how to implement dark mode for a website using CSS Variables so that you can
-          begin to provide this features to your users.</p>
+          begin to provide this feature to your users.</p>
       </section>
       <section>
         <h2>CSS Variables</h2>
         <p>The magic lies within CSS variables, which allows setting CSS values to a variable that can later be
-          overwritten. This forms the basis of light and dark mode.</p>
-        <p>To start out, define a variable for the background and text colors on the root element of the document.
-          Additionally, assign these colors to HTML elements</p>
+          overwritten using Javascript.</p>
+        <script src="https://gist.github.com/lee-cooper/42a257f5916b03739a3a2d8a731a55f4.js"></script>
 
-        <pre style="background-color: black; color: white; white-space: pre-line; padding: 1rem;">
-          <code>
-              <span style="white-space: pre;">:root {</span>
-              <span style="white-space: pre;">  --background-color: #000;</span>
-              <span style="white-space: pre;">  --text-color: #FFF;</span>
-              <span style="white-space: pre;">}</span>
-        
-              <span style="white-space: pre;">h1, p {</span>
-              <span style="white-space: pre;">  color: var(--text-color);</span>
-              <span style="white-space: pre;">}</span>
-        
-              <span style="white-space: pre;">body {</span>
-              <span style="white-space: pre;">  background-color: var(--background-color);</span>
-              <span style="white-space: pre;">}</span>
-          </code>
-        </pre>
-
-
-
-        <p>Next, create a simple HTML document containing these styled elements:</p>
-        <pre>
-          <code>
-
-          </code>
-        </pre>
-
+        <p>For example, the above snippet sets a CSS variable (which can be named anything) on the root of the document
+          and applies that variable to the body element's background-color, changing it to red. And since it's a
+          variable, that means it can
+          be changed.</p>
+        <p>Knowing this, a toggle function can be set up to replace the light mode values with their dark mode
+          counterparts.</p>
+        <h3>Lab: Implement Dark Mode with CSS Variables</h3>
+        <p>To start out, create a basic HTML document with a heading, some paragraph text, and a button that will
+          be used to toggle the theme of the page. Take note of the id attribute on the button - this will be used later
+          in the javascript file.</p>
+        <script src="https://gist.github.com/lee-cooper/370a6a8f5bd3fa2c81a855f53736abe8.js"></script>
+        <p>Next, using the --variable-name: syntax, create styles for the background, text, and accent colors. Then use
+          the var(--variable-name) syntax on the h1, p, button, and body elements. This sets our elements to pull color
+          styling values from the new CSS variables, and sets us up for the final step.</p>
+        <script src="https://gist.github.com/lee-cooper/a2b9960a8cfae967bb6dcff452fa6e5b.js"></script>
+        <p>Finally, attach a click event to the button via the button's id and toggle a .dark class on the root document
+          element. When
+          clicked, the :root will have the .dark class added, and because of its CSS specificity the dark mode values
+          will be used in the document instead of the light mode values.</p>
+        <script src="https://gist.github.com/lee-cooper/1fcda79ab5d3d0ab2e61bf27788a212a.js"></script>
+        <p>If everything is set up correctly, when the project is run and the button is clicked, the theme will
+          successfully switch from light to dark mode! Check out the Stackblitz for a working demo of this.</p>
+        <iframe style="width: 100%; height: 20rem;"
+                src="https://stackblitz.com/edit/web-platform-jrset6?embed=1&file=dark-mode.css&hideExplorer=1&hideNavigation=1&view=preview"></iframe>
       </section>
+
       <section>
-        <h2>Sample Website</h2>
-        <p>In practice, a HTML Element can be inspected to see each area's value by using the browser dev
-          tools.</p>
-        <div class="article-box-model-shiba">
-          <img src="/img/articles/box-model/doge-without-frame.webp"
-               alt="Photo of a Shibu Inu used to illustrate CSS Box Model concepts"
-               class="article-shiba">
-          <img src="/img/articles/box-model/box-model-dev-tools.webp"
-               alt="Photo of box model in browser dev tools"
-               class="article-box-model">
-        </div>
-        <p>Right clicking the Shibu Inu image and selecting <b>inspect</b> will launch the browser dev tools with
-          the <b>elements</b> tab selected. On the right side is a <b>styles</b> tab, and scrolling to the bottom
-          reveals an interactive display that lists the <i>calculated</i> values for content, padding, border, and
-          margin dimensions.
-        </p>
-        <p>Since relative units like rem and em are often used for sizing <i>(rather than static pixel sizes)</i>, this
-          provides a convenient way to
-          inspect an element's dimensions in different states, such as on a desktop screen or a mobile phone display.
-        </p>
-      </section>
-      <section>
-        <h2>In Conclusion</h2>
-        <p>The CSS Box Model is a key introductory concept to the world of CSS. Once it is understood that everything on
-          a web page is made up of boxes, it becomes easier to view how each element is sized and its behavior
-          around other elements.</p>
+        <h2>The Possibilities Are Endless</h2>
+        <p>This short article outlined an approach to implement light / dark mode themes, which can be further
+          expanded to support other custom themes. From the functional and accessible high-contrast themes, to the
+          outright fun cotton-candy bubblegum-esque themes, CSS variables provide developers with a powerful and simple
+          method to switch app appearances at the click of a button.</p>
         <h3>Challenge:</h3>
-        <p>Using the inspect tool, explore this page and find an example implementation of each of the four CSS Box
-          Model areas. How do they interact? Does every element have a value for each of the four areas? Does specifying
-          the value for one area <i>(for example, margin)</i> apply it to all sides of the element?</p>
+        <p>Design and add another theme to the CSS file and provide a mechanism to toggle this new theme on/off. Did
+          this introduce any issues with the dark mode theme? If so, why? Do the names of the CSS variables cause
+          confusion when being applied to other elements? If so, how could this be addressed?</p>
       </section>
     </main>
     @@include('../../_layouts/footer.html')
