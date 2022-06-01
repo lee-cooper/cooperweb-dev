@@ -14,7 +14,6 @@
   width: clamp(8rem, 100vw, 15rem);
   border-radius: 50%;
   border: 1px solid var(--color-gray);
-  filter: grayscale(100%);
   align-self: center;
   margin: var(--spacing-4);
   box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.024),
