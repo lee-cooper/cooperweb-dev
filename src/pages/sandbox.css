@@ -1,0 +1,5 @@
+.sandbox {
+  /* Add stuff here to interact with the sandbox */
+  display: flex;
+  align-items: baseline;
+}

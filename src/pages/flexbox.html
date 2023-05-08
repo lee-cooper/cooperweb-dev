@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com" />
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+          rel="stylesheet" />
+    <link rel="stylesheet"
+          href="./flexbox.css" />
+    <link rel="stylesheet"
+          href="./sandbox.css" />
+    <script src="./flexbox.js"
+            defer></script>
+    <title>Flexbox Practice 💪🏻</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Flexbox</h1>
+      <span>Author: Lee Cooper</span>
+    </header>
+    <main>
+      <section>
+        <h2>What is Flexbox?</h2>
+        <p>
+          Flexbox is a one-dimensional layout system in CSS that makes it easy
+          to align and distribute content within a container, allowing for
+          changes in screen sizes and content to be handled gracefully.
+        </p>
+        <p>
+          It's called "flexbox" because it allows you to make the items inside
+          the container flexible, so they can adjust their size and position
+          depending on the available space.
+        </p>
+      </section>
+
+      <section>
+        <h2>High Level Flexbox Questions</h2>
+        <ul>
+          <li><b>What:</b> One-dimensional layout and alignment system</li>
+          <li>
+            <b>Where to use:</b> Centering items, webpage layouts, responsive
+            behavior, etc.
+          </li>
+          <li>
+            <b>Why:</b> It was designed for creating layouts and aligning
+            content and offers a simple and intuitive approach for doing so
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Flex Container and Flex Items</h2>
+        <p>
+          Flexbox requires two things: a <b>flexbox container</b>, and
+          <b>items</b> to put in it. For example:
+        </p>
+        <ul>
+          <li>A cupboard (container) containing drink glasses (items)</li>
+          <li>A drawer (container) holding socks (items)</li>
+          <li>A wall (container) with mounted pictures (items)</li>
+        </ul>
+        <p></p>
+        <!-- Trust me, I know this is ugly :) -->
+        <pre><code>&lt;div class="container">
+  &lt;div>Flexbox Item&lt;/div>
+  &lt;div>Flexbox Item&lt;/div>
+  &lt;div>Flexbox Item&lt;/div>
+&lt;/div></code></pre>
+
+        <pre>
+.container {
+  display: flex;
+}</pre>
+        <p>
+          Flexbox, if available in the real world, would allow your cupboards,
+          sock drawers, and pictures to neatly adjust to the size of their
+          containers when they change (if they could) and react gracefully when
+          new items are added.
+        </p>
+        <p>Think of the organization and aesthetic benefits!</p>
+        <p>But we'll settle for the magic in webpages for now.</p>
+      </section>
+
+      <section>
+        <h2>The Main and Cross Axis</h2>
+        <p>
+          Flexbox has two axes that defines the direction of container content:
+        </p>
+        <ul>
+          <li>
+            <b>Main Axis:</b> defined by the flex-direction property (row or
+            column)
+          </li>
+          <li><b>Cross Axis:</b> runs perpendicular to the main axis</li>
+        </ul>
+        <p>The default flex-direction is "row."</p>
+        <figure>
+          <img src="/assets/flex-container.png"
+               alt="flex container with items" />
+          <figcaption>
+            Figure 1: Main and Cross Axis displayed across a container with
+            items.
+          </figcaption>
+        </figure>
+        <p>
+          This means that items, when put into a flex container, will
+          automatically line up based on the main axis direction.
+        </p>
+        <p>
+          <b>Again this is one-dimensional - it's either a row, or a column.</b>
+        </p>
+        <p>
+          Once set, there's a number of properties we can apply to the container
+          to tell it how to arrange our items, and to the items themselves to
+          configure how much space is taken.
+        </p>
+        <p>
+          There's a curveball later with flex-direction and how some of these
+          properties apply. Make sure you understand the main axis / cross axis
+          - it'll come in handy later.
+        </p>
+      </section>
+
+      <section>
+        <h2>Flexbox Sandbox 🛠️</h2>
+        <p>Here's the flexbox sandbox. Very exciting!</p>
+        <p>
+          We'll use this throughout our journey to apply concepts on this page.
+          Open the sandbox.css file in the workshop folder to begin editing.
+        </p>
+        <div class="container sandbox">
+          <div class="tile tile-sandbox">Flexbox Item</div>
+          <div class="tile tile-sandbox">Flexbox Item</div>
+          <div class="tile tile-sandbox">Flexbox Item</div>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="highlight">Flex-Container:</span> Justify Content</h2>
+        <p>
+          How the browser distributes space between and around content items
+          along the main axis of the flex container
+        </p>
+        <span>Mental Models:</span>
+        <ul>
+          <li>
+            Aligning paragraphs in Microsoft Word (left, center, right aligned)
+          </li>
+          <li>
+            Arranging pictures on the wall (aligned with even space between)
+          </li>
+          <li>
+            Movie Theater seating (seats all centered together, or separated by
+            aisles)
+          </li>
+        </ul>
+
+        <div class="demo-container">
+          <h3>Demo 🎥</h3>
+          <label for="justify-content-select"><b>Choose a justify-content value:</b></label>
+          <select name="justify-content-values"
+                  id="justify-content-select">
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="space-around">space-around</option>
+            <option value="space-between">space-between</option>
+          </select>
+
+          <pre>
+.container {
+  display: flex;
+  justify-content: <span id="justify-display">flex-start</span>;
+}</pre>
+
+          <div class="container fws-2-container">
+            <div class="tile">Flexbox Item</div>
+            <div class="tile">Flexbox Item</div>
+            <div class="tile">Flexbox Item</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="highlight">Flex-Container:</span> Align Items</h2>
+        <p>
+          The CSS align-items property sets the align-self value on all direct
+          children as a group. In Flexbox, it controls the alignment of items on
+          the Cross Axis.
+        </p>
+        <span>Mental Models:</span>
+        <ul>
+          <li>How high you hang a row of photos on a wall</li>
+          <li>Lining up text from irregularly shaped objects</li>
+        </ul>
+
+        <div class="demo-container">
+          <h3>Demo 🎥</h3>
+          <label for="align-items-select"><b>Choose an align-items value:</b></label>
+          <select name="align-items-values"
+                  id="align-items-select">
+            <option value="stretch">stretch (default)</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="baseline">baseline</option>
+          </select>
+
+          <pre>
+.container {
+  display: flex;
+  align-items: <span id="align-display">stretch</span>;
+}</pre>
+
+          <div class="container fws-3-container">
+            <div class="tile tile-align">Flexbox Item</div>
+            <div class="tile tile-align">Flexbox Item</div>
+            <div class="tile tile-align">Flexbox Item</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="highlight">Flex-Container:</span> Flex Direction</h2>
+        <p>
+          The flex-direction CSS property sets how flex items are placed in the
+          flex container defining the main axis and the direction (normal or
+          reversed).
+        </p>
+        <span>Mental Models:</span>
+        <ul>
+          <li>Horizontal or vertical lines</li>
+          <li>Rows or columns</li>
+        </ul>
+
+        <div class="demo-container">
+          <h3>Demo 🎥</h3>
+          <label for="flex-direction-select"><b>Choose a flex-direction value:</b></label>
+          <select name="flex-direction-values"
+                  id="flex-direction-select">
+            <option value="row">row (default)</option>
+            <option value="column">column</option>
+            <option value="row-reverse">row-reverse</option>
+            <option value="column-reverse">column-reverse</option>
+          </select>
+
+          <pre>
+.container {
+  display: flex;
+  flex-direction: <span id="flex-direction-display">row</span>;
+}</pre>
+
+          <div class="container fws-4-container">
+            <div class="tile tile-flex-direction">Flexbox Item 1</div>
+            <div class="tile tile-flex-direction">Flexbox Item 2</div>
+            <div class="tile tile-flex-direction">Flexbox Item 3</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="highlight">Flex-Item:</span> Flex-Grow</h2>
+        <p>
+          The flex-grow CSS property sets the flex grow factor, which specifies
+          how much of the flex container's remaining space should be assigned to
+          the flex item's main size.
+        </p>
+        <div class="demo-container">
+          <h3>Demo 🎥</h3>
+          <label for="flex-grow-select"><b>Choose a flex-grow value (tile two):</b></label>
+          <select name="flex-grow-values"
+                  id="flex-grow-select">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+
+          <pre>
+.container {
+  display: flex;
+}
+
+.tile-one-flex-grow{
+  flex-grow: 1;
+}
+
+.tile-two-flex-grow{
+  flex-grow: <span id="flex-grow-display">0</span>;
+}
+
+.tile-three-flex-grow{
+  flex-grow: 1;
+}</pre>
+
+          <div class="container">
+            <div class="tile tile-one-flex-grow">Flexbox Item 1</div>
+            <div class="tile tile-two-flex-grow">Flexbox Item 2</div>
+            <div class="tile tile-three-flex-grow">Flexbox Item 3</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="highlight">Flex-Item:</span> Flex-Shrink</h2>
+        <p>
+          The flex-shrink CSS property sets the flex shrink factor of a flex
+          item. If the size of all flex items is larger than the flex container,
+          items shrink to fit according to flex-shrink.
+        </p>
+        <div class="demo-container">
+          <h3>Demo 🎥</h3>
+          <label for="flex-shrink-select"><b>Choose a flex-shrink value (tile two):</b></label>
+          <select name="flex-shrink-values"
+                  id="flex-shrink-select">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+
+          <pre>
+.container {
+  display: flex;
+}
+
+.tile-one-flex-shrink{
+  flex-shrink: 1;
+}
+
+.tile-two-flex-shrink{
+  flex-shrink: <span id="flex-shrink-display">0</span>;
+}
+
+.tile-three-flex-shrink{
+  flex-shrink: 1;
+}</pre>
+
+          <div class="container">
+            <div class="tile tile-one-flex-shrink">Flexbox Item 1</div>
+            <div class="tile tile-two-flex-shrink">Flexbox Item 2</div>
+            <div class="tile tile-three-flex-shrink">Flexbox Item 3</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="highlight">Flex-Item:</span> Flex-Basis</h2>
+        <p>
+          The flex-basis CSS property sets the initial main size of a flex item.
+        </p>
+        <div class="demo-container">
+          <h3>Demo 🎥</h3>
+          <label for="flex-basis-select"><b>Choose a flex-basis value (tile two):</b></label>
+          <select name="flex-basis-values"
+                  id="flex-basis-select">
+            <option value="0">0px</option>
+            <option value="200px">200px</option>
+            <option value="300px">300px</option>
+          </select>
+
+          <pre>
+.container {
+  display: flex;
+}
+
+.tile-one-flex-basis{
+  flex-basis: auto;
+}
+
+.tile-two-flex-basis{
+  flex-basis: <span id="flex-basis-display">0px</span>;
+}
+
+.tile-three-flex-basis{
+  flex-basis: auto;
+}</pre>
+
+          <div class="container">
+            <div class="tile tile-one-flex-basis">Flexbox Item 1</div>
+            <div class="tile tile-two-flex-basis">Flexbox Item 2</div>
+            <div class="tile tile-three-flex-basis">Flexbox Item 3</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+
+</html>

@@ -1,0 +1,188 @@
+/* Don't mind the stuff behind the curtain here! Nothing needs to be changed below */
+
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fdfdfd;
+}
+
+header {
+  background-color: #655a7c;
+  color: white;
+  width: 100%;
+  max-width: 766px;
+  padding: 1.5rem 3rem;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+header h1 {
+  letter-spacing: 1rem;
+  animation: headerAnimation 5s infinite;
+  animation-timing-function: ease-in-out;
+  font-size: 3rem;
+}
+
+main {
+  padding: 0 3rem 3rem;
+  height: 100%;
+  border-radius: 3px;
+  max-width: 766px;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+section {
+  margin-top: 5rem;
+}
+
+section:first-of-type {
+  margin-top: 1rem;
+}
+
+select {
+  padding: 2.5px 5px;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+/* Utils */
+.highlight {
+  background-color: #c1aeea;
+}
+
+/* Containers */
+.container {
+  border: 1px dashed gray;
+  height: 350px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='150px' width='150px'><text transform='translate(20, 100) rotate(-45)' fill='rgb(158,158,158, 0.3)' font-size='18'>flexbox container</text></svg>");
+  display: flex;
+  background-color: white;
+}
+
+.demo-container {
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 3px;
+  background-color: #ddf4ce;
+}
+
+.demo-container h3 {
+  margin-top: 0;
+}
+
+/* Tiles */
+.tile {
+  background-color: #fcfcfc;
+  min-height: 100px;
+  height: 100px;
+  margin: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 3px;
+  transition: all 0.5s linear;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.tile-align {
+  height: auto;
+}
+
+.tile-sandbox {
+  height: auto;
+}
+
+.tile-align:first-of-type {
+  padding-top: 2rem;
+}
+
+.tile-align:last-of-type {
+  padding-top: 3rem;
+}
+
+.tile-flex-direction {
+  width: 100px;
+}
+
+.tile-one-flex-grow,
+.tile-three-flex-grow {
+  flex-grow: 1;
+}
+
+.tile-one-flex-shrink,
+.tile-three-flex-shrink {
+  flex-shrink: 1;
+  flex-basis: 300px;
+}
+
+.tile-two-flex-shrink {
+  flex-shrink: 0;
+  flex-basis: 300px;
+}
+
+.tile-one-flex-basis,
+.tile-three-flex-basis {
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.tile-two-flex-basis {
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+/* Screen media queries */
+
+@media only screen and (max-width: 460px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 0.5rem;
+  }
+}
+
+/* Animations */
+
+@keyframes headerAnimation {
+  50% {
+    letter-spacing: 1.5rem;
+  }
+}
